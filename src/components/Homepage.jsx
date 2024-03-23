@@ -1,12 +1,13 @@
 import React from 'react'
 import Navbar from './Navbar'
+import WhatWeDo from './WhatWeDo'
 
 const Homepage = () => {
     return (
         <>
             <Navbar />
-            <div className='flex flex-col items-center justify-center'>
-                <div className='flex flex-col text-6xl font-medium tracking-wide mt-48'>
+            <div className='flex flex-col items-center  h-screen mt-48'>
+                <div className='flex flex-col text-6xl font-medium tracking-wide '>
                     <span className='text-black'>
                         Unleashing the potential  of
                     </span>
@@ -18,7 +19,7 @@ const Homepage = () => {
                     Our Difference
                 </div>
             </div>
-
+            <WhatWeDo />
         </>
     )
 }
