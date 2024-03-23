@@ -3,7 +3,7 @@ import React from 'react'
 const Navbar = () => {
     return (
         <>
-            <div className=' flex flex-row bg-white py-6 w-full h-max items-center justify-between shadow-sm'>
+            <div className='fixed flex flex-row bg-white py-6 w-full h-max items-center justify-between  z-10'>
                 <div className="ml-8">
                     <img
                         src="/tyn-logo.png"

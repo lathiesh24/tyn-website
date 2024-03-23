@@ -6,8 +6,8 @@ const Homepage = () => {
     return (
         <>
             <Navbar />
-            <div className='flex flex-col items-center  h-screen mt-48'>
-                <div className='flex flex-col text-6xl font-medium tracking-wide '>
+            <div className='flex flex-col items-center  h-screen '>
+                <div className='flex flex-col text-6xl font-medium tracking-wide mt-60'>
                     <span className='text-black'>
                         Unleashing the potential  of
                     </span>
