@@ -3,7 +3,7 @@ import React from 'react'
 const WhatWeDo = () => {
     return (
         <>
-            <div className='h-screen flex flex-col justify-center items-center bg-sky-100 '>
+            <div className='h-screen flex flex-col justify-center items-center bg-blue-50  '>
                 <div className='text-4xl text-sky-600 font-medium'>
                     What We Do?
                 </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import WhatWeDo from './WhatWeDo'
+import OurMission from './OurMission'
 
 const Homepage = () => {
     return (
@@ -20,6 +21,7 @@ const Homepage = () => {
                 </div>
             </div>
             <WhatWeDo />
+            <OurMission />
         </>
     )
 }
