@@ -4,6 +4,7 @@ import WhatWeDo from './WhatWeDo'
 import OurMission from './OurMission'
 import WeOffer from './WeOffer'
 import OurTeam from './OurTeam'
+import AdvisoryTeam from './AdvisoryTeam'
 
 const Homepage = () => {
     return (
@@ -35,6 +36,9 @@ const Homepage = () => {
             </div>
             <div className='mt-32'>
                 <OurTeam />
+            </div>
+            <div className=''>
+                <AdvisoryTeam />
             </div>
         </>
     )
