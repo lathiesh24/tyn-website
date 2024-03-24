@@ -20,7 +20,7 @@ const OurDifference = () => {
             </svg>
             `,
             differenceName: "Instant Scaling",
-            differenceDescription: "Very little onboarding time as most of the stakeholders from the ecosystem are already identified and have an established relationship."
+            differenceDescription: "Rapid onboarding facilitated by pre-identified stakeholders with established relationships."
         },
         {
             differenceLogo: `<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -73,7 +73,7 @@ const OurDifference = () => {
                         onSwiper={(swiper) => console.log(swiper)}
                     >
                         {differenceData.map((item, index) => (
-                            <SwiperSlide key={index} className='shadow-lg p-14 w-full flex flex-col items-center rounded-xl mb-10 mx-10'>
+                            <SwiperSlide key={index} className='shadow-lg p-14 max-w-[650px] h-[50px] flex flex-col items-center rounded-xl mb-10 mx-10'>
                                 {/* <img 
                                 src={item.differenceLogo} 
                                 alt="differenceLogo" 
