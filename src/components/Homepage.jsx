@@ -4,6 +4,7 @@ import WhatWeDo from './WhatWeDo'
 import OurMission from './OurMission'
 import WeOffer from './WeOffer'
 import OurTeam from './OurTeam'
+import OurDifference from './OurDifference'
 
 const Homepage = () => {
     return (
@@ -29,6 +30,9 @@ const Homepage = () => {
             </div>
             <div>
                 <OurMission />
+            </div>
+            <div>
+                <OurDifference/>
             </div>
             <div>
                 <WeOffer />
