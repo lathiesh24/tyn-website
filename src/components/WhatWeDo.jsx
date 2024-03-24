@@ -3,8 +3,8 @@ import React from 'react'
 const WhatWeDo = () => {
     return (
         <>
-            <div className='h-screen flex flex-col justify-center items-center bg-blue-50  '>
-                <div className='text-4xl text-sky-600 font-medium'>
+            <div className='h-screenflex flex flex-col justify-center items-center bg-blue-50 pt-16 pb-24 '>
+                <div className='text-4xl text-sky-600 font-medium '>
                     What We Do?
                 </div>
                 <div className="flex justify-center space-x-32 mt-16">

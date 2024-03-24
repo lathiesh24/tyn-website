@@ -2,11 +2,15 @@ import React from 'react'
 import Navbar from './Navbar'
 import WhatWeDo from './WhatWeDo'
 import OurMission from './OurMission'
+import WeOffer from './WeOffer'
+import OurTeam from './OurTeam'
 
 const Homepage = () => {
     return (
         <>
-            <Navbar />
+            <div>
+                <Navbar />
+            </div>
             <div className='flex flex-col items-center  h-screen '>
                 <div className='flex flex-col text-6xl font-medium tracking-wide mt-60'>
                     <span className='text-black'>
@@ -20,8 +24,18 @@ const Homepage = () => {
                     Our Difference
                 </div>
             </div>
-            <WhatWeDo />
-            <OurMission />
+            <div>
+                <WhatWeDo />
+            </div>
+            <div>
+                <OurMission />
+            </div>
+            <div>
+                <WeOffer />
+            </div>
+            <div className='mt-32'>
+                <OurTeam />
+            </div>
         </>
     )
 }

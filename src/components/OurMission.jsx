@@ -3,8 +3,8 @@ import React from 'react'
 const OurMission = () => {
     return (
         <>
-            <div className='h-screen'>
-                <div className='flex flex-col  items-center text-4xl leading-loose tracking-wide font-semibold pt-24'>
+            <div className='h-screenflex'>
+                <div className='flex flex-col  items-center text-4xl leading-loose tracking-wide font-semibold pt-8'>
                     <div>
                         <span className='text-[26px]'>Our Mission</span>
                         <span className='text-[26px] font-extralight tracking-wider'> is to deliver </span>
@@ -13,7 +13,7 @@ const OurMission = () => {
                     </div>
                     <div className='bg-gradient-to-r from-blue-500 via-cyan-500 to-green-300 text-transparent bg-clip-text'>Frictionless Orchestration</div>
                 </div>
-                <div className='grid grid-cols-2 mx-64 mt-8'>
+                <div className='grid grid-cols-2 mx-64 mt-16'>
                     <div className=''>
                         Customer needs
                     </div>
