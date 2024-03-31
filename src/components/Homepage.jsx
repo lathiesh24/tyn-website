@@ -6,6 +6,7 @@ import WeOffer from './WeOffer'
 import OurTeam from './OurTeam'
 import AdvisoryTeam from './AdvisoryTeam'
 import OurDifference from './OurDifference'
+import Footer from './Footer'
 
 const Homepage = () => {
     return (
@@ -43,6 +44,9 @@ const Homepage = () => {
             </div>
             <div className=''>
                 <AdvisoryTeam />
+            </div>
+            <div>
+                <Footer/>
             </div>
         </>
     )
