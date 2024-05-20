@@ -1,24 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from 'react-icons/io5';
 
-const Navbar = () => {
+const Navbar = ({ activeSection, handleNavigation }) => {
     const [isOpen, setIsOpen] = useState(false);
 
-    const handleNavigation = (sectionId) => {
-        const section = document.getElementById(sectionId);
-        if (section) {
-            const rect = section.getBoundingClientRect();
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            const top = rect.top + scrollTop - (window.innerHeight / 2) + (rect.height / 2);
-
-            window.scrollTo({
-                top: top,
-                behavior: 'smooth'
-            });
-        }
-        setIsOpen(false);
-    };
 
 
     return (
@@ -32,12 +18,12 @@ const Navbar = () => {
                         height={0}
                     />
                 </div>
-                <div className="hidden md:grid text-gray-800 grid-flow-col gap-x-16 mr-20 text-lg">
-                    <div onClick={() => handleNavigation('home')} className='mt-2 cursor-pointer'>Home</div>
-                    <div onClick={() => handleNavigation('about-us')} className='mt-2 cursor-pointer'>About Us</div>
-                    <div onClick={() => handleNavigation('services')} className='mt-2 cursor-pointer'>Services</div>
-                    <div onClick={() => handleNavigation('our-team')} className='mt-2 cursor-pointer'>Our Team</div>
-                    <div onClick={() => handleNavigation('contact-us')} className='border bg-sky-600 text-white py-1.5 px-8 rounded-3xl cursor-pointer'>
+                <div className="hidden md:grid text-gray-800 grid-flow-col sm:gap-x-6 xl:gap-x-16 sm:mr-4 xl:mr-20 text-lg">
+                    <div onClick={() => handleNavigation('home')} className={`mt-2 cursor-pointer ${activeSection === 'home' ? 'underline decoration-customYellow decoration-[3px]' : ''}`}>Home</div>
+                    <div onClick={() => handleNavigation('about-us')} className={`mt-2 cursor-pointer ${activeSection === 'about-us' ? 'underline decoration-customYellow decoration-[3px]' : ''}`}>About Us</div>
+                    <div onClick={() => handleNavigation('services')} className={`mt-2 cursor-pointer ${activeSection === 'services' ? 'underline decoration-customYellow decoration-[3px]' : ''}`}>Services</div>
+                    <div onClick={() => handleNavigation('our-team')} className={`mt-2 cursor-pointer ${activeSection === 'our-team' ? 'underline decoration-customYellow decoration-[3px]' : ''}`}>Our Team</div>
+                    <div onClick={() => handleNavigation('contact-us')} className={`border bg-sky-600 text-white hover:text-customBlue shadow hover:bg-white py-1.5 px-8 rounded-3xl cursor-pointer ${activeSection === 'contact-us' ? 'underline decoration-customYellow decoration-[3px]' : ''}`}>
                         Contact Us
                     </div>
                 </div>
@@ -49,7 +35,7 @@ const Navbar = () => {
             </div>
             {isOpen && (
                 <div className="fixed inset-0 bg-gray-800 bg-opacity-50 z-20">
-                    <div className="fixed top-0 right-0 w-full bg-white  flex flex-col items-center pt-32 pb-16 space-y-8">
+                    <div className="fixed top-0 right-0 w-full bg-white flex flex-col items-center pt-32 pb-16 space-y-8">
                         <div onClick={() => handleNavigation('home')} className='mt-2 cursor-pointer text-xl'>Home</div>
                         <div onClick={() => handleNavigation('about-us')} className='mt-2 cursor-pointer text-xl'>About Us</div>
                         <div onClick={() => handleNavigation('services')} className='mt-2 cursor-pointer text-xl'>Services</div>

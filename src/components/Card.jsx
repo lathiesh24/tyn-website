@@ -29,7 +29,7 @@ const Card = () => {
         <>
             {cardData.map((card, index) => {
                 return (
-                    <div className="sm:w-64 bg-white shadow-lg rounded-lg mt-24 px-4 pb-4 ">
+                    <div className="sm:w-56 xl:w-64 bg-white shadow-lg rounded-lg mt-24 px-4 pb-4 ">
                         <div className="relative h-[88px] w-[88px] rounded-full mx-auto">
                             <img
                                 className="absolute object-cover h-24 w-48 rounded-2xl -top-[44px]"

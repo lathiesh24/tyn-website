@@ -21,7 +21,7 @@ const WeOffer = () => {
                     <div className='mt-2 leading-loose text-[18px] sm:text-base  font-light'>Alliance as a service to growth B2B tech companies, to scale their business development through Global System Integrators (GSI) & established tech partners</div>
                     <div
                         onClick={handleAlliance}
-                        className='flex border-2 border-sky-700 text-lg bg-white font-semibold text-sky-700 sm:w-40 items-center justify-center py-1.5 rounded-2xl cursor-pointer mt-4 tracking-wider'>
+                        className='flex border-2 border-customBlue text-lg bg-white font-medium text-customBlue sm:w-40 items-center justify-center py-1.5 rounded-xl cursor-pointer mt-4 tracking-wider shadow-sm'>
                         Find out how
                     </div>
                 </div>
@@ -29,7 +29,7 @@ const WeOffer = () => {
                     <div className='text-sky-600 text-xl sm:text-2xl'>Enabling Co Innovation to Entreprises</div>
                     <div className='mt-2 leading-loose text-[18px] sm:text-base font-light'>Co Innovation as a service to enterprise & governments, to solve their complex requirements and cater their customer needs through ecosystems</div>
                     <div
-                        className='flex border-2 border-sky-700 text-lg bg-white font-semibold text-sky-700 sm:w-40 items-center justify-center py-1.5 rounded-2xl cursor-pointer mt-4 tracking-wider'
+                        className='flex border-2 border-customBlue text-lg bg-white font-medium text-customBlue sm:w-40 items-center justify-center py-1.5 rounded-xl cursor-pointer mt-4 tracking-wider shadow-sm'
                         onClick={handleInnovation}>
                         Find out how
                     </div>
