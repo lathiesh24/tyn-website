@@ -20,17 +20,25 @@ const WhatWeDo = () => {
 
           <div className="flex flex-col py-4 sm:pt-0 gap-6 sm:gap-10 text-base sm:text-xl">
             <div className="bg-white p-3 sm:p-6 rounded-lg sm:w-[450px] 2xl:w-[650px] flex gap-2 sm:gap-4 2xl:gap-4">
-              <SlGlobe color="darkblue" size={30} />
+              <div className="text-customBlue">
+                <SlGlobe size={30} />
+              </div>
               We identify Ecosystem Stakeholders
             </div>
 
             <div className="bg-white p-3 sm:p-6 rounded-lg sm:w-[450px] 2xl:w-[650px] flex gap-2 sm:gap-4 2xl:gap-4">
-              <RiFlowChart color="darkblue" size={30} />
+              <div className="text-customBlue">
+                <RiFlowChart size={30} />
+              </div>
+
               We define Ecosystem Strategy
             </div>
 
             <div className="bg-white p-3 sm:p-6 rounded-lg sm:w-[450px] 2xl:w-[650px] flex gap-2 sm:gap-4 2xl:gap-4">
-              <IoSettingsOutline color="darkblue" size={30} />
+              <div className="text-customBlue">
+                <RiFlowChart size={30} />
+              </div>
+              <IoSettingsOutline size={30} />
               We build and Orchestrate Ecosystem
             </div>
           </div>
