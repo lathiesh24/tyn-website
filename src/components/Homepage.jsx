@@ -53,7 +53,7 @@ const Homepage = () => {
     return (
         <div>
             <Navbar activeSection={activeSection} handleNavigation={handleNavigation} />
-            <section id='home' className='flex flex-col items-center sm:h-screen justify-center pt-40 pb-16 sm:py-0'>
+            <section id='home' className='flex flex-col items-center h-screen justify-center pt-40 pb-16 sm:py-0'>
                 <div className='flex flex-col text-2xl sm:text-6xl font-medium tracking-wide'>
                     <span className='text-black'>
                         Unleashing the potential of

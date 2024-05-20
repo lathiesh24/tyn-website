@@ -10,7 +10,7 @@ const Alliance = () => {
 
     return (
         <>
-            <div className='flex flex-col  mx-20 2xl:mx-64 sm:pt-6 xl:pt-16 h-screen gap-6'>
+            <div className='flex flex-col  sm:mx-20 2xl:mx-64 sm:pt-6 xl:pt-16 sm:h-screen sm:gap-6'>
                 <div className='flex flex-row justify-between'>
                     <div className='text-2xl font-semibold'>Enabling Alliances to Startups </div>
                     <button
@@ -21,13 +21,13 @@ const Alliance = () => {
                 </div>
 
                 <div>
-                    <div className='grid grid-flow-col gap-32 justify-center xl:pt-6'>
+                    <div className='grid grid-flow-row sm:grid-flow-col gap-32 justify-center xl:pt-6'>
                         <div className='relative'>
                             <div className='bg-blue-50 p-2  text-lg 2xl:text-xl leading-relaxed md:pr-12 pl-4 xl:pl-6 2xl:pr-12 py-4 xl:py-6'>
                                 Alliance GTM generates nonlinear repeatable growth but it takes time, specific expertise, constant governance & high cost to build and sustain the partnerships.
                                 We shall be your extended alliance team, with an outcome based engagement for your growth. We start with building an ecosystem strategy in alignment with your organization business strategy followed by rolling out that strategy by effective implementation for tangible outcomes while ensuring those outcomes through effective governance & oversight framework
                             </div>
-                            <div className='absolute border-[3px] border-customBlue rounded-full bg-white text-2xl font-semibold text-customBlue px-6 py-2 top-1/2 right-0 transform rotate-90 translate-x-1/2 -translate-y-1/2'>
+                            <div className='absolute border-[3px] border-customBlue rounded-full bg-white text-2xl font-semibold text-customBlue px-6 py-2 sm:top-1/2 sm:right-0 transform sm:rotate-90 sm:translate-x-1/2 sm:-translate-y-1/2'>
                                 Our commitment
                             </div>
                         </div>
