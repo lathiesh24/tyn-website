@@ -36,9 +36,8 @@ const WhatWeDo = () => {
 
             <div className="bg-white p-3 sm:p-6 rounded-lg sm:w-[450px] 2xl:w-[650px] flex gap-2 sm:gap-4 2xl:gap-4">
               <div className="text-customBlue">
-                <RiFlowChart size={30} />
+                <IoSettingsOutline size={30} />
               </div>
-              <IoSettingsOutline size={30} />
               We build and Orchestrate Ecosystem
             </div>
           </div>
