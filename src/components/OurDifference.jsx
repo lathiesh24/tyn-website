@@ -43,11 +43,11 @@ const OurDifference = () => {
     };
 
     return (
-        <>
+        <div className='hidden sm:flex flex-col justify-center items-center'>
             <div className='flex justify-center items-center text-2xl sm:text-4xl text-black font-medium py-8 sm:py-16'>
                 Our Difference
             </div>
-            <div className="relative w-full ">
+            <div className="relative w-9/12 ">
                 <button
                     onClick={goToPrevious}
                     className="absolute top-1/2 transform -translate-y-1/2 left-0 z-10"
@@ -58,16 +58,16 @@ const OurDifference = () => {
                     {[currentIndex, (currentIndex + 1) % differenceData.length].map((index) => (
                         <div
                             key={index}
-                            className="bg-white flex flex-col gap-4 shadow-lg rounded-lg px-4 pb-4 transition-transform transform w-3/4"
+                            className="bg-white flex flex-col gap-4 shadow-lg rounded-lg px-4 pb-4 transition-transform transform w-3/4 h-[180px]"
                         >
                             <div className="relative rounded-full">
                                 <img src={differenceData[index].differenceLogo} alt='' className='h-8 w-8' />
                             </div>
                             <div className="">
-                                <div className="flex  font-semibold text-xl">
+                                <div className="flex text-customBlue font-semibold text-xl">
                                     <span>{differenceData[index].differenceName}</span>
                                 </div>
-                                <div className="font-normal text-base pt-1">
+                                <div className="font-normal text-base pt-1 leading-loose">
                                     {differenceData[index].differenceDescription}
                                 </div>
                             </div>
@@ -85,7 +85,7 @@ const OurDifference = () => {
                             </div>
                         </div>
                         <div className="">
-                            <div className="flex justify-center font-semibold text-xl pt-2">
+                            <div className="flex justify-center text-customBlue font-semibold text-xl pt-2">
                                 <span>{differenceData[currentIndex].differenceName}</span>
                             </div>
                             <div className="font-normal text-lg pt-2">
@@ -102,7 +102,7 @@ const OurDifference = () => {
                     <IoIosArrowForward size={36} />
                 </button>
             </div>
-        </>
+        </div>
 
     );
 };
