@@ -44,10 +44,10 @@ const OurDifference = () => {
 
     return (
         <div className='hidden sm:flex flex-col justify-center items-center'>
-            <div className='flex justify-center items-center text-2xl sm:text-4xl text-black font-medium py-8 sm:py-16'>
+            <div className='flex justify-center items-center text-2xl sm:text-4xl text-customBlack font-medium py-8 sm:py-16'>
                 Our Difference
             </div>
-            <div className="relative w-9/12 ">
+            <div className="relative w-11/12">
                 <button
                     onClick={goToPrevious}
                     className="absolute top-1/2 transform -translate-y-1/2 left-0 z-10"
@@ -58,16 +58,16 @@ const OurDifference = () => {
                     {[currentIndex, (currentIndex + 1) % differenceData.length].map((index) => (
                         <div
                             key={index}
-                            className="bg-white flex flex-col gap-4 shadow-lg rounded-lg px-4 pb-4 transition-transform transform w-3/4 h-[180px]"
+                            className="bg-white flex flex-col gap-4 pt-4 shadow-customAdCard rounded-[8px] px-4 pb-4 transition-transform transform w-3/4 sm:h-[240px] xl:h-auto"
                         >
                             <div className="relative rounded-full">
                                 <img src={differenceData[index].differenceLogo} alt='' className='h-8 w-8' />
                             </div>
                             <div className="">
-                                <div className="flex text-customBlue font-semibold text-xl">
+                                <div className="flex text-customBlue font-medium text-xl">
                                     <span>{differenceData[index].differenceName}</span>
                                 </div>
-                                <div className="font-normal text-base pt-1 leading-loose">
+                                <div className="font-normal text-base pt-1 leading-loose text-customGreyishBlack">
                                     {differenceData[index].differenceDescription}
                                 </div>
                             </div>
@@ -77,7 +77,7 @@ const OurDifference = () => {
                 <div className="px-10 relative flex sm:hidden">
                     <div
                         key={currentIndex}
-                        className="flex flex-col gap-y-2 justify-center items-center bg-white shadow-lg rounded-lg px-4 transition-transform transform h-64"
+                        className="flex flex-col gap-y-2 justify-center items-center bg-white shadow-customAdCard rounded-[8px] px-4 transition-transform transform h-64"
                     >
                         <div className="relative rounded-full flex flex-col gap-4 ">
                             <div className="relative  rounded-full " >
