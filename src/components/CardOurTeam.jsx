@@ -53,7 +53,7 @@ const cardData = [
 ];
 
 const CardOurTeam = () => {
-    const [currentIndex, setCurrentIndex] = useState(2);
+    const [currentIndex, setCurrentIndex] = useState(3);
 
     const goToPrevious = () => {
         const newIndex = (currentIndex === 0) ? (cardData.length - 1) : (currentIndex - 1);
