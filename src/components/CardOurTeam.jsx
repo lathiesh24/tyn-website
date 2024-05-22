@@ -87,8 +87,8 @@ const CardOurTeam = () => {
                             />
                         </div>
                         <div className="">
-                            <div className="flex justify-center font-semibold text-xl text-customBlack">
-                                <span>{cardData[index].name}</span>
+                            <div className="flex flex-col justify-center items-center h-full text-center">
+                                <span className="font-semibold text-xl text-customBlack">{cardData[index].name}</span>
                             </div>
                             <div className="font-normal text-base pt-1 text-customBlack">
                                 {cardData[index].role}
@@ -103,7 +103,7 @@ const CardOurTeam = () => {
             <div className="sm:hidden flex px-9 relative ">
                 <div
                     key={currentIndex}
-                    className="bg-white shadow-customAdCard rounded-[24px] px-4 transition-transform transform w-full h-[380px]"
+                    className="bg-white shadow-customAdCard rounded-[24px] px-4 transition-transform transform w-full h-[400px]"
                 >
                     <div className="relative h-[78px] w-[120px] rounded-full mx-auto">
                         <img
@@ -113,16 +113,17 @@ const CardOurTeam = () => {
                         />
                     </div>
                     <div className="">
-                        <div className="flex justify-center items-center font-semibold text-[23px]">
-                            <span>{cardData[currentIndex].name}</span>
+                        <div className="flex justify-center items-center h-full w-11/12">
+                            <span className="font-medium text-xl text-customBlack text-center">{cardData[currentIndex].name}</span>
                         </div>
-                        <div className="font-normal text-[20px] py-2">
+                        <div className="font-medium text-lg py-2.5 text-customBlack">
                             {cardData[currentIndex].role}
                         </div>
-                        <p className="font-light pb-4 text-[18px] tracking-wide">
+                        <p className="font-light pb-4 text-lg text-customGreyishBlack tracking-wide">
                             {cardData[currentIndex].roleDescription}
                         </p>
                     </div>
+
                 </div>
             </div>
 

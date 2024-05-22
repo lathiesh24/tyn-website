@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="h-min flex flex-col justify-center  sm:mx-28">
       {/* Footer part 1 */}
-      <div className="hidden sm:grid  sm:grid-cols-4 sm:gap-20 text-lg xl:text-xl">
+      <div className="hidden sm:grid  sm:grid-cols-4 sm:gap-20 text-lg">
         <div className="">
           <img
             src="/tynfooterimg.png"
@@ -15,49 +15,56 @@ const Footer = () => {
         </div>
 
         <div className="font-light">
-          <h3 className="font-semibold text-xl 2xl:text-2xl mb-2">Services</h3>
-          <p>Alliance as a service</p>
-          <p>Co Innovation as a service</p>
+          <div className="flex flex-col font-medium text-xl text-customBlack gap-1">Services
+            <p className="font-normal text-lg text-customGreyishBlack">Alliance as a service</p>
+            <p className="font-normal text-lg text-customGreyishBlack">Co Innovation as a service</p>
+          </div>
         </div>
 
         <div className="font-light">
-          <h3 className="font-semibold text-xl 2xl:text-2xl mb-2">Company</h3>
-          <p>About us</p>
-          <p>Our Team</p>
-          <p>Difference</p>
+          <div className="flex flex-col font-medium text-xl text-customBlack gap-1">Company
+            <p className="font-normal text-lg  text-customGreyishBlack">About us</p>
+            <p className="font-normal text-lg  text-customGreyishBlack">Our Team</p>
+            <p className="font-normal text-lg  text-customGreyishBlack">Difference</p>
+          </div>
         </div>
 
         <div className="font-light">
-          <h3 className="font-semibold text-xl 2xl:text-2xl mb-2">Contact</h3>
-          <p>info@theyellownetwork.com</p>
+          <div className="flex flex-col font-medium text-xl text-customBlack gap-1">Contact
+            <p className="font-normal text-lg  text-customGreyishBlack">info@theyellownetwork.com</p>
+          </div>
+
         </div>
       </div>
-      <div className="flex flex-col gap-4 justify-center items-center sm:hidden text-lg ">
+      <div className="flex flex-col-reverse gap-4 justify-center items-center sm:hidden text-lg ">
         <div className="">
           <img
-            src="/tynfooterimg.png"
+            src="/tyn-logo.png"
             alt="tyn-footer-image"
-            className="w-40 h-40"
+            className="w-60"
           />
         </div>
         <div className="flex flex-col mx-4">
           <div className="grid grid-cols-2 place-items-center">
             <div className="font-light">
-              <h3 className="font-semibold text-xl 2xl:text-2xl mb-2">Services</h3>
-              <p>Alliance as a service</p>
-              <p>Co Innovation as a service</p>
+              <div className="font-medium text-lg">Services
+                <p className="font-normal text-customGreyishBlack">Alliance as a service</p>
+                <p className="font-normal text-customGreyishBlack">Co Innovation as a service</p>
+              </div>
             </div>
 
             <div className="font-light">
-              <h3 className="font-semibold text-xl 2xl:text-2xl mb-2">Company</h3>
-              <p>About us</p>
-              <p>Our Team</p>
-              <p>Difference</p>
+              <div className="font-medium text-lg gap-4">Company
+                <p className="font-normal text-customGreyishBlack">About us</p>
+                <p className="font-normal text-customGreyishBlack">Our Team</p>
+                <p className="font-normal text-customGreyishBlack">Difference</p>
+              </div>
             </div>
           </div>
           <div className="font-light mt-2">
-            <h3 className="font-semibold text-xl 2xl:text-2xl mb-2">Contact</h3>
-            <p>info@theyellownetwork.com</p>
+            <div className="font-semibold text-lg mb-2">Contact
+              <p className="font-normal text-customGreyishBlack">info@theyellownetwork.com</p>
+            </div>
           </div>
         </div>
       </div>
@@ -65,9 +72,9 @@ const Footer = () => {
       {/* Footer part 2 */}
 
       {/* Footer last part */}
-      <div className="font-light flex mx-4 my-4 text-[15px] sm:text-lg xl:text-xl">
-        <div className="sm:w-1/2">Copyright © 2024 TYN Ecosystem Private Ltd</div>
-        <div className="sm:w-1/2 flex sm:justify-around">
+      <div className="font-light flex flex-col text-center justify-center items-center sm:flex-row mt-4 mb-1 text-[15px] sm:text-lg">
+        <div className="sm:w-1/2 text-customBlack font-medium">Copyright © 2024 TYN Ecosystem Private Ltd</div>
+        <div className=" gap-4 text-center sm:text-auto sm:gap-0 sm:w-1/2 flex sm:justify-around text-customGreyishBlack">
           <div>Terms of Service</div>
           <div>Privacy Policy</div>
           <div>Cookie Policy</div>
