@@ -51,11 +51,11 @@ const Homepage = () => {
 
 
     return (
-        <div>
+        <div className="" >
             <Navbar activeSection={activeSection} handleNavigation={handleNavigation} />
-            <section id='home' className='flex flex-col items-center justify-center h-screen pt-40 pb-16 sm:py-0'>
+            <section id='home' className='flex flex-col items-center justify-center h-screen pt-40 pb-16 sm:py-0 '>
                 <div className='flex flex-col text-2xl sm:text-6xl font-medium tracking-wide'>
-                    <span className='text-black'>
+                    <span className='text-customBlack'>
                         Unleashing the potential of
                     </span>
                     <span className='flex items-center justify-center mt-3 sm:mt-6 bg-gradient-to-r from-blue-500 via-cyan-500 to-green-300 text-transparent bg-clip-text min-w-max p-2 tracking-wider'>
@@ -94,7 +94,7 @@ const Homepage = () => {
             <section id='contact-us'>
                 <Footer />
             </section>
-        </div>
+        </div >
     );
 };
 
