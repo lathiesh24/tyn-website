@@ -27,8 +27,8 @@ const OurMission = () => {
                         <img src="/customerneedimage.jpg" alt="" className='' />
                     </div>
                     <div className='border bg-bgBlue rounded-lg px-2 sm:px-6 py-2 sm:py-6 xl:py-8 flex flex-col mt-8 sm:mt-0 mx-2 sm:mx-0'>
-                        <div className='text-xl sm:text-4xl font-medium text-customBlack'>Our Company</div>
-                        <div className='mt-1 sm:mt-4 sm:leading-loose 2xl:leading-[40px] font-light text-lg sm:text-[18px] text-customGreyishBlack'>
+                        <div className='text-2xl sm:text-4xl font-medium text-customBlack text-center sm:text-left'>Our Company</div>
+                        <div className='mt-0 sm:mt-4 leading-relaxed sm:leading-loose 2xl:leading-[40px] font-light text-lg sm:text-[18px] text-customGreyishBlack p-2 sm:p-0'>
                             We believe, when businesses or government shift their focus from their products or services to holistic customer needs, barriers break, an ecosystem economy emerges & a tremendous value is created for all stakeholders.
                             We partner with organizations & governments to succeed in the ecosystem economy by being an ecosystem orchestrator (from strategy to implementation & governance).
                         </div>
