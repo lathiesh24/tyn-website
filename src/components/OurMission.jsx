@@ -14,7 +14,7 @@ const OurMission = () => {
                     <div className='bg-gradient-to-r from-blue-400 via-cyan-500 to-cyan-400 text-transparent bg-clip-text'>Frictionless Orchestration</div>
                 </div>
                 <div className='flex-col xl:gap-5 items-center text-[15px] sm:text-4xl leading-loose tracking-wide font-semibold flex sm:hidden'>
-                    <div className=''>
+                    <div className='text-customGreyishBlack'>
                         <span className='text-[18px] sm:text-[30px]'>Our Mission</span>
                         <span className='text-[18px] sm:text-[30px] font-extralight tracking-wider'> is to deliver </span>
                     </div>
@@ -27,8 +27,8 @@ const OurMission = () => {
                         <img src="/customerneedimage.jpg" alt="" className='' />
                     </div>
                     <div className='border bg-blue-50 rounded-lg px-2 sm:px-8 2xl:px-12 py-2 2xl:py-8 flex flex-col justify-start items-center mt-8 sm:mt-0 mx-2 sm:mx-0'>
-                        <div className='text-xl sm:text-4xl xl:text-4xl 2xl:text-4xl'>Our Company</div>
-                        <div className='mt-1 sm:mt-2 xl:mt-5  sm:leading-loose xl:leading-normal 2xl:leading-[40px] font-light text-lg sm:text-lg xl:text-lg 2xl:text-lg'>
+                        <div className='text-xl sm:text-4xl xl:text-4xl 2xl:text-4xl text-customBlack'>Our Company</div>
+                        <div className='mt-1 sm:mt-2 xl:mt-5  sm:leading-loose xl:leading-normal 2xl:leading-[40px] font-light text-lg sm:text-lg xl:text-lg 2xl:text-lg text-customGreyishBlack'>
                             We believe, when businesses or government shift their focus from their products or services to holistic customer needs, barriers break, an ecosystem economy emerges & a tremendous value is created for all stakeholders.
                             We partner with organizations & governments to succeed in the ecosystem economy by being an ecosystem orchestrator (from strategy to implementation & governance).
                         </div>
