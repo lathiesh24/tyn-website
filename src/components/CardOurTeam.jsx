@@ -77,7 +77,7 @@ const CardOurTeam = () => {
                 {[currentIndex, (currentIndex + 1) % cardData.length, (currentIndex + 2) % cardData.length].map((index) => (
                     <div
                         key={index}
-                        className="bg-white shadow-lg rounded-lg px-4 pb-4 transition-transform transform w-3/4"
+                        className="bg-white shadow-customAdCard rounded-[24px] px-4 pb-4 transition-transform transform w-3/4"
                     >
                         <div className="relative h-[78px] w-[120px] rounded-full mx-auto">
                             <img
@@ -87,13 +87,13 @@ const CardOurTeam = () => {
                             />
                         </div>
                         <div className="">
-                            <div className="flex justify-center font-semibold text-xl">
+                            <div className="flex justify-center font-semibold text-xl text-customBlack">
                                 <span>{cardData[index].name}</span>
                             </div>
-                            <div className="font-normal text-base pt-1">
+                            <div className="font-normal text-base pt-1 text-customBlack">
                                 {cardData[index].role}
                             </div>
-                            <p className="font-light pb-4 pt-1 tracking-wide">
+                            <p className="font-light pb-4 pt-1 tracking-wide text-customGreyishBlack">
                                 {cardData[index].roleDescription}
                             </p>
                         </div>
@@ -103,7 +103,7 @@ const CardOurTeam = () => {
             <div className="sm:hidden flex px-9 relative ">
                 <div
                     key={currentIndex}
-                    className="bg-white shadow-lg rounded-lg px-4 transition-transform transform w-full h-[380px]"
+                    className="bg-white shadow-customAdCard rounded-[24px] px-4 transition-transform transform w-full h-[380px]"
                 >
                     <div className="relative h-[78px] w-[120px] rounded-full mx-auto">
                         <img

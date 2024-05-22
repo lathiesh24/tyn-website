@@ -53,17 +53,17 @@ const Homepage = () => {
     return (
         <div className="" >
             <Navbar activeSection={activeSection} handleNavigation={handleNavigation} />
-            <section id='home' className='flex flex-col items-center justify-center h-screen pt-40 pb-16 sm:py-0 '>
+            <section id='home' className='flex flex-col items-center justify-center h-screen'>
                 <div className='flex flex-col text-2xl sm:text-6xl font-medium tracking-wide'>
                     <span className='text-customBlack'>
                         Unleashing the potential of
                     </span>
-                    <span className='flex items-center justify-center mt-3 sm:mt-6 bg-gradient-to-r from-blue-500 via-cyan-500 to-green-300 text-transparent bg-clip-text min-w-max p-2 tracking-wider'>
+                    <span className='flex items-center justify-center mt-3 sm:mt-6 bg-custom-gradient text-transparent bg-clip-text min-w-max p-2 tracking-wider'>
                         ecosystems
                     </span>
                 </div>
                 <button
-                    className='flex border-[3px] border-customBlue text-base sm:text-2xl font-medium text-customBlue w-max items-center justify-center py-1.5 px-3 sm:py-3 sm:px-5 rounded-2xl cursor-pointer mt-6 sm:mt-12 tracking-wider'
+                    className='flex border-[3px] border-customBlue text-base sm:text-2xl font-medium text-customBlue w-max items-center justify-center py-1.5 px-3 sm:py-3 sm:px-5 rounded-2xl cursor-pointer mt-6 tracking-wider'
                     onClick={() => handleNavigation('difference')}>
                     Our Difference
                 </button>

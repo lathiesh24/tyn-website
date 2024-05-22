@@ -17,7 +17,7 @@ const Navbar = ({ activeSection, handleNavigation }) => {
                         className='w-40'
                     />
                 </div>
-                <div className="hidden md:grid text-gray-800 grid-flow-col sm:gap-x-6 xl:gap-x-16 sm:mr-4 xl:mr-20 text-lg">
+                <div className="hidden md:grid text-customBlack grid-flow-col sm:gap-x-6 xl:gap-x-16 sm:mr-4 xl:mr-20 text-lg">
                     <div onClick={() => handleNavigation('home')} className={`mt-2 cursor-pointer ${activeSection === 'home' ? 'underline decoration-customYellow decoration-[3px]' : ''}`}>Home</div>
                     <div onClick={() => handleNavigation('about-us')} className={`mt-2 cursor-pointer ${activeSection === 'about-us' ? 'underline decoration-customYellow decoration-[3px]' : ''}`}>About Us</div>
                     <div onClick={() => handleNavigation('services')} className={`mt-2 cursor-pointer ${activeSection === 'services' ? 'underline decoration-customYellow decoration-[3px]' : ''}`}>Services</div>
@@ -33,7 +33,7 @@ const Navbar = ({ activeSection, handleNavigation }) => {
                 </div>
             </div>
             {isOpen && (
-                <div className="fixed inset-0 bg-gray-800 bg-opacity-50 z-20">
+                <div className="fixed inset-0 bg-customBlack bg-opacity-50 z-20">
                     <div className="fixed top-0 right-0 w-full bg-white flex flex-col items-center pt-32 pb-16 space-y-8">
                         <div onClick={() => handleNavigation('home')} className='mt-2 cursor-pointer text-xl'>Home</div>
                         <div onClick={() => handleNavigation('about-us')} className='mt-2 cursor-pointer text-xl'>About Us</div>

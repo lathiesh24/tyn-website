@@ -9,14 +9,19 @@ module.exports = {
     },
     extend: {
       backgroundImage:{
-        'homebg':"ur('./public/homebg.png')"
+        'homebg':"ur('./public/homebg.png')",
+         'custom-gradient': 'linear-gradient(90.76deg, #2287C0 6.67%, #00C1EC 58.25%, #83FBD6 89.58%)',
+      },
+       boxShadow: {
+        'customAdCard': '5px 5px 25px 1px rgba(14, 14, 14, 0.19)', 
       },
       colors: {
         customBlue: '#2287C0',
         customYellow:"#FCE834",
         customBlack:"#2F2F2F",
         customGreyishBlack:"#626262",
-        bgBlue:"#F0FAFF"
+        bgBlue:"#F0FAFF",
+        borderBlue:"#BBE6FF"
       },
     },
   },
