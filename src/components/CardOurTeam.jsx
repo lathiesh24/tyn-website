@@ -17,13 +17,13 @@ const cardData = [
     {
         name: "Sudharshan",
         role: "Alliance Director",
-        roleDescription: "Sudharshan - Global IT professional with 15+ yrs experience, highly committed in building Alliance and Partner relationship. Having diverse experience like Aviation, IT industry and successful track in partnership management, ecosystem building. Passionate about interaction with people from various sector, building & maintaining people connects.",
+        roleDescription: "Global IT professional with 15+ yrs experience, highly committed in building Alliance and Partner relationship. Having diverse experience like Aviation, IT industry and successful track in partnership management, ecosystem building.",
         image: "/sudharshan.png"
     },
     {
         name: "Kaushik",
         role: "Alliance Director",
-        roleDescription: "Kaushik is a seasoned Alliances and Partnerships consultant with rich experience in partner strategy, partner go-to-market, and digital transformation. Having previously run and managed partnerships and alliances teams at various companies including TCS and Freshworks, he has a successful track record building ecosystems and going-to-market partner solutions across various industries.",
+        roleDescription: "Kaushik is a seasoned Alliances and Partnerships consultant with extensive experience in partner strategy, go-to-market, and digital transformation. He has managed partnerships at companies like TCS and Freshworks, successfully building ecosystems and partner solutions across various industries.",
         image: "/kaushik.jpg"
     },
     {
@@ -59,7 +59,7 @@ const cardData = [
 ];
 
 const CardOurTeam = () => {
-    const [currentIndex, setCurrentIndex] = useState(3);
+    const [currentIndex, setCurrentIndex] = useState(4);
 
     const goToPrevious = () => {
         const newIndex = (currentIndex === 0) ? (cardData.length - 1) : (currentIndex - 1);
@@ -109,7 +109,7 @@ const CardOurTeam = () => {
             <div className="sm:hidden flex px-9 relative ">
                 <div
                     key={currentIndex}
-                    className="bg-white shadow-customAdCard rounded-[24px] px-4 transition-transform transform w-full h-[400px]"
+                    className="bg-white shadow-customAdCard rounded-[24px] px-4 transition-transform transform w-full h-[500px]"
                 >
                     <div className="relative h-[78px] w-[120px] rounded-full mx-auto">
                         <img
