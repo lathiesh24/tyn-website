@@ -17,8 +17,14 @@ const cardData = [
     {
         name: "Sudharshan",
         role: "Alliance Director",
-        roleDescription: "Global IT leader with 25+ yrs experience in product units, AI, Digital Twin. Multicontinental, P&L ownership, presales, transformations. Passionate about development, scaling businesses, travel",
+        roleDescription: "Sudharshan - Global IT professional with 15+ yrs experience, highly committed in building Alliance and Partner relationship. Having diverse experience like Aviation, IT industry and successful track in partnership management, ecosystem building. Passionate about interaction with people from various sector, building & maintaining people connects.",
         image: "/sudharshan.png"
+    },
+    {
+        name: "Kaushik",
+        role: "Alliance Director",
+        roleDescription: "Kaushik is a seasoned Alliances and Partnerships consultant with rich experience in partner strategy, partner go-to-market, and digital transformation. Having previously run and managed partnerships and alliances teams at various companies including TCS and Freshworks, he has a successful track record building ecosystems and going-to-market partner solutions across various industries.",
+        image: "/kaushik.jpg"
     },
     {
         name: "Ganapathy Gangadharan [GG]",

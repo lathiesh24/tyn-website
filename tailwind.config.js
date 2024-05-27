@@ -9,7 +9,7 @@ module.exports = {
     },
     extend: {
       backgroundImage:{
-        'homebg':"ur('./public/homebg.png')",
+        'homebg':"ur('/homebg.png')",
          'custom-gradient': 'linear-gradient(90.76deg, #2287C0 6.67%, #00C1EC 58.25%, #83FBD6 89.58%)',
       },
        boxShadow: {

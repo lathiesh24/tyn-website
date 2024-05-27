@@ -53,7 +53,7 @@ const Homepage = () => {
     return (
         <div className="" >
             <Navbar activeSection={activeSection} handleNavigation={handleNavigation} />
-            <section id='home' className='flex flex-col items-center justify-center h-screen'>
+            <section id='home' className='flex flex-col items-center justify-center h-screen bg-homebg' style={{ backgroundImage: "url('/homebg.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
                 <div className='flex flex-col text-2xl sm:text-6xl font-medium tracking-wide'>
                     <span className='text-customBlack'>
                         Unleashing the potential of
