@@ -5,11 +5,11 @@ const OurMission = () => {
         <>
             <div className='h-screenflex flex-col sm:gap-5 xl:gap-20 mt-4 sm:mt-8 mx-1 2xl:mx-12'>
                 <div className='flex-col xl:gap-5 items-center text-[15px] sm:text-4xl leading-loose tracking-wide font-semibold sm:flex hidden'>
-                    <div className=''>
-                        <span className='text-[18px] sm:text-[30px]'>Our Mission</span>
+                    <div className='pt-8'>
+                        <span className='text-[18px] sm:text-[30px] text-customBlack'>Our Mission</span>
                         <span className='text-[18px] sm:text-[30px] font-extralight tracking-wider'> is to deliver </span>
                         <span className='bg-custom-gradient text-transparent bg-clip-text'>Noiseless Information </span>
-                        &
+                        <span className='text-customBlack'>&</span>
                     </div>
                     <div className='bg-custom-gradient text-transparent bg-clip-text sm:mt-4 xl:mt-2'>Frictionless Orchestration</div>
                 </div>
