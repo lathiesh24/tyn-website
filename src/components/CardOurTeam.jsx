@@ -11,19 +11,19 @@ const cardData = [
     {
         name: "Sourish Ghosh",
         role: "Growth Manager",
-        roleDescription: "Experienced sales/marketing pro committed to trust-based relationships. Transitioned from hospitality to innovation sector. Excited to disrupt post-COVID ecosystem with transparency and collaboration",
+        roleDescription: "Experienced sales/marketing pro, transitioning from hospitality to innovation, aims to disrupt post-COVID ecosystem with transparency and collaboration.",
         image: "/sourish.jpeg"
     },
     {
         name: "Sudharshan",
         role: "Alliance Director",
-        roleDescription: "Global IT professional with 15+ yrs experience, highly committed in building Alliance and Partner relationship. Having diverse experience like Aviation, IT industry and successful track in partnership management, ecosystem building.",
+        roleDescription: "Global IT professional with 15+ years of experience in alliance and partner relationships across aviation and IT, specializing in ecosystem building and management.",
         image: "/sudharshan.png"
     },
     {
         name: "Kaushik",
         role: "Alliance Director",
-        roleDescription: "Kaushik is a seasoned Alliances and Partnerships consultant with extensive experience in partner strategy, go-to-market, and digital transformation. He has managed partnerships at companies like TCS and Freshworks, successfully building ecosystems and partner solutions across various industries.",
+        roleDescription: "Seasoned Alliances and Partnerships consultant experienced in partner strategy, go-to-market, and digital transformation. Led partnerships at TCS and Freshworks, building ecosystems.",
         image: "/kaushik.jpg"
     },
     {
