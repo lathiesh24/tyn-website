@@ -23,7 +23,7 @@ module.exports = {
         bgBlue:"#F0FAFF",
         borderBlue:"#BBE6FF"
       },
-    },
+    },  
   },
   plugins: [],
 }
