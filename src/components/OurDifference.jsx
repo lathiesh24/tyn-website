@@ -43,11 +43,11 @@ const OurDifference = () => {
     };
 
     return (
-        <div className='hidden sm:flex flex-col justify-center items-center'>
-            <div className='flex justify-center items-center text-2xl sm:text-4xl text-customBlack font-medium py-8 sm:py-16'>
+        <div className='flex flex-col justify-center items-center'>
+            <div className='flex justify-center items-center text-2xl sm:text-4xl text-customBlack font-medium py-16 sm:py-16'>
                 Our Difference
             </div>
-            <div className="relative w-11/12">
+            <div className="relative sm:w-11/12">
                 <button
                     onClick={goToPrevious}
                     className="absolute top-1/2 transform -translate-y-1/2 left-0 z-10"
@@ -77,20 +77,16 @@ const OurDifference = () => {
                 <div className="px-10 relative flex sm:hidden">
                     <div
                         key={currentIndex}
-                        className="flex flex-col gap-y-2 justify-center items-center bg-white shadow-customAdCard rounded-[8px] px-4 transition-transform transform h-64"
+                        className="flex flex-col justify-center items-center bg-white shadow-customAdCard rounded-[8px] px-4 transition-transform transform py-8 gap-y-3"
                     >
-                        <div className="relative rounded-full flex flex-col gap-4 ">
-                            <div className="relative  rounded-full " >
-                                <img src={differenceData[currentIndex].differenceLogo} alt='' className='h-12 w-12' />
-                            </div>
+                        <div className="relative rounded-full" >
+                            <img src={differenceData[currentIndex].differenceLogo} alt='' className='h-12 w-12' />
                         </div>
-                        <div className="">
-                            <div className="flex justify-center text-customBlue font-semibold text-xl pt-2">
-                                <span>{differenceData[currentIndex].differenceName}</span>
-                            </div>
-                            <div className="font-normal text-lg pt-2">
-                                {differenceData[currentIndex].differenceDescription}
-                            </div>
+                        <div className="flex justify-center text-customBlue font-semibold text-xl pt-2">
+                            <span>{differenceData[currentIndex].differenceName}</span>
+                        </div>
+                        <div className="font-normal text-lg pt-2">
+                            {differenceData[currentIndex].differenceDescription}
                         </div>
                     </div>
                 </div>
