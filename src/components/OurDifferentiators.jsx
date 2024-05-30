@@ -74,7 +74,7 @@ const OurDifferentiators = () => {
                         </div>
                     ))}
                 </div>
-                <div className="px-10 relative flex sm:hidden">
+                <div className="px-10 relative flex sm:hidden h-96">
                     <div
                         key={currentIndex}
                         className="flex flex-col justify-center items-center bg-white shadow-customAdCard rounded-[8px] px-4 transition-transform transform py-8 gap-y-3"
@@ -82,10 +82,10 @@ const OurDifferentiators = () => {
                         <div className="relative rounded-full" >
                             <img src={DifferentiatorsData[currentIndex].DifferentiatorsLogo} alt='' className='h-12 w-12' />
                         </div>
-                        <div className="flex justify-center text-customBlue font-medium text-2xl pt-6 pb-3 text-center">
+                        <div className="flex justify-center text-customBlue font-medium text-[22px]  pt-6 pb-3 text-center">
                             <span>{DifferentiatorsData[currentIndex].DifferentiatorsName}</span>
                         </div>
-                        <div className="font-normal text-xl pt-2 text-customBlack leading-relaxed">
+                        <div className="font-normal text-xl text-customBlack leading-loose">
                             {DifferentiatorsData[currentIndex].DifferentiatorsDescription}
                         </div>
                     </div>
