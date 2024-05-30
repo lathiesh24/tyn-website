@@ -106,26 +106,29 @@ const CardOurTeam = () => {
                     </div>
                 ))}
             </div>
+
+            {/* Mobile Screen */}
+
             <div className="sm:hidden flex px-9 relative ">
                 <div
                     key={currentIndex}
-                    className="bg-white shadow-customAdCard rounded-[24px] px-4 transition-transform transform w-full h-[500px]"
+                    className="bg-white shadow-customAdCard rounded-[24px] px-4 transition-transform transform w-full "
                 >
-                    <div className="relative h-[78px] w-[120px] rounded-full mx-auto">
+                    <div className="relative w-[160px] rounded-full mx-auto">
                         <img
-                            className="absolute object-cover h-32 w-32 rounded-2xl -top-[66px]"
+                            className="absolute object-cover h-40 w-40 rounded-2xl -top-[76px]"
                             src={cardData[currentIndex].image}
                             alt=""
                         />
                     </div>
-                    <div className="">
+                    <div className="pt-32 pb-12">
                         <div className="flex justify-center items-center h-full w-11/12">
-                            <span className="font-medium text-xl text-customBlack text-center">{cardData[currentIndex].name}</span>
+                            <span className="font-medium text-2xl text-customBlack text-center">{cardData[currentIndex].name}</span>
                         </div>
-                        <div className="font-medium text-lg py-2.5 text-customBlack">
+                        <div className="font-medium text-[21px] py-8 text-customBlack">
                             {cardData[currentIndex].role}
                         </div>
-                        <p className="font-light pb-4 text-lg text-customGreyishBlack tracking-wide">
+                        <p className="font-light pb-4 text-xl text-customGreyishBlack leading-relaxed tracking-wide">
                             {cardData[currentIndex].roleDescription}
                         </p>
                     </div>
