@@ -13,7 +13,7 @@ const WeOffer = () => {
     }
 
     return (
-        <div className='h-screenflex'>
+        <div className='h-screenflex mt-0 sm:mt-8 sm:mb-8'>
             <div className='flex justify-center items-center text-3xl sm:text-4xl text-customBlack font-medium pt-16 pb-12 sm:py-10 xl:py-16'>
                 <div className='grid'>
                     <div className='relative'>
