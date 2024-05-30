@@ -101,7 +101,7 @@ const Homepage = () => {
             </section>
 
             <section id='contact-us'>
-                <Footer />
+                <Footer handleNavigation={handleNavigation} />
             </section>
         </div >
     );
