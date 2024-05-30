@@ -19,14 +19,14 @@ const Footer = ({ handleNavigation }) => {
 
         <div className="font-medium text-lg">
           <div>Company</div>
-          <p  onClick={() => handleNavigation('about-us')} className="font-normal text-customGreyishBlack cursor-pointer">About us</p>
-          <p  onClick={() => handleNavigation('our-team')} className="font-normal text-customGreyishBlack cursor-pointer">Our Team</p>
-          <p  onClick={() => handleNavigation('difference')}className="font-normal text-customGreyishBlack cursor-pointer">Difference</p>
+          <p onClick={() => handleNavigation('about-us')} className="font-normal text-customGreyishBlack cursor-pointer">About us</p>
+          <p onClick={() => handleNavigation('our-team')} className="font-normal text-customGreyishBlack cursor-pointer">Our Team</p>
+          <p onClick={() => handleNavigation('difference')} className="font-normal text-customGreyishBlack cursor-pointer">Difference</p>
         </div>
 
         <div className="font-medium text-lg">
           <div>Contact</div>
-          <a href = "mailto:info@theyellownetwork.com" className="font-normal text-customGreyishBlack">
+          <a href="mailto:info@theyellownetwork.com" className="font-normal text-customGreyishBlack">
             info@theyellownetwork.com
           </a>
         </div>
