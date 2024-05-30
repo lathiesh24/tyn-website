@@ -5,7 +5,7 @@ import OurMission from './OurMission';
 import WeOffer from './WeOffer';
 import OurTeam from './OurTeam';
 import AdvisoryTeam from './AdvisoryTeam';
-import OurDifference from './OurDifference';
+import OurDifferentiators from './OurDifferentiators';
 import Footer from './Footer';
 
 const Homepage = () => {
@@ -70,8 +70,8 @@ const Homepage = () => {
                         </div>
                         <button
                             className='flex border-[3px] border-customBlue text-base sm:text-2xl font-medium text-customBlue w-max items-center justify-center py-1.5 px-3 sm:py-3 sm:px-5 rounded-2xl cursor-pointer mt-6 tracking-wider'
-                            onClick={() => handleNavigation('difference')}>
-                            Our Difference
+                            onClick={() => handleNavigation('Differentiators')}>
+                            Our Differentiators
                         </button>
                     </section>
                 </div>
@@ -88,8 +88,8 @@ const Homepage = () => {
                 <WeOffer />
             </section>
 
-            <section id='difference'>
-                <OurDifference />
+            <section id='Differentiators'>
+                <OurDifferentiators />
             </section>
 
             <section id="our-team" className='mt-8 sm:mt-20'>

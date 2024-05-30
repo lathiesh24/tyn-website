@@ -12,9 +12,9 @@ const Alliance = () => {
 
     return (
         <>
-            <div className='flex flex-col sm:mx-20 2xl:mx-32 sm:pt-6 xl:pt-16 sm:h-screen sm:gap-6 mt-2 sm:mt-0'>
-                <div className='flex flex-row justify-between mx-2'>
-                    <div className='text-lg sm:text-2xl font-medium sm:font-semibold text-customBlack'>Enabling Alliances to Startups </div>
+            <div className='flex flex-col sm:mx-20 2xl:mx-32 sm:pt-6 xl:pt-16 sm:h-screen sm:gap-6 mt-2 sm:mt-0 mx-6 mb-16 sm:mb-0'>
+                <div className='flex flex-row justify-between'>
+                    <div className='text-xl sm:text-2xl font-medium sm:font-semibold text-customBlack py-4 sm:py-0'>Enabling Alliances to Startups </div>
                     <button
                         className='hidden sm:flex border-[3px] text-lg font-normal text-white bg-customBlue  w-max items-center justify-center py-1.5 px-4  rounded-xl cursor-pointer  tracking-wider shadow-md hover:text-customBlue hover:bg-white hover:border-white'
                         onClick={handleMainMenu}>
@@ -28,24 +28,24 @@ const Alliance = () => {
                 </div>
 
                 <div>
-                    <div className='grid grid-flow-row sm:grid-flow-col gap-12 sm:gap-32 justify-center xl:pt-6'>
+                    <div className='grid grid-flow-row sm:grid-flow-col gap-24 sm:gap-32 justify-center xl:pt-6'>
                         <div className='relative'>
-                            <div className='bg-blue-50 text-base sm:text-lg tracking-wide mx-2 mt-3 sm:mt-0 sm:mx-0 md:pr-12 sm:pl-4 xl:pl-6 2xl:pr-12 pt-3 pb-6 sm:pb-0 sm:pt-0 sm:py-4 xl:py-6 text-customGreyishBlack'>
+                            <div className='bg-blue-50 text-lg sm:text-lg leading-relaxed tracking-wide  mt-3 sm:mt-0 sm:mx-0 md:pr-12 sm:pl-4 xl:pl-6 2xl:pr-12  px-4 pt-4 sm:px-0 sm:p-0 pb-10  sm:pb-0 sm:pt-0 sm:py-4 xl:py-6 text-customGreyishBlack rounded-lg shadow-customAdCard'>
                                 Alliance GTM generates nonlinear repeatable growth but it takes time, specific expertise, constant governance & high cost to build and sustain the partnerships. We shall be your extended alliance team, with an outcome based engagement for your growth. We start with building an ecosystem strategy in alignment with your organization business strategy followed by rolling out that strategy by effective implementation for tangible outcomes while ensuring those outcomes through effective governance & oversight framework
                             </div>
-                            <div className='absolute border-2 sm:border-[3px] border-customBlue rounded-full bg-white sm:text-2xl font-semibold text-customBlue px-6 py-2 sm:top-1/2 sm:right-0 transform sm:rotate-90 translate-x-1/2 -translate-y-1/2'>
+                            <div className='absolute border-2 sm:border-[3px] shadow-customAdCard  rounded-full bg-white w-56 sm:w-auto flex justify-center text-lg sm:text-xl font-semibold text-customBlue py-2 px-6 sm:px-6 sm:top-1/2 sm:right-0 transform sm:rotate-90  sm:translate-x-1/2 sm:-translate-y-1/2  sm:bottom-auto bottom-0 sm:left-auto left-1/2 -translate-x-1/2 translate-y-1/2'>
                                 Our commitment
                             </div>
                         </div>
 
-                        <div className="relative flex justify-center items-center text-customGreyishBlack">
+                        <div className="relative flex justify-center items-center text-customGreyishBlack ">
                             <motion.div
-                                className="absolute left-[18px] top-0 w-[3px] h-full bg-gray-200"
+                                className="absolute left-[18px] -top-2 w-[3px] h-full bg-gray-200"
                                 initial={{ scaleY: 0 }}
                                 animate={{ scaleY: 1 }}
                                 transition={{ duration: 0.7, ease: 'easeInOut' }}
                             ></motion.div>
-                            <div className="flex flex-col sm:text-lg gap-6 sm:gap-12 pl-10">
+                            <div className="flex flex-col text-lg sm:text-lg gap-12 sm:gap-12 pl-10">
                                 <motion.div
                                     className="relative flex items-center"
                                     initial={{ opacity: 0, y: -20 }}
