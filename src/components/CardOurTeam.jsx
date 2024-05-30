@@ -3,7 +3,7 @@ import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 const cardData = [
     {
-        name: "Anandapadmanaban",
+        name: "Anandapadmanaban Kathiresan",
         role: "Innovation Evangelist",
         roleDescription: "Passionate problem solver, and tech enthusiast with an entrepreneurial mindset. Innovating solutions, driving efficiency, enhancing user experiences, and delivering value in business.",
         image: "/anand.png"
@@ -11,17 +11,17 @@ const cardData = [
     {
         name: "Sourish Ghosh",
         role: "Growth Manager",
-        roleDescription: "Experienced sales/marketing pro, transitioning from hospitality to innovation, aims to disrupt post-COVID ecosystem with transparency and collaboration.",
+        roleDescription: "Seasoned professional in customer liaison & program management, aims to disrupt post-COVID ecosystem with transparency and collaboration.",
         image: "/sourish.jpeg"
     },
     {
-        name: "Sudharshan",
+        name: "Sudharshan Ethirajulu",
         role: "Alliance Director",
         roleDescription: "Global IT professional with 15+ years of experience in alliance and partner relationships across aviation and IT, specializing in ecosystem building and management.",
         image: "/sudharshan.png"
     },
     {
-        name: "Kaushik",
+        name: "Kaushik Venkatesan",
         role: "Alliance Director",
         roleDescription: "Seasoned Alliances and Partnerships consultant experienced in partner strategy, go-to-market, and digital transformation. Led partnerships at TCS and Freshworks, building ecosystems.",
         image: "/kaushik.jpg"
@@ -39,7 +39,7 @@ const cardData = [
         image: "/velan.png"
     },
     {
-        name: "Bharthima",
+        name: "Bharathima Suriya",
         role: "Growth Lead",
         roleDescription: "A Entrepreneurial aspirant with appreciable knowledge in Marketing and Business development. With learnings & experiences across startups.",
         image: "/bharathi.png"
@@ -92,9 +92,9 @@ const CardOurTeam = () => {
                                 alt=""
                             />
                         </div>
-                        <div className="">
-                            <div className="flex flex-col justify-center items-center h-full text-center">
-                                <span className="font-semibold text-xl text-customBlack">{cardData[index].name}</span>
+                        <div className="flex flex-col gap-y-3">
+                            <div className="flex flex-col justify-center items-center h-full text-center ">
+                                <span className="font-medium text-xl text-customBlack">{cardData[index].name}</span>
                             </div>
                             <div className="font-normal text-base pt-1 text-customBlack">
                                 {cardData[index].role}
