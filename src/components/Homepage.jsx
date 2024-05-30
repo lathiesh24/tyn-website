@@ -78,7 +78,10 @@ const Homepage = () => {
             </div>
 
 
-            <WhatWeDo />
+            <section id='what-we-do'>
+                <WhatWeDo />
+            </section>
+           
 
             <section id='about-us'>
                 <OurMission />
