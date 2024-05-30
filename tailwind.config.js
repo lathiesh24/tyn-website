@@ -21,7 +21,8 @@ module.exports = {
         customBlack:"#2F2F2F",
         customGreyishBlack:"#626262",
         bgBlue:"#F0FAFF",
-        borderBlue:"#BBE6FF"
+        borderBlue:"#BBE6FF",
+        
       },
     },  
   },

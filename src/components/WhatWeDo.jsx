@@ -6,7 +6,7 @@ import { IoSettingsOutline } from "react-icons/io5";
 const WhatWeDo = () => {
   return (
     <>
-      <div className="bg-bgBlue flex flex-col sm:flex-row  items-center py-4 sm:py-16 sm:gap-10 sm:px-10 sm:justify-around">
+      <div className="bg-bgBlue flex flex-col sm:flex-row  justify-center items-center h-[100vh] sm:py-16 sm:gap-10 sm:px-10 sm:justify-around">
         <div className="text-2xl sm:text-5xl font-medium flex sm:hidden">What we do</div>
         <div className="2xl:m-0 flex justify-center items-center pt-4 pb-2 sm:pt-0 sm:pb-0">
           <img

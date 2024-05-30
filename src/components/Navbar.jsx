@@ -9,7 +9,7 @@ const Navbar = ({ activeSection, handleNavigation }) => {
 
     return (
         <>
-            <div className='fixed flex flex-row bg-white z-50 py-3 sm:py-6 w-full h-max items-center justify-between'>
+            <div className='fixed flex flex-row bg-white z-50 h-14 sm:h-24 w-full  items-center justify-between'>
                 <div className="ml-4 sm:ml-8 ">
                     <img
                         src="/tyn-logo.png"
