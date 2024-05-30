@@ -4,27 +4,27 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const DifferentiatorsData = [
     {
-        DifferentiatorsLogo: '/df2.jpg',
+        DifferentiatorsLogo: '/df1.png',
         DifferentiatorsName: "Instant Scaling",
         DifferentiatorsDescription: "Rapid onboarding facilitated by pre-identified stakeholders with established relationships."
     },
     {
-        DifferentiatorsLogo: `/df1.jpg`,
+        DifferentiatorsLogo: `/df2.png`,
         DifferentiatorsName: "Superior results through network effects",
         DifferentiatorsDescription: "The entire network's industry connections/expertise work for the success of our customers rather than one individual."
     },
     {
-        DifferentiatorsLogo: `/df3.jpg`,
+        DifferentiatorsLogo: `/df3.png`,
         DifferentiatorsName: "Riskless option",
         DifferentiatorsDescription: "Outcome-based engagement model with more than 50% of the payment upon realization of the committed results."
     },
     {
-        DifferentiatorsLogo: `/df4.jpg`,
+        DifferentiatorsLogo: `/df4.png`,
         DifferentiatorsName: "No Personal Dependency",
         DifferentiatorsDescription: "Don't have to worry about attrition/loss of contacts due to attrition."
     },
     {
-        DifferentiatorsLogo: `/df5.jpg`,
+        DifferentiatorsLogo: `/df5.png`,
         DifferentiatorsName: "Overall cost-effective",
         DifferentiatorsDescription: "Cheaper than hiring a full-time ecosystem manager in NA/Europe and not too much upfront."
     }
