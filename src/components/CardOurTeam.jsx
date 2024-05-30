@@ -125,7 +125,7 @@ const CardOurTeam = () => {
                         <div className="flex justify-center items-center h-full w-11/12">
                             <span className="font-medium text-2xl text-customBlack text-center">{cardData[currentIndex].name}</span>
                         </div>
-                        <div className="font-medium text-[21px] py-8 text-customBlack">
+                        <div className="font-medium text-[21px] py-5 text-customBlack">
                             {cardData[currentIndex].role}
                         </div>
                         <p className="font-light pb-4 text-xl text-customGreyishBlack leading-relaxed tracking-wide">
