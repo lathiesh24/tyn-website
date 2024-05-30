@@ -13,7 +13,7 @@ const WeOffer = () => {
     }
 
     return (
-        <div className='h-screenflex'>
+        <div className='h-[100vh]'>
             <div className='flex justify-center items-center text-2xl sm:text-4xl text-black font-medium py-8 sm:py-10 xl:py-16'>We Offer</div>
             <div className='grid grid-flow-row sm:grid-cols-2 gap-y-4 sm:gap-x-8 sm:mt-0 sm:mx-6 xl:mx-24 mx-4'>
                 <div className='border bg-bgBlue rounded-lg  sm:px-4 2xl:px-6 py-3 px-3 sm:py-4 2xl:py-6'>

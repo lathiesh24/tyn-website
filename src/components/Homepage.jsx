@@ -53,21 +53,30 @@ const Homepage = () => {
     return (
         <div className="" >
             <Navbar activeSection={activeSection} handleNavigation={handleNavigation} />
-            <section id='home' className='flex flex-col items-center justify-center h-screen bg-homebg' style={{ backgroundImage: "url('/homebg.png')", backgroundSize: "cover", backgroundPosition: "center" }}>
-                <div className='flex flex-col text-2xl sm:text-6xl font-medium tracking-wide'>
-                    <span className='text-customBlack'>
-                        Unleashing the potential of
-                    </span>
-                    <span className='flex items-center justify-center mt-3 sm:mt-6 bg-custom-gradient text-transparent bg-clip-text min-w-max p-2 tracking-wider'>
-                        ecosystems
-                    </span>
+            <div className="relative flex items-center justify-center bg-white overflow-hidden">
+                <div className="absolute inset-0">
+                    <div className="border-8 absolute w-64 h-64 sm:w-[400px] sm:h-[400px]  rounded-full opacity-20 -left-32 sm:-left-64 top-1/4"></div>
+                    <div className="absolute border-8 w-64 h-64 sm:w-[400px] sm:h-[400px] bg-customGradient rounded-full opacity-20 -right-32 sm:-right-64 top-1/4"></div>
                 </div>
-                <button
-                    className='flex border-[3px] border-customBlue text-base sm:text-2xl font-medium text-customBlue w-max items-center justify-center py-1.5 px-3 sm:py-3 sm:px-5 rounded-2xl cursor-pointer mt-6 tracking-wider'
-                    onClick={() => handleNavigation('difference')}>
-                    Our Difference
-                </button>
-            </section>
+                <div className="z-10 text-center">
+                    <section id='home' className='flex flex-col items-center justify-center  h-[100vh]'>
+                        <div className='flex flex-col text-2xl sm:text-6xl font-medium tracking-wide'>
+                            <span className='text-customBlack'>
+                                Unleashing the potential of
+                            </span>
+                            <span className='flex items-center justify-center mt-3 sm:mt-6 bg-custom-gradient text-transparent bg-clip-text min-w-max p-2 tracking-wider'>
+                                ecosystems
+                            </span>
+                        </div>
+                        <button
+                            className='flex border-[3px] border-customBlue text-base sm:text-2xl font-medium text-customBlue w-max items-center justify-center py-1.5 px-3 sm:py-3 sm:px-5 rounded-2xl cursor-pointer mt-6 tracking-wider'
+                            onClick={() => handleNavigation('difference')}>
+                            Our Difference
+                        </button>
+                    </section>
+                </div>
+            </div>
+
 
             <WhatWeDo />
 
