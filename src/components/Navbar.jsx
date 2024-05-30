@@ -9,12 +9,12 @@ const Navbar = ({ activeSection, handleNavigation }) => {
 
     return (
         <>
-            <div className='fixed flex flex-row bg-white z-50 h-14 sm:h-24 w-full  items-center justify-between'>
+            <div className='fixed flex flex-row bg-white z-50 h-20 sm:h-24 w-full  items-center justify-between'>
                 <div className="ml-4 sm:ml-8 ">
                     <img
                         src="/tyn-logo.png"
                         alt="The Yellow Network Logo"
-                        className='w-40'
+                        className='w-44'
                     />
                 </div>
                 <div className="hidden md:grid text-customBlack grid-flow-col sm:gap-x-6 xl:gap-x-16 sm:mr-4 xl:mr-20 text-lg">
@@ -28,7 +28,7 @@ const Navbar = ({ activeSection, handleNavigation }) => {
                 </div>
                 <div className="sm:hidden flex items-center mr-4 sm:mr-8">
                     <button onClick={() => setIsOpen(!isOpen)} className="focus:outline-none">
-                        {isOpen ? <IoClose size={20} /> : <GiHamburgerMenu size={20} />}
+                        {isOpen ? <IoClose size={24} /> : <GiHamburgerMenu size={24} />}
                     </button>
                 </div>
             </div>

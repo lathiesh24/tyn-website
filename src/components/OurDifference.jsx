@@ -44,7 +44,7 @@ const OurDifference = () => {
 
     return (
         <div className='flex flex-col justify-center items-center'>
-            <div className='flex justify-center items-center text-2xl sm:text-4xl text-customBlack font-medium py-16 sm:py-16'>
+            <div className='flex justify-center items-center text-3xl sm:text-4xl text-customBlack font-medium py-16 sm:py-16'>
                 Our Difference
             </div>
             <div className="relative sm:w-11/12">
@@ -82,10 +82,10 @@ const OurDifference = () => {
                         <div className="relative rounded-full" >
                             <img src={differenceData[currentIndex].differenceLogo} alt='' className='h-12 w-12' />
                         </div>
-                        <div className="flex justify-center text-customBlue font-semibold text-xl pt-2">
+                        <div className="flex justify-center text-customBlue font-medium text-2xl pt-6 pb-3 text-center">
                             <span>{differenceData[currentIndex].differenceName}</span>
                         </div>
-                        <div className="font-normal text-lg pt-2">
+                        <div className="font-normal text-xl pt-2 text-customBlack leading-relaxed">
                             {differenceData[currentIndex].differenceDescription}
                         </div>
                     </div>

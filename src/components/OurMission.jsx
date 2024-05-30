@@ -4,7 +4,7 @@ const OurMission = () => {
     return (
         <>
             <div className='sm:flex sm:flex-col sm:gap-5 xl:gap-20 mt-4 sm:mt-8 mx-1 2xl:mx-12 hidden'>
-                <div className='flex-col xl:gap-5 items-center text-[15px]  sm:text-4xl leading-loose tracking-wide font-semibold sm:flex hidden'>
+                <div className='flex-col xl:gap-5 items-center text-[15px]  sm:text-4xl leading-loose tracking-wide font-semibold sm:flex  hidden'>
                     <div className='pt-8'>
                         <span className='text-[18px] sm:text-[30px] text-customBlack'>Our Mission</span>
                         <span className='text-[18px] sm:text-[30px] font-extralight tracking-wider'> is to deliver </span>
@@ -37,7 +37,7 @@ const OurMission = () => {
             </div>
 
             {/* Mobile Screen */}
-            <div className='flex flex-col gap-5'>
+            <div className='flex sm:hidden flex-col gap-5'>
                 <div className='flex flex-col justify-center items-center px-4 py-12'>
                     <div className='items-center text-2xl leading-loose tracking-wide font-semibold flex flex-col gap-y-2'>
                         <div className='flex justify-center items-center'>
