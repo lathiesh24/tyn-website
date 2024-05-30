@@ -45,7 +45,16 @@ const OurDifferentiators = () => {
     return (
         <div className='flex flex-col justify-center items-center'>
             <div className='flex justify-center items-center text-3xl sm:text-4xl text-customBlack font-medium py-16 sm:py-16'>
-                Our Differentiators
+                <div className='grid'>
+                    <div className='relative'>
+                        <div className='absolute -top-8 -right-8 h-8 w-8'>
+                            <img src="doublequotes.jpg" alt='Double Quotes' />
+                        </div>
+                        <div className=''>
+                            Our Differentiators
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className="relative sm:w-11/12">
                 <button
