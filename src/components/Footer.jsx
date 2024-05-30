@@ -26,7 +26,7 @@ const Footer = () => {
           <div className="flex flex-col font-medium text-xl text-customBlack gap-1">Company
             <p className="font-normal text-lg  text-customGreyishBlack">About us</p>
             <p className="font-normal text-lg  text-customGreyishBlack">Our Team</p>
-            <p className="font-normal text-lg  text-customGreyishBlack">Difference</p>
+            <p className="font-normal text-lg  text-customGreyishBlack">Differentiators</p>
           </div>
         </div>
 
@@ -58,7 +58,7 @@ const Footer = () => {
               <div className="font-medium text-lg gap-4">Company
                 <p className="font-normal text-customGreyishBlack">About us</p>
                 <p className="font-normal text-customGreyishBlack">Our Team</p>
-                <p className="font-normal text-customGreyishBlack">Difference</p>
+                <p className="font-normal text-customGreyishBlack">Differentiators</p>
               </div>
             </div>
           </div>

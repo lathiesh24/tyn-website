@@ -2,50 +2,50 @@ import React, { useState } from 'react';
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 
-const differenceData = [
+const DifferentiatorsData = [
     {
-        differenceLogo: '/df2.jpg',
-        differenceName: "Instant Scaling",
-        differenceDescription: "Rapid onboarding facilitated by pre-identified stakeholders with established relationships."
+        DifferentiatorsLogo: '/df2.jpg',
+        DifferentiatorsName: "Instant Scaling",
+        DifferentiatorsDescription: "Rapid onboarding facilitated by pre-identified stakeholders with established relationships."
     },
     {
-        differenceLogo: `/df1.jpg`,
-        differenceName: "Superior results through network effects",
-        differenceDescription: "The entire network's industry connections/expertise work for the success of our customers rather than one individual."
+        DifferentiatorsLogo: `/df1.jpg`,
+        DifferentiatorsName: "Superior results through network effects",
+        DifferentiatorsDescription: "The entire network's industry connections/expertise work for the success of our customers rather than one individual."
     },
     {
-        differenceLogo: `/df3.jpg`,
-        differenceName: "Riskless option",
-        differenceDescription: "Outcome-based engagement model with more than 50% of the payment upon realization of the committed results."
+        DifferentiatorsLogo: `/df3.jpg`,
+        DifferentiatorsName: "Riskless option",
+        DifferentiatorsDescription: "Outcome-based engagement model with more than 50% of the payment upon realization of the committed results."
     },
     {
-        differenceLogo: `/df4.jpg`,
-        differenceName: "No Personal Dependency",
-        differenceDescription: "Don't have to worry about attrition/loss of contacts due to attrition."
+        DifferentiatorsLogo: `/df4.jpg`,
+        DifferentiatorsName: "No Personal Dependency",
+        DifferentiatorsDescription: "Don't have to worry about attrition/loss of contacts due to attrition."
     },
     {
-        differenceLogo: `/df5.jpg`,
-        differenceName: "Overall cost-effective",
-        differenceDescription: "Cheaper than hiring a full-time ecosystem manager in NA/Europe and not too much upfront."
+        DifferentiatorsLogo: `/df5.jpg`,
+        DifferentiatorsName: "Overall cost-effective",
+        DifferentiatorsDescription: "Cheaper than hiring a full-time ecosystem manager in NA/Europe and not too much upfront."
     }
 ];
-const OurDifference = () => {
+const OurDifferentiators = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const goToPrevious = () => {
-        const newIndex = (currentIndex === 0) ? (differenceData.length - 1) : (currentIndex - 1);
+        const newIndex = (currentIndex === 0) ? (DifferentiatorsData.length - 1) : (currentIndex - 1);
         setCurrentIndex(newIndex);
     };
 
     const goToNext = () => {
-        const newIndex = (currentIndex === differenceData.length - 1) ? 0 : (currentIndex + 1);
+        const newIndex = (currentIndex === DifferentiatorsData.length - 1) ? 0 : (currentIndex + 1);
         setCurrentIndex(newIndex);
     };
 
     return (
         <div className='flex flex-col justify-center items-center'>
             <div className='flex justify-center items-center text-3xl sm:text-4xl text-customBlack font-medium py-16 sm:py-16'>
-                Our Difference
+                Our Differentiators
             </div>
             <div className="relative sm:w-11/12">
                 <button
@@ -55,20 +55,20 @@ const OurDifference = () => {
                     <IoIosArrowBack size={36} />
                 </button>
                 <div className="px-16 space-x-4 relative sm:flex hidden">
-                    {[currentIndex, (currentIndex + 1) % differenceData.length].map((index) => (
+                    {[currentIndex, (currentIndex + 1) % DifferentiatorsData.length].map((index) => (
                         <div
                             key={index}
                             className="bg-white flex flex-col gap-4 pt-4 shadow-customAdCard rounded-[8px] px-4 pb-4 transition-transform transform w-3/4 sm:h-[240px] xl:h-auto"
                         >
                             <div className="relative rounded-full">
-                                <img src={differenceData[index].differenceLogo} alt='' className='h-8 w-8' />
+                                <img src={DifferentiatorsData[index].DifferentiatorsLogo} alt='' className='h-8 w-8' />
                             </div>
                             <div className="">
                                 <div className="flex text-customBlue font-medium text-xl">
-                                    <span>{differenceData[index].differenceName}</span>
+                                    <span>{DifferentiatorsData[index].DifferentiatorsName}</span>
                                 </div>
                                 <div className="font-normal text-base pt-1 leading-loose text-customGreyishBlack">
-                                    {differenceData[index].differenceDescription}
+                                    {DifferentiatorsData[index].DifferentiatorsDescription}
                                 </div>
                             </div>
                         </div>
@@ -80,13 +80,13 @@ const OurDifference = () => {
                         className="flex flex-col justify-center items-center bg-white shadow-customAdCard rounded-[8px] px-4 transition-transform transform py-8 gap-y-3"
                     >
                         <div className="relative rounded-full" >
-                            <img src={differenceData[currentIndex].differenceLogo} alt='' className='h-12 w-12' />
+                            <img src={DifferentiatorsData[currentIndex].DifferentiatorsLogo} alt='' className='h-12 w-12' />
                         </div>
                         <div className="flex justify-center text-customBlue font-medium text-2xl pt-6 pb-3 text-center">
-                            <span>{differenceData[currentIndex].differenceName}</span>
+                            <span>{DifferentiatorsData[currentIndex].DifferentiatorsName}</span>
                         </div>
                         <div className="font-normal text-xl pt-2 text-customBlack leading-relaxed">
-                            {differenceData[currentIndex].differenceDescription}
+                            {DifferentiatorsData[currentIndex].DifferentiatorsDescription}
                         </div>
                     </div>
                 </div>
@@ -103,4 +103,4 @@ const OurDifference = () => {
     );
 };
 
-export default OurDifference;
+export default OurDifferentiators;
