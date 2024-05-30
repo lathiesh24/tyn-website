@@ -3,7 +3,7 @@ import React from 'react'
 const OurMission = () => {
     return (
         <>
-            <div className='sm:flex sm:flex-col sm:gap-5 xl:gap-20 mt-4 sm:mt-8 mx-1 2xl:mx-12 hidden'>
+            <div className='sm:flex sm:flex-col sm:gap-5 xl:gap-20 mt-4 sm:mt-8 mx-3 2xl:mx-12 hidden'>
                 <div className='flex-col xl:gap-5 items-center text-[15px]  sm:text-4xl leading-loose tracking-wide font-semibold sm:flex  hidden'>
                     <div className='pt-8'>
                         <span className='text-[18px] sm:text-[30px] text-customBlack'>Our Mission</span>
@@ -26,7 +26,7 @@ const OurMission = () => {
                     <div className='flex justify-center items-center px-12 sm:px-0'>
                         <img src="/customerneedimage.jpg" alt="" className='' />
                     </div>
-                    <div className='border bg-bgBlue rounded-lg px-2 sm:px-6 py-2 sm:py-6 xl:py-8 flex flex-col mt-8 sm:mt-0 mx-2 sm:mx-0'>
+                    <div className='border bg-bgBlue rounded-lg px-2 sm:px-6 py-2 sm:py-12 flex flex-col mt-8 sm:mt-0 mx-2 sm:mx-0'>
                         <div className='text-2xl sm:text-4xl font-medium text-customBlack text-center sm:text-left'>
                             <div className='flex'>
                                 <div className='relative'>
