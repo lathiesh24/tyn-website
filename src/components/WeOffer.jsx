@@ -27,7 +27,7 @@ const WeOffer = () => {
       <div className="grid grid-flow-row sm:grid-cols-2 gap-y-8 sm:gap-x-8 sm:mt-0 sm:mx-6 xl:mx-24 mx-4">
         <div className="border bg-bgBlue rounded-lg  sm:px-4 2xl:px-6  py-4  px-3 sm:py-4 2xl:py-6">
           <div className="text-customBlue text-xl sm:text-xl 2xl:text-xl">
-            Enabling Alliances to Startups
+            Enabling Alliances to Growth Techs / Startups
           </div>
           <div className="mt-2 leading-loose sm:leading-loose text-lg sm:text-base font-light text-customGreyishBlack">
             Alliance as a service to growth B2B tech companies, to scale their
