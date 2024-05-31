@@ -2,12 +2,13 @@ import React from "react";
 import { SlGlobe } from "react-icons/sl";
 import { RiFlowChart } from "react-icons/ri";
 import { IoSettingsOutline } from "react-icons/io5";
+import { FaHandHoldingUsd } from "react-icons/fa";
 
 const WhatWeDo = () => {
   return (
     <>
       <div className="bg-bgBlue flex flex-col sm:flex-row  justify-center items-center sm:h-[100vh] pb-8 sm:pb-0 sm:py-16 sm:gap-10 sm:px-10 sm:justify-around">
-        <div className="text-3xl sm:text-5xl font-medium flex sm:hidden py-16">
+        <div className="text-3xl sm:text-5xl font-medium flex sm:hidden pb-8 pt-16">
           <div className="grid">
             <div className="relative">
               <div className="absolute -top-8 -right-8 h-8 w-8">
@@ -17,10 +18,10 @@ const WhatWeDo = () => {
             </div>
           </div>
         </div>
-        <div className="2xl:m-0 flex justify-center items-center pt-4 pb-16 sm:pt-0 sm:pb-0 ">
+        <div className="2xl:m-0 flex justify-center items-center pt-4 pb-8 sm:pt-0 sm:pb-0 ">
           {/* Image of what we do  */}
           <img
-            className="rounded-2xl object-cover cursor-pointer h-[200px] w-[300px]  sm:h-auto sm:w-auto"
+            className="rounded-2xl object-cover cursor-pointer h-[200px] w-[240px]  sm:h-auto sm:w-auto"
             src="/image3.png"
             alt="image2"
           />
@@ -36,26 +37,33 @@ const WhatWeDo = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col py-4 sm:pt-0 gap-16 sm:gap-10 text-base sm:text-xl sm:mx-0">
-            <div className="bg-white p-3 sm:p-5 rounded-lg font-medium sm:text-[18px] sm:w-[450px] 2xl:w-[650px] flex gap-2 sm:gap-4 2xl:gap-4 items-center">
+          <div className="flex flex-col py-4 sm:pt-0 gap-10 sm:gap-10 text-base sm:text-xl sm:mx-0">
+            <div className="bg-white p-3 sm:p-5 rounded-lg font-medium text-[15px] sm:text-[18px] sm:w-[450px] 2xl:w-[650px] flex gap-4 sm:gap-4 2xl:gap-4 items-center">
               <div className="text-customBlue">
-                <SlGlobe size={30} />
+                <SlGlobe size={24} />
               </div>
               We identify Ecosystem Stakeholders
             </div>
 
-            <div className="bg-white p-3 sm:p-5 sm:text-[18px] rounded-lg font-medium sm:w-[450px] 2xl:w-[650px] flex gap-2 sm:gap-4 2xl:gap-4 items-center">
+            <div className="bg-white p-3 sm:p-5 text-[15px] sm:text-[18px] rounded-lg font-medium sm:w-[450px] 2xl:w-[650px] flex gap-4 sm:gap-4 2xl:gap-4 items-center">
               <div className="text-customBlue">
-                <RiFlowChart size={30} />
+                <RiFlowChart size={24} />
               </div>
               We define Ecosystem Strategy
             </div>
 
-            <div className="bg-white p-3 sm:p-5 rounded-lg sm:text-[18px]  font-medium sm:w-[450px] 2xl:w-[650px] flex gap-2 sm:gap-4 2xl:gap-4 items-center">
+            <div className="bg-white p-3 sm:p-5 rounded-lg text-[15px] sm:text-[18px]  font-medium sm:w-[450px] 2xl:w-[650px] flex gap-4 sm:gap-4 2xl:gap-4 items-center">
               <div className="text-customBlue">
-                <IoSettingsOutline size={30} />
+                <IoSettingsOutline size={24} />
               </div>
               We build and Orchestrate Ecosystem
+            </div>
+
+            <div className="bg-white p-3 sm:p-5 rounded-lg text-[15px] sm:text-[18px]  font-medium sm:w-[450px] 2xl:w-[650px] flex gap-4 sm:gap-4 2xl:gap-4 items-center">
+              <div className="text-customBlue">
+                <FaHandHoldingUsd size={24} />
+              </div>
+              We deliver outcomes
             </div>
           </div>
         </div>
