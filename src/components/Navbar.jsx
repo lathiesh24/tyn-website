@@ -1,16 +1,28 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from 'react-icons/io5';
 
 const Navbar = ({ activeSection, handleNavigation }) => {
     const [isOpen, setIsOpen] = useState(false);
 
-
+    const handleIconNavigation = () => {
+        const section = document.getElementById('home');
+        const navbarHeight = document.querySelector('.fixed').offsetHeight;
+        if (section) {
+            const sectionTop = section.offsetTop - navbarHeight;
+            window.scrollTo({
+                top: sectionTop,
+                behavior: 'smooth',
+            });
+        }
+    }
 
     return (
         <>
             <div className='fixed flex flex-row bg-white z-50 h-20 sm:h-24 w-full  items-center justify-between'>
-                <div className="ml-4 sm:ml-8 ">
+                <div
+                    className="ml-4 sm:ml-8 cursor-pointer"
+                    onClick={handleIconNavigation}>
                     <img
                         src="/tyn-logo.png"
                         alt="The Yellow Network Logo"
