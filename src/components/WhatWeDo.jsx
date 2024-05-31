@@ -6,9 +6,18 @@ import { IoSettingsOutline } from "react-icons/io5";
 const WhatWeDo = () => {
   return (
     <>
-      <div className="bg-bgBlue flex flex-col sm:flex-row  justify-center items-center h-[100vh] sm:py-16 sm:gap-10 sm:px-10 sm:justify-around gap-6">
-        <div className="text-3xl sm:text-5xl font-medium flex sm:hidden">What we do</div>
-        <div className="2xl:m-0 flex justify-center items-center pt-4 pb-2 sm:pt-0 sm:pb-0">
+      <div className="bg-bgBlue flex flex-col sm:flex-row  justify-center items-center sm:h-[100vh] pb-8 sm:pb-0 sm:py-16 sm:gap-10 sm:px-10 sm:justify-around">
+        <div className="text-3xl sm:text-5xl font-medium flex sm:hidden py-16">
+          <div className="grid">
+            <div className="relative">
+              <div className="absolute -top-8 -right-8 h-8 w-8">
+                <img src="doublequotes.jpg" alt="Double Quotes" />
+              </div>
+              <div className="">What We Do</div>
+            </div>
+          </div>
+        </div>
+        <div className="2xl:m-0 flex justify-center items-center pt-4 pb-16 sm:pt-0 sm:pb-0 ">
           {/* Image of what we do  */}
           <img
             className="rounded-2xl object-cover cursor-pointer h-[200px] w-[300px]  sm:h-auto sm:w-auto"
@@ -17,8 +26,17 @@ const WhatWeDo = () => {
           />
         </div>
         <div className="flex flex-col sm:gap-8">
-          <div className="text-2xl md:text-5xl font-medium sm:flex hidden">What we do</div>
-          <div className="flex flex-col py-4 sm:pt-0 gap-6 sm:gap-10 text-base sm:text-xl sm:mx-0">
+          <div className="text-2xl sm:text-4xl font-medium sm:flex hidden">
+            <div className="grid">
+              <div className="relative">
+                <div className="absolute -top-8 -right-8 h-8 w-8">
+                  <img src="doublequotes.jpg" alt="Double Quotes" />
+                </div>
+                <div className="">What We Do</div>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col py-4 sm:pt-0 gap-16 sm:gap-10 text-base sm:text-xl sm:mx-0">
             <div className="bg-white p-3 sm:p-5 rounded-lg font-medium sm:text-[18px] sm:w-[450px] 2xl:w-[650px] flex gap-2 sm:gap-4 2xl:gap-4 items-center">
               <div className="text-customBlue">
                 <SlGlobe size={30} />

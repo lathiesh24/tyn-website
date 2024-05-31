@@ -13,8 +13,19 @@ const WeOffer = () => {
     }
 
     return (
-        <div className='h-screenflex'>
-            <div className='flex justify-center items-center text-3xl sm:text-4xl text-customBlack font-medium py-12 sm:py-10 xl:py-16'>We Offer</div>
+        <div className='h-screenflex mt-0 sm:mt-8 sm:mb-8'>
+            <div className='flex justify-center items-center text-3xl sm:text-4xl text-customBlack font-medium pt-16 pb-12 sm:py-10 xl:py-16'>
+                <div className='grid'>
+                    <div className='relative'>
+                        <div className='absolute -top-8 -right-8 h-8 w-8'>
+                            <img src="doublequotes.jpg" alt='Double Quotes' />
+                        </div>
+                        <div className=''>
+                            We Offer
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className='grid grid-flow-row sm:grid-cols-2 gap-y-8 sm:gap-x-8 sm:mt-0 sm:mx-6 xl:mx-24 mx-4'>
                 <div className='border bg-bgBlue rounded-lg  sm:px-4 2xl:px-6  py-4  px-3 sm:py-4 2xl:py-6'>
                     <div className='text-customBlue text-xl sm:text-xl 2xl:text-xl'>Enabling Alliances to Startups</div>
