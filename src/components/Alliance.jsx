@@ -21,7 +21,7 @@ const Alliance = () => {
                                     <img src="doublequotes.jpg" alt='Double Quotes' />
                                 </div>
                                 <div className=''>
-                                    Enabling Alliances to Startups
+                                    Enabling Alliances to Growth Techs / Startups
                                 </div>
                             </div>
                         </div>

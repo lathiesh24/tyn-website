@@ -4,6 +4,11 @@ const Card = () => {
 
     const cardData = [
         {
+            name: "TR Kesavan",
+            roleDescription: "Group President, TAFE Ltd",
+            image: "/adt5.jpeg"
+        },
+        {
             name: "Kishore Jayaraman",
             roleDescription: "President, Rolls Royce, India & South Asia",
             image: "/adt1.png"
@@ -22,11 +27,6 @@ const Card = () => {
             name: "MVS Subramanian",
             roleDescription: "Partner, July Ventures (Serial entrepreneur)",
             image: "/adt4.png"
-        },
-        {
-            name: "TR Kesavan",
-            roleDescription: "President:Corporate Relations & Alliances, TAFE Ltd",
-            image: "/adt5.jpeg"
         }
     ];
 
