@@ -6,8 +6,8 @@ const Footer = ({ handleNavigation }) => {
   return (
     <div className="flex flex-col">
       {/* For mobile   */}
-      <div className="mx-6 flex flex-col md:flex-row-reverse lg:mx-24 xl:mx-28 md:justify-between gap-6 mt-10">
-        <div className="font-medium text-lg">
+      <div className="mx-6 xl:mx-20 flex flex-col md:flex-row-reverse md:justify-between gap-6 mt-10">
+        <div className="font-medium text-lg flex flex-col gap-1">
           <div>Services</div>
           <p className="font-normal text-customGreyishBlack">
             Alliance as a service
@@ -17,18 +17,62 @@ const Footer = ({ handleNavigation }) => {
           </p>
         </div>
 
-        <div className="font-medium text-lg">
+        <div className="font-medium text-lg flex flex-col gap-1">
           <div>Company</div>
-          <p onClick={() => handleNavigation('about-us')} className="font-normal text-customGreyishBlack cursor-pointer">About us</p>
-          <p onClick={() => handleNavigation('our-team')} className="font-normal text-customGreyishBlack cursor-pointer">Our Team</p>
-          <p onClick={() => handleNavigation('difference')} className="font-normal text-customGreyishBlack cursor-pointer">Difference</p>
+          <p
+            onClick={() => handleNavigation("about-us")}
+            className="font-normal text-customGreyishBlack cursor-pointer"
+          >
+            About us
+          </p>
+          <p
+            onClick={() => handleNavigation("our-team")}
+            className="font-normal text-customGreyishBlack cursor-pointer"
+          >
+            Our Team
+          </p>
+          <p
+            onClick={() => handleNavigation("difference")}
+            className="font-normal text-customGreyishBlack cursor-pointer"
+          >
+            Difference
+          </p>
+          <div className="text-blue-500 cursor-pointer my-1">
+            <a
+              href="https://www.linkedin.com/company/the-yellow-network/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLinkedin size={32} />
+            </a>
+          </div>
         </div>
 
-        <div className="font-medium text-lg">
-          <div>Contact</div>
-          <a href="mailto:info@theyellownetwork.com" className="font-normal text-customGreyishBlack">
-            info@theyellownetwork.com
-          </a>
+        <div className="font-medium text-lg flex flex-col gap-4 leading-8">
+          <div>
+            <div>Contact</div>
+            <a
+              href="mailto:info@theyellownetwork.com"
+              className="font-normal text-customGreyishBlack"
+            >
+              info@theyellownetwork.com
+            </a>
+          </div>
+
+          <div>
+            <div>Address</div>
+            <div className="font-normal text-customGreyishBlack w-60">
+              PSG Step, PSG College of Technology, Peelamedu, Coimbatore, Tamil
+              Nadu 641004
+            </div>
+          </div>
+
+          <div>
+            <div>Phone Number</div>
+            <div className="font-normal text-customGreyishBlack">
+              +91 73582 95305
+            </div>
+          </div>
         </div>
 
         <div className="flex justify-center items-center my-5">
