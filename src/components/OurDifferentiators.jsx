@@ -23,7 +23,7 @@ const DifferentiatorsData = [
   },
   {
     DifferentiatorsLogo: `/df4.png`,
-    DifferentiatorsName: "No Personal Dependency",
+    DifferentiatorsName: "No Individual Dependency",
     DifferentiatorsDescription:
       "Don't have to worry about attrition/loss of contacts due to attrition.",
   },

@@ -6,26 +6,27 @@ const IdeologyData = [
   {
     IdeologyName: "Purpose",
     IdeologyDescription:
-      "Believe in the power of ecosystems and enable collaborations.",
+      "We believe in the power of ecosystems and enable collaborations.",
   },
   {
     IdeologyName: "People",
     IdeologyDescription:
-      "Invest in our associates, understanding that their growth fuels our collective success.",
+      "We invest in our associates, their growth fuels our collective success.",
   },
   {
     IdeologyName: "Customer",
     IdeologyDescription:
-      "Make customer lives easier by consistently providing better and more convenient solutions.",
+      "We make our customers life easier by consistently providing better & convenient solution",
   },
   {
     IdeologyName: "Culture",
     IdeologyDescription:
-      "Maintain integrity and foster innovation with a steadfast 'get things done' attitude in every transaction.",
+      "We maintain integrity and foster innovation with a get things done attitude in every transaction.",
   },
   {
     IdeologyName: "Community",
-    IdeologyDescription: "Pledge 5% of our profits to CSR efforts.",
+    IdeologyDescription:
+      "We pledge 5% of our profits and efforts  to CSR initiatives.",
   },
 ];
 
@@ -45,8 +46,8 @@ const OurIdeology = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center ">
-      <div className="flex justify-center items-center text-3xl sm:text-4xl text-customBlack font-medium py-16 sm:py-16">
+    <div className="flex flex-col justify-center items-center pt-8 sm:pt-12">
+      <div className="flex justify-center items-center text-3xl sm:text-4xl text-customBlack font-medium py-12 sm:py-16">
         <div className="grid">
           <div className="relative">
             <div className="absolute -top-8 -right-8 h-8 w-8">
@@ -57,21 +58,19 @@ const OurIdeology = () => {
         </div>
       </div>
 
-      <div className="flex flex-col bg-bgBlue py-2 sm:py-0 sm:p-4 gap-5 mx-4">
-        <ul className="list-disc list-inside pl-5">
-          {IdeologyData.map((ideology, index) => {
-            return (
-              <li key={index} className="mb-3 gap-10">
-                <span className="text-customBlue text-xl">
-                  {ideology.IdeologyName}
-                </span>
-                <div className="text-customGreyishBlack text-lg pt-1.5">
-                  {ideology.IdeologyDescription}
-                </div>
-              </li>
-            );
-          })}
-        </ul>
+      <div className="flex flex-col bg-bgBlue py-3 px-3 sm:px-6 sm:py-6 gap-5 mx-4 rounded-lg shadow-customAdCard">
+        {IdeologyData.map((ideology, index) => {
+          return (
+            <div key={index} className="mb-3 gap-10">
+              <span className="text-customBlue text-xl">
+                {ideology.IdeologyName}
+              </span>
+              <div className="text-customGreyishBlack text-lg pt-1.5">
+                {ideology.IdeologyDescription}
+              </div>
+            </div>
+          );
+        })}
       </div>
 
       {/* <div className="relative sm:w-11/12">
