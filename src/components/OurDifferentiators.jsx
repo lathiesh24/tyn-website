@@ -97,7 +97,7 @@ const OurDifferentiators = () => {
             )
           )}
         </div>
-        <div className="px-10 relative flex sm:hidden h-[450px]">
+        <div className="px-10 relative flex sm:hidden h-auto">
           <div
             key={currentIndex}
             className="flex flex-col justify-center items-center bg-white shadow-customAdCard rounded-[8px] px-4 transition-transform transform py-8 gap-y-3"
