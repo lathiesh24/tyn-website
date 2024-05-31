@@ -65,7 +65,7 @@ const OurIdeology = () => {
               <span className="text-customBlue text-xl">
                 {ideology.IdeologyName}
               </span>
-              <div className="text-customGreyishBlack text-lg pt-1.5">
+              <div className="text-customGreyishBlack text-[17px] pt-1.5">
                 {ideology.IdeologyDescription}
               </div>
             </div>

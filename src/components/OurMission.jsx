@@ -92,8 +92,8 @@ const OurMission = () => {
 
         <div className="border bg-bgBlue rounded-lg px-3 pt-8 sm:py-6 xl:py-8 flex flex-col mt-8 sm:mt-0 mx-2 sm:mx-0">
           <div className="text-2xl sm:text-4xl font-medium text-customBlack text-center sm:text-left pt-4 pb-2">
-            <div className="flex justify-center items-center">
-              <div className="relative ">
+            <div className="flex justify-center items-center py-4">
+              <div className="relative">
                 <div className="absolute -top-8 -right-8 h-8 w-8">
                   <img src="doublequotes.jpg" alt="Double Quotes" />
                 </div>
@@ -101,7 +101,7 @@ const OurMission = () => {
               </div>
             </div>
           </div>
-          <div className="mt-0 sm:mt-4 leading-loose font-light text-lg sm:text-[18px] text-customGreyishBlack p-2 sm:p-0">
+          <div className="mt-0 sm:mt-4 leading-loose font-light text-lg sm:text-[18px] text-customGreyishBlack p-2 sm:p-0 pb-5">
             We believe, when businesses or government shift their focus from
             their products or services to holistic customer needs, barriers
             break, an ecosystem economy emerges & a tremendous value is created
