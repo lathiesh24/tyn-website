@@ -1,18 +1,35 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import { FaLinkedin } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 const Footer = ({ handleNavigation }) => {
+  const navigate = useNavigate();
+
+  const handleAllianceNavigation = () => {
+    navigate("/alliance");
+  };
+
+  const handleCoInnovationNavigation = () => {
+    navigate("/alliance");
+  };
+
   return (
     <div className="flex flex-col">
       {/* For mobile   */}
       <div className="mx-6 xl:mx-20 flex flex-col md:flex-row-reverse md:justify-between gap-6 mt-10">
         <div className="font-medium text-lg flex flex-col gap-1">
           <div>Services</div>
-          <p className="font-normal text-customGreyishBlack">
+          <p
+            className="font-normal text-customGreyishBlack cursor-pointer"
+            onClick={handleAllianceNavigation}
+          >
             Alliance as a service
           </p>
-          <p className="font-normal text-customGreyishBlack">
+          <p
+            className="font-normal text-customGreyishBlack cursor-pointer"
+            onClick={handleCoInnovationNavigation}
+          >
             Co Innovation as a service
           </p>
         </div>
