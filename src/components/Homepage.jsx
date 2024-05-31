@@ -63,6 +63,13 @@ const Homepage = () => {
           <div className="border-8 absolute w-64 h-64 sm:w-[400px] border-customYellow sm:h-[400px]  rounded-full opacity-20 -left-32 sm:-left-64 top-1/4"></div>
           <div className="absolute border-8 w-64 h-64 sm:w-[400px] border-customYellow sm:h-[400px] bg-customGradient rounded-full opacity-20 -right-32 sm:-right-64 top-1/4"></div>
         </div> */}
+        <div className="sm:flex hidden absolute  right-0">
+          <img src="/circle1.png" alt="/" className="sm:h-[70vh] sm:w-auto" />
+        </div>
+        <div className="sm:flex hidden absolute  left-0">
+          <img src="/circle2.png" alt="/" className="sm:h-[70vh] sm:w-auto" />
+        </div>
+
         <div className="z-10 text-center">
           <section
             id="home"
