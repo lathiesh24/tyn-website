@@ -1,58 +1,80 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 
 const IdeologyData = [
-    {
-        IdeologyName: "Purpose",
-        IdeologyDescription: "Believe in the power of ecosystems and enable collaborations."
-    },
-    {
-        IdeologyName: "People",
-        IdeologyDescription: "Invest in our associates, understanding that their growth fuels our collective success."
-    },
-    {
-        IdeologyName: "Customer",
-        IdeologyDescription: "Make customer lives easier by consistently providing better and more convenient solutions."
-    },
-    {
-        IdeologyName: "Culture",
-        IdeologyDescription: "Maintain integrity and foster innovation with a steadfast 'get things done' attitude in every transaction."
-    },
-    {
-        IdeologyName: "Community",
-        IdeologyDescription: "Pledge 5% of our profits to CSR efforts."
-    }
+  {
+    IdeologyName: "Purpose",
+    IdeologyDescription:
+      "Believe in the power of ecosystems and enable collaborations.",
+  },
+  {
+    IdeologyName: "People",
+    IdeologyDescription:
+      "Invest in our associates, understanding that their growth fuels our collective success.",
+  },
+  {
+    IdeologyName: "Customer",
+    IdeologyDescription:
+      "Make customer lives easier by consistently providing better and more convenient solutions.",
+  },
+  {
+    IdeologyName: "Culture",
+    IdeologyDescription:
+      "Maintain integrity and foster innovation with a steadfast 'get things done' attitude in every transaction.",
+  },
+  {
+    IdeologyName: "Community",
+    IdeologyDescription: "Pledge 5% of our profits to CSR efforts.",
+  },
 ];
 
 const OurIdeology = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-    const goToPrevious = () => {
-        const newIndex = (currentIndex === 0) ? (IdeologyData.length - 1) : (currentIndex - 1);
-        setCurrentIndex(newIndex);
-    };
+  const goToPrevious = () => {
+    const newIndex =
+      currentIndex === 0 ? IdeologyData.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  };
 
-    const goToNext = () => {
-        const newIndex = (currentIndex === IdeologyData.length - 1) ? 0 : (currentIndex + 1);
-        setCurrentIndex(newIndex);
-    };
+  const goToNext = () => {
+    const newIndex =
+      currentIndex === IdeologyData.length - 1 ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  };
 
-    return (
-        <div className='flex flex-col justify-center items-center'>
-            <div className='flex justify-center items-center text-3xl sm:text-4xl text-customBlack font-medium py-16 sm:py-16'>
-                <div className='grid'>
-                    <div className='relative'>
-                        <div className='absolute -top-8 -right-8 h-8 w-8'>
-                            <img src="doublequotes.jpg" alt='Double Quotes' />
-                        </div>
-                        <div className=''>
-                            Our Ideology
-                        </div>
-                    </div>
-                </div>
+  return (
+    <div className="flex flex-col justify-center items-center ">
+      <div className="flex justify-center items-center text-3xl sm:text-4xl text-customBlack font-medium py-16 sm:py-16">
+        <div className="grid">
+          <div className="relative">
+            <div className="absolute -top-8 -right-8 h-8 w-8">
+              <img src="doublequotes.jpg" alt="Double Quotes" />
             </div>
-            <div className="relative sm:w-11/12">
+            <div className="">Our Ideology</div>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col bg-bgBlue py-2 sm:py-0 sm:p-4 gap-5 mx-4">
+        <ul className="list-disc list-inside pl-5">
+          {IdeologyData.map((ideology, index) => {
+            return (
+              <li key={index} className="mb-3 gap-10">
+                <span className="text-customBlue text-xl">
+                  {ideology.IdeologyName}
+                </span>
+                <div className="text-customGreyishBlack text-lg pt-1.5">
+                  {ideology.IdeologyDescription}
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+
+      {/* <div className="relative sm:w-11/12">
                 <button
                     onClick={goToPrevious}
                     className="absolute top-1/2 transform -translate-y-1/2 left-0 z-10"
@@ -96,9 +118,9 @@ const OurIdeology = () => {
                 >
                     <IoIosArrowForward size={36} />
                 </button>
-            </div>
-        </div>
-    );
+            </div> */}
+    </div>
+  );
 };
 
 export default OurIdeology;
