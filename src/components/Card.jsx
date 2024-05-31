@@ -23,6 +23,11 @@ const Card = () => {
             roleDescription: "Partner, July Ventures (Serial entrepreneur)",
             image: "/adt4.png"
         },
+        {
+            name: "TR Kesavan",
+            roleDescription: "President:Corporate Relations & Alliances, TAFE Ltd",
+            image: "/adt5.jpeg"
+        }
     ];
 
     return (

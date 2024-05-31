@@ -7,6 +7,7 @@ import OurTeam from './OurTeam';
 import AdvisoryTeam from './AdvisoryTeam';
 import OurDifferentiators from './OurDifferentiators';
 import Footer from './Footer';
+import OurIdeology from './OurIdeology';
 
 const Homepage = () => {
     const [activeSection, setActiveSection] = useState('home');
@@ -81,15 +82,20 @@ const Homepage = () => {
             <section id='what-we-do'>
                 <WhatWeDo />
             </section>
-           
+
 
             <section id='about-us'>
                 <OurMission />
             </section>
 
+            <section>
+                <OurIdeology />
+            </section>
+
             <section id="services">
                 <WeOffer />
             </section>
+
 
             <section id='Differentiators'>
                 <OurDifferentiators />
