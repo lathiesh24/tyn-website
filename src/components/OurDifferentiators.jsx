@@ -6,29 +6,30 @@ const DifferentiatorsData = [
     {
         DifferentiatorsLogo: '/df1.png',
         DifferentiatorsName: "Instant Scaling",
-        DifferentiatorsDescription: "Rapid onboarding facilitated by pre-identified stakeholders with established relationships."
+        DifferentiatorsDescription: "Rapid onboarding facilitated by pre-identified stakeholders with established relationships.                                           "
     },
     {
         DifferentiatorsLogo: `/df2.png`,
-        DifferentiatorsName: "Superior results through network effects",
-        DifferentiatorsDescription: "The entire network's industry connections/expertise work for the success of our customers rather than one individual."
+        DifferentiatorsName: "Network Superiority",
+        DifferentiatorsDescription: "The entire network's connections/expertise work for the success of our customers rather than one individual."
     },
     {
         DifferentiatorsLogo: `/df3.png`,
         DifferentiatorsName: "Riskless option",
-        DifferentiatorsDescription: "Outcome-based engagement model with more than 50% of the payment upon realization of the committed results."
+        DifferentiatorsDescription: "Outcome-based engagement model with more than 50% of the payment upon realization of the committed results.                             "
     },
     {
         DifferentiatorsLogo: `/df4.png`,
-        DifferentiatorsName: "No Personal Dependency",
-        DifferentiatorsDescription: "Don't have to worry about attrition/loss of contacts due to attrition."
+        DifferentiatorsName: "No Individual Dependency",
+        DifferentiatorsDescription: "Don't have to worry about attrition/loss of contacts due to attrition.                                                                                 "
     },
     {
         DifferentiatorsLogo: `/df5.png`,
         DifferentiatorsName: "Overall cost-effective",
-        DifferentiatorsDescription: "Cheaper than hiring a full-time ecosystem manager in NA/Europe and not too much upfront."
+        DifferentiatorsDescription: "Cheaper than hiring a full-time ecosystem manager in NA/Europe and not too much upfront.                                                           "
     }
 ];
+
 const OurDifferentiators = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
