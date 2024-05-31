@@ -10,33 +10,35 @@ const Alliance = () => {
     navigate("/");
   };
 
-    return (
-        <>
-            <div className='flex flex-col sm:mx-20 2xl:mx-32 sm:pt-6 xl:pt-16 sm:h-screen sm:gap-6 mt-2 sm:mt-0 mx-6 mb-16 sm:mb-0'>
-                <div className='flex flex-row justify-between'>
-                    <div className='text-xl sm:text-2xl font-medium sm:font-semibold text-customBlack py-4 sm:py-0'>
-                        <div className='grid'>
-                            <div className='relative'>
-                                <div className='absolute -top-8 -right-8 h-8 w-8'>
-                                    <img src="doublequotes.jpg" alt='Double Quotes' />
-                                </div>
-                                <div className=''>
-                                    Enabling Alliances to Growth Techs / Startups
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button
-                        className='hidden sm:flex border-[3px] text-lg font-normal text-white bg-customBlue  w-max items-center justify-center py-1.5 px-4  rounded-xl cursor-pointer  tracking-wider shadow-md hover:text-customBlue hover:bg-white hover:border-white'
-                        onClick={handleMainMenu}>
-                        Main Menu
-                    </button>
-                    <button
-                        className='text-customBlue sm:hidden'
-                        onClick={handleMainMenu}>
-                        <IoExitOutline size={30} />
-                    </button>
+  return (
+    <>
+      <div className="flex flex-col sm:mx-20 2xl:mx-32 sm:pt-6 xl:pt-16 sm:h-screen sm:gap-6 mt-2 sm:mt-0 mx-6 mb-16 sm:mb-0">
+        <div className="flex flex-row justify-between">
+          <div className="text-xl sm:text-2xl font-medium sm:font-semibold text-customBlack py-4 sm:py-0">
+            <div className="grid">
+              <div className="relative">
+                <div className="sm:flex hidden absolute -top-8 -right-8 h-8 w-8">
+                  <img src="doublequotes.jpg" alt="Double Quotes" />
                 </div>
+                <div className="">
+                  Enabling Alliances to Growth Techs / Startups
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            className="hidden sm:flex border-[3px] text-lg font-normal text-white bg-customBlue  w-max items-center justify-center py-1.5 px-4  rounded-xl cursor-pointer  tracking-wider shadow-md hover:text-customBlue hover:bg-white hover:border-white"
+            onClick={handleMainMenu}
+          >
+            Main Menu
+          </button>
+          <button
+            className="text-customBlue sm:hidden"
+            onClick={handleMainMenu}
+          >
+            <IoExitOutline size={30} />
+          </button>
+        </div>
 
         <div>
           <div className="grid grid-flow-row sm:grid-flow-col gap-24 sm:gap-32 justify-center xl:pt-6">
