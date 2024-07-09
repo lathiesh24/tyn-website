@@ -8,9 +8,11 @@ import AdvisoryTeam from "./AdvisoryTeam";
 import OurDifferentiators from "./OurDifferentiators";
 import Footer from "./Footer";
 import OurIdeology from "./OurIdeology";
+import { useNavigate } from "react-router-dom";
 
 const Homepage = () => {
   const [activeSection, setActiveSection] = useState("home");
+  const navigate = useNavigate();
 
   const handleNavigation = (sectionId) => {
     const section = document.getElementById(sectionId);
@@ -23,6 +25,10 @@ const Homepage = () => {
       });
       setActiveSection(sectionId);
     }
+  };
+
+  const handleEventNavigation = () => {
+    navigate("/event");
   };
 
   useEffect(() => {
@@ -69,11 +75,21 @@ const Homepage = () => {
         <div className="sm:flex hidden absolute  left-0">
           <img src="/circle2.png" alt="/" className="sm:h-[70vh] sm:w-auto" />
         </div>
+        <div
+          className="sm:flex hidden absolute -bottom-8 right-16 cursor-pointer"
+          onClick={handleEventNavigation}
+        >
+          <img
+            src="/YInfinity.png"
+            alt="YInfinity"
+            className="sm:h-48 sm:w-auto"
+          />
+        </div>
 
         <div className="z-10 text-center">
           <section
             id="home"
-            className="flex flex-col items-center justify-center  h-[100vh]"
+            className="flex flex-col items-center justify-center  h-screen"
           >
             <div className="flex flex-col text-2xl sm:text-6xl font-medium tracking-wide">
               <span className="text-customBlack">
