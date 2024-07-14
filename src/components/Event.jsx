@@ -63,11 +63,11 @@ const Event = () => {
           </div>
         </div>
       </div>
-      <div className="mx-auto flex flex-col gap-4 justify-center items-center mt-20 animate-fadeInUp delay-1200 relative bg-customBlue bg-opacity-50 text-white rounded-lg shadow-xl py-6 w-3/4">
+      <div className="flex flex-col mt-12 justify-start items-start">
         <div className="text-3xl font-semibold mb-4 text-center">
           Event Overview
         </div>
-        <div className="mb-4 max-w-3xl mx-auto text-center text-lg leading-relaxed">
+        <div className="mb-4 max-w-3xl text-lg leading-relaxed">
           YInfinity is an exclusive invite-only CXO Innovation Summit, themed
           around "Sustainable Innovation through Ecosystems." This event brings
           together top executives and industry leaders to explore innovative
