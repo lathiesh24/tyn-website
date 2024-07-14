@@ -15,7 +15,7 @@ const Event = () => {
       </div>
       <div
         className="relative bg-center bg-cover h-screen"
-        style={{ backgroundImage: 'url("/eventImage.webp")' }}
+        style={{ backgroundImage: 'url("/bgevent11.jpg")' }}
       >
         <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 text-center p-4">
           <div className="flex flex-col bg-white bg-opacity-75 py-5 pl-4 pr-16 rounded-2xl font-medium items-start mb-12">
