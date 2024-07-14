@@ -3,7 +3,7 @@ import "./App.css";
 import Homepage from "./components/Homepage";
 import Alliance from "./components/Alliance";
 import CoInnovation from "./components/CoInnovation";
-import EventPage from "./components/EventPage";
+import Event from "./components/Event";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <Route path="/" element={<Homepage />} exact />
         <Route path="/alliance" element={<Alliance />} exact />
         <Route path="/co-innovation" element={<CoInnovation />} exact />
-        <Route path="/event" element={<EventPage />} exact />
+        <Route path="/event" element={<Event />} exact />
       </Routes>
     </>
   );

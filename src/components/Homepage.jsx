@@ -11,6 +11,34 @@ import OurIdeology from "./OurIdeology";
 import { useNavigate } from "react-router-dom";
 
 const Homepage = () => {
+  const sentences = [
+    "Synthetic sentences 1",
+    "Synthetic sentences 2",
+    "Synthetic sentences 3",
+  ];
+  const [currentSentence, setCurrentSentence] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSentence(
+        (prevSentence) => (prevSentence + 1) % (sentences.length * 2)
+      );
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [sentences.length]);
+
+  useEffect(() => {
+    if (currentSentence === sentences.length) {
+      setIsTransitioning(false);
+      setCurrentSentence(0);
+      setTimeout(() => {
+        setIsTransitioning(true);
+      }, 20);
+    }
+  }, [currentSentence, sentences.length]);
+
   const [activeSection, setActiveSection] = useState("home");
   const navigate = useNavigate();
 
@@ -65,31 +93,24 @@ const Homepage = () => {
         handleNavigation={handleNavigation}
       />
       <div className="relative flex items-center justify-center bg-white overflow-hidden">
-        {/* <div className="absolute inset-0">
-          <div className="border-8 absolute w-64 h-64 sm:w-[400px] border-customYellow sm:h-[400px]  rounded-full opacity-20 -left-32 sm:-left-64 top-1/4"></div>
-          <div className="absolute border-8 w-64 h-64 sm:w-[400px] border-customYellow sm:h-[400px] bg-customGradient rounded-full opacity-20 -right-32 sm:-right-64 top-1/4"></div>
-        </div> */}
         <div className="sm:flex hidden absolute  right-0">
           <img src="/circle1.png" alt="/" className="sm:h-[70vh] sm:w-auto" />
         </div>
         <div className="sm:flex hidden absolute  left-0">
           <img src="/circle2.png" alt="/" className="sm:h-[70vh] sm:w-auto" />
         </div>
+
         <div
-          className="sm:flex hidden absolute -bottom-8 right-16 cursor-pointer"
+          className="flex sm:hidden absolute bottom-0 right-0 cursor-pointer z-50"
           onClick={handleEventNavigation}
         >
-          <img
-            src="/YInfinity.png"
-            alt="YInfinity"
-            className="sm:h-48 sm:w-auto"
-          />
+          <img src="/YInfinity.png" alt="YInfinity" className="h-36 w-auto" />
         </div>
 
         <div className="z-10 text-center">
           <section
             id="home"
-            className="flex flex-col items-center justify-center  h-screen"
+            className="flex flex-col items-center justify-center h-screen"
           >
             <div className="flex flex-col text-2xl sm:text-6xl font-medium tracking-wide">
               <span className="text-customBlack">
@@ -109,12 +130,54 @@ const Homepage = () => {
         </div>
       </div>
 
-      <section id="what-we-do">
-        <WhatWeDo />
-      </section>
+      <div className="flex flex-row bg-bgBlue h-[40vh] mx-auto items-center shadow-md">
+        <div
+          className="sm:flex hidden cursor-pointer"
+          onClick={handleEventNavigation}
+        >
+          <img
+            src="/YInfinity.png"
+            alt="YInfinity"
+            className="sm:h-[90vh] sm:w-auto"
+          />
+        </div>
+        <div className="flex flex-col items-center">
+          <div className="relative overflow-hidden h-10 w-full">
+            <div
+              className={`flex ${
+                isTransitioning ? "transition-transform duration-1000" : ""
+              }`}
+              style={{
+                transform: `translateX(-${
+                  (currentSentence % sentences.length) * 100
+                }%)`,
+              }}
+            >
+              {sentences.concat(sentences).map((sentence, index) => (
+                <div
+                  key={index}
+                  className="w-full flex-shrink-0 flex justify-center items-center"
+                >
+                  {sentence}
+                </div>
+              ))}
+            </div>
+          </div>
+          <div
+            className={`border bg-sky-600 text-white hover:text-customBlue shadow hover:bg-white py-1.5 px-8 rounded-3xl cursor-pointer mt-4`}
+            onClick={handleEventNavigation}
+          >
+            See More
+          </div>
+        </div>
+      </div>
 
       <section id="about-us">
         <OurMission />
+      </section>
+
+      <section id="what-we-do" className="mt-16">
+        <WhatWeDo />
       </section>
 
       <section>
