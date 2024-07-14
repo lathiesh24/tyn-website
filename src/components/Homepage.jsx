@@ -135,11 +135,7 @@ const Homepage = () => {
           className="sm:flex hidden cursor-pointer"
           onClick={handleEventNavigation}
         >
-          <img
-            src="/YInfinity.png"
-            alt="YInfinity"
-            className="sm:h-[90vh] sm:w-auto"
-          />
+          <img src="/YInfinity.png" alt="YInfinity" className="h-4 sm:w-auto" />
         </div>
         <div className="flex flex-col items-center">
           <div className="relative overflow-hidden h-10 w-full">
