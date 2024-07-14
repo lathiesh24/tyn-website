@@ -25,7 +25,7 @@ const Event = () => {
             <div className="opacity-100 py-12">
               <img src="/YInfinity.png" alt="Logo" className="h-24" />
             </div>
-            <hr className="w-2/5 border-customYellow border-[1px] mb-2 -mt-4" />
+            <hr className="w-2/5 border-customBlue border-[1px] mb-2 -mt-4" />
             <div className="flex flex-row gap-10 ">
               <div className="text-sm uppercase font-medium text-left">
                 <div>CONFERENCE DAY</div>
@@ -36,7 +36,7 @@ const Event = () => {
                 <div>Coimbatore</div>
               </div>
             </div>
-            <hr className="w-2/5 border-customYellow border-[1px] mt-2 mb-6" />
+            <hr className="w-2/5 border-customBlue border-[1px] mt-2 mb-6" />
             <div className="flex flex-row gap-2 justify-center w-max cursor-pointer font-semibold items-center text-customBlue hover:text-white bg-white hover:bg-customBlue rounded-full px-4 py-2 transition duration-300 ease-in-out transform hover:scale-110">
               <button className="w-max font-bold rounded-full">Register</button>
               <FaArrowRight className="transition-transform duration-300" />
