@@ -10,6 +10,8 @@ module.exports = {
         homebg: "ur('/homebg.png')",
         "custom-gradient":
           "linear-gradient(90.76deg, #2287C0 6.67%, #00C1EC 58.25%, #83FBD6 89.58%)",
+        "custom-yellow-gradient":
+          "linear-gradient(90deg, #f6f3b5 10%,  #f4f87b 50%, #f1c232 90%)",
       },
       boxShadow: {
         customAdCard: "5px 5px 25px 1px rgba(14, 14, 14, 0.19)",

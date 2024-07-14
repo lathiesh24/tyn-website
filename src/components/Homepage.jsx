@@ -12,9 +12,9 @@ import { useNavigate } from "react-router-dom";
 
 const Homepage = () => {
   const sentences = [
-    "Synthetic sentences 1",
-    "Synthetic sentences 2",
-    "Synthetic sentences 3",
+    "Discover Sustainable Innovation and Network with Industry Leaders!",
+    "Register Now to Secure Your Spot!",
+    "Join Us on Sept, 2024, from 10:00 AM to 2:00 PM",
   ];
   const [currentSentence, setCurrentSentence] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(true);
@@ -130,15 +130,22 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div className="flex flex-row bg-bgBlue h-[40vh] mx-auto items-center shadow-md">
+      <div className="flex flex-row shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] bg-bgBlue justify-around h-[10vh] fixed bottom-0 items-center w-full z-50">
+        {/* YInfinity image */}
         <div
-          className="sm:flex hidden cursor-pointer"
+          className="sm:flex hidden cursor-pointer p-10 w-2/12"
           onClick={handleEventNavigation}
         >
-          <img src="/YInfinity.png" alt="YInfinity" className="h-4 sm:w-auto" />
+          <img
+            src="/YInfinity.png"
+            alt="YInfinity"
+            className="sm:h-[7vh] sm:w-auto"
+          />
         </div>
-        <div className="flex flex-col items-center">
-          <div className="relative overflow-hidden h-10 w-full">
+        {/* scrolling banner */}
+
+        <div className="w-8/12 flex flex-col items-center" onClick={handleEventNavigation}>
+          <div className="relative overflow-hidden h-10">
             <div
               className={`flex ${
                 isTransitioning ? "transition-transform duration-1000" : ""
@@ -149,22 +156,40 @@ const Homepage = () => {
                 }%)`,
               }}
             >
-              {sentences.concat(sentences).map((sentence, index) => (
-                <div
-                  key={index}
-                  className="w-full flex-shrink-0 flex justify-center items-center"
-                >
-                  {sentence}
-                </div>
-              ))}
+              {sentences.concat(sentences).map((sentence, index) => {
+                let colorClass;
+                switch (index % sentences.length) {
+                  case 0:
+                    colorClass = "bg-custom-gradient text-transparent bg-clip-text"; // Dark blue for the first sentence
+                    break;
+                  case 1:
+                    colorClass = "bg-custom-yellow-gradient text-transparent bg-clip-text"; // Bright yellow for the second sentence (CTA)
+                    break;
+                  case 2:
+                    colorClass = "bg-custom-gradient text-transparent bg-clip-text"; 
+                    break;
+                  default:
+                    colorClass = "text-gray-800"; 
+                }
+                return (
+                  <div
+                    key={`${sentence}-${index}`} // Unique key for each element
+                    className={`w-full font-medium italic capitalize text-2xl flex-shrink-0 flex justify-center items-center ${colorClass}`}
+                  >
+                    {sentence}
+                  </div>
+                );
+              })}
             </div>
           </div>
-          <div
-            className={`border bg-sky-600 text-white hover:text-customBlue shadow hover:bg-white py-1.5 px-8 rounded-3xl cursor-pointer mt-4`}
-            onClick={handleEventNavigation}
-          >
-            See More
-          </div>
+        </div>
+
+        {/* Join us button */}
+        <div
+          className={`border cursor-pointer bg-sky-600 text-white hover:text-customBlue shadow hover:bg-white py-1.5 px-8 rounded-3xl`}
+          onClick={handleEventNavigation}
+        >
+          Join Us!
         </div>
       </div>
 
