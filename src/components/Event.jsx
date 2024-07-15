@@ -25,40 +25,21 @@ const Event = () => {
             <div className="opacity-100 py-12">
               <img src="/YInfinity.png" alt="Logo" className="h-24" />
             </div>
+            <hr className="w-2/5 border-customBlue border-[1px] mb-2 -mt-4" />
+            <div className="flex flex-row gap-10 ">
+              <div className="text-sm uppercase font-medium text-left">
+                <div>CONFERENCE DAY</div>
+                <div>July 15, 2024</div>
+              </div>
+              <div className="text-sm uppercase font-medium text-left">
+                <div>VENUE</div>
+                <div>Coimbatore</div>
+              </div>
+            </div>
+            <hr className="w-2/5 border-customBlue border-[1px] mt-2 mb-6" />
             <div className="flex flex-row gap-2 justify-center w-max cursor-pointer font-semibold items-center text-customBlue hover:text-white bg-white hover:bg-customBlue rounded-full px-4 py-2 transition duration-300 ease-in-out transform hover:scale-110">
               <button className="w-max font-bold rounded-full">Register</button>
               <FaArrowRight className="transition-transform duration-300" />
-            </div>
-          </div>
-          <div className="mx-auto px-4">
-            <div className="flex flex-wrap justify-center">
-              <div className="text-left event-card w-60 m-4 p-4 bg-gray-200 opacity-90 shadow-lg rounded-lg flex flex-row gap-4 items-start transition transform hover:scale-105 animate-fadeInUp delay-600">
-                <div className="icon bg-customBlue text-white p-4 rounded-full">
-                  <FaCalendarAlt className="text-2xl" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold">Date</h3>
-                  <p>July 15, 2024</p>
-                </div>
-              </div>
-              <div className="text-left event-card w-max m-4 p-4 bg-gray-200 opacity-90 shadow-md rounded-lg flex flex-row gap-4 items-start transition transform hover:scale-105 animate-fadeInUp delay-800">
-                <div className="icon bg-customBlue text-white p-4 rounded-full">
-                  <FaClock className="text-2xl" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold">Time</h3>
-                  <p>10:00 AM - 2:00 PM</p>
-                </div>
-              </div>
-              <div className="text-left event-card w-64 m-4 p-4 bg-gray-200 opacity-90 shadow-md rounded-lg flex flex-row gap-4 items-start transition transform hover:scale-105 animate-fadeInUp delay-1000">
-                <div className="icon bg-customBlue text-white p-4 rounded-full">
-                  <FaMapMarkerAlt className="text-2xl" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold">Venue</h3>
-                  <p>PSG Street, City</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
