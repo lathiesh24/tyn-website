@@ -9,10 +9,12 @@ import OurDifferentiators from "./OurDifferentiators";
 import Footer from "./Footer";
 import OurIdeology from "./OurIdeology";
 import { useNavigate } from "react-router-dom";
+import SeptEvent from "./SeptEvent";
+import SeptEventMob from "./SeptEventMob";
 
 const Homepage = () => {
   const sentences = [
-    "Discover Sustainable Innovation and Network with Industry Leaders!",
+    "Sustainable Innovation and Network with Industry Leaders!",
     "Register Now to Secure Your Spot!",
     "Join Us on Sept, 2024, from 10:00 AM to 2:00 PM",
   ];
@@ -100,13 +102,6 @@ const Homepage = () => {
           <img src="/circle2.png" alt="/" className="sm:h-[70vh] sm:w-auto" />
         </div>
 
-        <div
-          className="flex sm:hidden absolute bottom-0 right-0 cursor-pointer z-50"
-          onClick={handleEventNavigation}
-        >
-          <img src="/YInfinity.png" alt="YInfinity" className="h-36 w-auto" />
-        </div>
-
         <div className="z-10 text-center">
           <section
             id="home"
@@ -130,66 +125,23 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div className="flex flex-row shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] bg-bgBlue justify-around h-[10vh] fixed bottom-0 items-center w-full z-50">
-        {/* YInfinity image */}
-        <div
-          className="sm:flex hidden cursor-pointer p-10 w-2/12"
-          onClick={handleEventNavigation}
-        >
-          <img
-            src="/YInfinity.png"
-            alt="YInfinity"
-            className="sm:h-[7vh] sm:w-auto"
+      <div>
+        <div className="hidden md:block">
+          <SeptEvent
+            handleEventNavigation={handleEventNavigation}
+            sentences={sentences}
+            currentSentence={currentSentence}
+            isTransitioning={isTransitioning}
           />
         </div>
-        {/* scrolling banner */}
 
-        <div className="w-8/12 flex flex-col items-center" onClick={handleEventNavigation}>
-          <div className="relative overflow-hidden h-10">
-            <div
-              className={`flex ${
-                isTransitioning ? "transition-transform duration-1000" : ""
-              }`}
-              style={{
-                transform: `translateX(-${
-                  (currentSentence % sentences.length) * 100
-                }%)`,
-              }}
-            >
-              {sentences.concat(sentences).map((sentence, index) => {
-                let colorClass;
-                switch (index % sentences.length) {
-                  case 0:
-                    colorClass = "bg-custom-gradient text-transparent bg-clip-text"; // Dark blue for the first sentence
-                    break;
-                  case 1:
-                    colorClass = "bg-custom-yellow-gradient text-transparent bg-clip-text"; // Bright yellow for the second sentence (CTA)
-                    break;
-                  case 2:
-                    colorClass = "bg-custom-gradient text-transparent bg-clip-text"; 
-                    break;
-                  default:
-                    colorClass = "text-gray-800"; 
-                }
-                return (
-                  <div
-                    key={`${sentence}-${index}`} // Unique key for each element
-                    className={`w-full font-medium italic capitalize text-2xl flex-shrink-0 flex justify-center items-center ${colorClass}`}
-                  >
-                    {sentence}
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-
-        {/* Join us button */}
-        <div
-          className={`border cursor-pointer bg-sky-600 text-white hover:text-customBlue shadow hover:bg-white py-1.5 px-8 rounded-3xl`}
-          onClick={handleEventNavigation}
-        >
-          Join Us!
+        <div className="md:hidden">
+          <SeptEventMob
+            handleEventNavigation={handleEventNavigation}
+            sentences={sentences}
+            currentSentence={currentSentence}
+            isTransitioning={isTransitioning}
+          />
         </div>
       </div>
 
