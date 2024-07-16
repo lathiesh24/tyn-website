@@ -95,10 +95,10 @@ const Homepage = () => {
         handleNavigation={handleNavigation}
       />
       <div className="relative flex items-center justify-center bg-white overflow-hidden">
-        <div className="sm:flex hidden absolute  right-0">
+        <div className="sm:flex hidden absolute right-0">
           <img src="/circle1.png" alt="/" className="sm:h-[70vh] sm:w-auto" />
         </div>
-        <div className="sm:flex hidden absolute  left-0">
+        <div className="sm:flex hidden absolute left-0">
           <img src="/circle2.png" alt="/" className="sm:h-[70vh] sm:w-auto" />
         </div>
 
@@ -187,6 +187,7 @@ const Homepage = () => {
           onClick={handleEventNavigation}
         >
           Join Us!
+        </div>
         <div className="md:hidden">
           <SeptEventMob
             handleEventNavigation={handleEventNavigation}

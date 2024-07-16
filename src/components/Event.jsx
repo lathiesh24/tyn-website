@@ -15,11 +15,9 @@ import {
 import Footer from "./Footer";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../firebase";
-import { useNavigate } from "react-router-dom";
 
 const Event = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
-  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -35,15 +33,6 @@ const Event = () => {
     mealPreference: "",
     travelAssistance: "",
   });
-  const [selectedDetail, setSelectedDetail] = useState(null);
-
-  const handleIconClick = (detail) => {
-    setSelectedDetail(detail);
-  };
-
-  const handleMainMenu = () => {
-    navigate("/");
-  };
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
