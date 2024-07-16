@@ -9,10 +9,12 @@ import OurDifferentiators from "./OurDifferentiators";
 import Footer from "./Footer";
 import OurIdeology from "./OurIdeology";
 import { useNavigate } from "react-router-dom";
+import SeptEvent from "./SeptEvent";
+import SeptEventMob from "./SeptEventMob";
 
 const Homepage = () => {
   const sentences = [
-    "Discover Sustainable Innovation and Network with Industry Leaders!",
+    "Sustainable Innovation and Network with Industry Leaders!",
     "Register Now to Secure Your Spot!",
     "Join Us on Sept, 2024, from 10:00 AM to 2:00 PM",
   ];
@@ -100,13 +102,6 @@ const Homepage = () => {
           <img src="/circle2.png" alt="/" className="sm:h-[70vh] sm:w-auto" />
         </div>
 
-        <div
-          className="flex sm:hidden absolute bottom-0 right-0 cursor-pointer z-50"
-          onClick={handleEventNavigation}
-        >
-          <img src="/YInfinity.png" alt="YInfinity" className="h-36 w-auto" />
-        </div>
-
         <div className="z-10 text-center">
           <section
             id="home"
@@ -130,19 +125,15 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div className="flex flex-row shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] bg-bgBlue justify-around h-[10vh] fixed bottom-0 items-center w-full z-50">
-        {/* YInfinity image */}
-        <div
-          className="sm:flex hidden cursor-pointer p-10 w-2/12"
-          onClick={handleEventNavigation}
-        >
-          <img
-            src="/YInfinity.png"
-            alt="YInfinity"
-            className="sm:h-[7vh] sm:w-auto"
+      <div>
+        <div className="hidden md:block">
+          <SeptEvent
+            handleEventNavigation={handleEventNavigation}
+            sentences={sentences}
+            currentSentence={currentSentence}
+            isTransitioning={isTransitioning}
           />
         </div>
-        {/* scrolling banner */}
 
         <div
           className="w-8/12 flex flex-col items-center"
@@ -196,6 +187,13 @@ const Homepage = () => {
           onClick={handleEventNavigation}
         >
           Join Us!
+        <div className="md:hidden">
+          <SeptEventMob
+            handleEventNavigation={handleEventNavigation}
+            sentences={sentences}
+            currentSentence={currentSentence}
+            isTransitioning={isTransitioning}
+          />
         </div>
       </div>
 
