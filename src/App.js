@@ -3,7 +3,7 @@ import "./App.css";
 import Homepage from "./components/Homepage";
 import Alliance from "./components/Alliance";
 import CoInnovation from "./components/CoInnovation";
-import Event from "./components/Event";
+import Event from "./components/EventReworked";
 
 function App() {
   return (
