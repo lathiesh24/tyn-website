@@ -1,18 +1,16 @@
-import React from 'react';
+import React from "react";
 
-const SeptEventMob = ({ handleEventNavigation, sentences, currentSentence, isTransitioning }) => {
+const SeptEventMob = ({
+  handleEventNavigation,
+  sentences,
+  currentSentence,
+  isTransitioning,
+}) => {
   return (
     <div className="flex flex-row shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] bg-bgBlue justify-around h-[10vh] fixed bottom-0 items-center w-full z-50">
       {/* YInfinity image */}
-      <div
-        className="cursor-pointer p-10"
-        onClick={handleEventNavigation}
-      >
-        <img
-          src="/YInfinity.png"
-          alt="YInfinity"
-          className="h-[4vh] w-auto"
-        />
+      <div className="cursor-pointer p-10" onClick={handleEventNavigation}>
+        <img src="/YInfinity.png" alt="YInfinity" className="h-[4vh] w-auto" />
       </div>
       {/* scrolling banner */}
       {/* <div
@@ -64,10 +62,10 @@ const SeptEventMob = ({ handleEventNavigation, sentences, currentSentence, isTra
         className={`border cursor-pointer bg-sky-600 text-white hover:text-customBlue shadow hover:bg-white py-1.5 px-8 rounded-3xl`}
         onClick={handleEventNavigation}
       >
-        Join Us on Sept!
+        Join Us!
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default SeptEventMob;

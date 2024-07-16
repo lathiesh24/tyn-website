@@ -7,3 +7,20 @@
     animation: marquee 15s linear infinite;
   }
   
+/* Add to your custom CSS file */
+.custom-select {
+  position: relative;
+}
+
+.custom-select select {
+  display: block;
+  width: 100%;
+}
+
+.custom-select::after {
+  content: '\25BC';
+  position: absolute;
+  right: 10px;
+  top: calc(50% - 0.5em);
+  pointer-events: none;
+}
