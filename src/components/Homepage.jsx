@@ -135,59 +135,6 @@ const Homepage = () => {
           />
         </div>
 
-        <div
-          className="w-8/12 flex flex-col items-center"
-          onClick={handleEventNavigation}
-        >
-          <div className="relative overflow-hidden h-10">
-            <div
-              className={`flex ${
-                isTransitioning ? "transition-transform duration-1000" : ""
-              }`}
-              style={{
-                transform: `translateX(-${
-                  (currentSentence % sentences.length) * 100
-                }%)`,
-              }}
-            >
-              {sentences.concat(sentences).map((sentence, index) => {
-                let colorClass;
-                switch (index % sentences.length) {
-                  case 0:
-                    colorClass =
-                      "bg-custom-gradient text-transparent bg-clip-text"; // Dark blue for the first sentence
-                    break;
-                  case 1:
-                    colorClass =
-                      "bg-custom-gradient text-transparent bg-clip-text"; // Bright yellow for the second sentence (CTA)
-                    break;
-                  case 2:
-                    colorClass =
-                      "bg-custom-gradient text-transparent bg-clip-text";
-                    break;
-                  default:
-                    colorClass = "text-gray-800";
-                }
-                return (
-                  <div
-                    key={`${sentence}-${index}`} // Unique key for each element
-                    className={`w-full font-medium italic capitalize text-2xl flex-shrink-0 flex justify-center items-center ${colorClass}`}
-                  >
-                    {sentence}
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-
-        {/* Join us button */}
-        <div
-          className={`border cursor-pointer bg-sky-600 text-white hover:text-customBlue shadow hover:bg-white py-1.5 px-8 rounded-3xl`}
-          onClick={handleEventNavigation}
-        >
-          Join Us!
-        </div>
         <div className="md:hidden">
           <SeptEventMob
             handleEventNavigation={handleEventNavigation}
