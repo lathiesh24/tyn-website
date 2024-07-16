@@ -232,7 +232,7 @@ const EventPage = () => {
           <form onSubmit={handleFormSubmit} className="space-y-4">
             <div className="flex flex-row gap-4">
               <div className="flex-1">
-                <label className="text-gray-700">First Name</label>
+                <label className="text-gray-900">First Name</label>
                 <input
                   type="text"
                   name="firstName"
@@ -243,7 +243,7 @@ const EventPage = () => {
                 />
               </div>
               <div className="flex-1">
-                <label className="text-gray-700">Last Name</label>
+                <label className="text-gray-900">Last Name</label>
                 <input
                   type="text"
                   name="lastName"
@@ -256,7 +256,7 @@ const EventPage = () => {
             </div>
 
             <div>
-              <label className="text-gray-700">Designation</label>
+              <label className="text-gray-900">Designation</label>
               <input
                 type="text"
                 name="designation"
@@ -268,7 +268,7 @@ const EventPage = () => {
             </div>
 
             <div>
-              <label className="text-gray-700">Company</label>
+              <label className="text-gray-900">Company</label>
               <input
                 type="text"
                 name="company"
@@ -279,7 +279,7 @@ const EventPage = () => {
               />
             </div>
             <div>
-              <label className="text-gray-700">Division</label>
+              <label className="text-gray-900">Division</label>
               <input
                 type="text"
                 name="division"
@@ -290,7 +290,7 @@ const EventPage = () => {
               />
             </div>
             <div>
-              <label className="text-gray-700">Sector / Industry</label>
+              <label className="text-gray-900">Sector / Industry</label>
               <input
                 type="text"
                 name="sector"
@@ -301,7 +301,7 @@ const EventPage = () => {
               />
             </div>
             <div>
-              <label className="text-gray-700">
+              <label className="text-gray-900">
                 Would you like to share your thoughts on 'Sustainable innovation
                 through ecosystem'?
               </label>
@@ -318,7 +318,7 @@ const EventPage = () => {
               </select>
             </div>
             <div>
-              <label className="text-gray-700">Contact Number (Whatsapp)</label>
+              <label className="text-gray-900">Contact Number (Whatsapp)</label>
               <input
                 type="text"
                 name="contactNumber"
@@ -330,7 +330,7 @@ const EventPage = () => {
             </div>
             <div className="flex flex-row gap-4">
               <div className="flex-1">
-                <label className="text-gray-700">Person to follow up</label>
+                <label className="text-gray-900">Person to follow up</label>
                 <input
                   type="text"
                   name="followUpPerson"
@@ -341,7 +341,7 @@ const EventPage = () => {
                 />
               </div>
               <div className="flex-1">
-                <label className="text-gray-700">Contact</label>
+                <label className="text-gray-900">Contact</label>
                 <input
                   type="text"
                   name="followUpContact"
@@ -353,7 +353,7 @@ const EventPage = () => {
               </div>
             </div>
             <div>
-              <label className="text-gray-700">Meal Preferences</label>
+              <label className="text-gray-900">Meal Preferences</label>
               <select
                 name="mealPreference"
                 value={formData.mealPreference}
@@ -367,7 +367,7 @@ const EventPage = () => {
               </select>
             </div>
             <div>
-              <label className="text-gray-700">
+              <label className="text-gray-900">
                 Would you need any assistance with travel & accommodation?
               </label>
               <select
@@ -572,14 +572,14 @@ const EventPage = () => {
         <div className=" max-h-[70vh] p-6 bg-white rounded-lg shadow-lg overflow-y-auto scrollbar-w-2  scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar scrollbar-thumb-gray-400 scrollbar-track-slate-100 relative">
           <button
             onClick={() => setModalIsOpen(false)}
-            className="absolute top-[26px] right-2 text-gray-700 hover:text-gray-900"
+            className="absolute top-[26px] right-2 text-gray-900 hover:text-gray-900"
           >
             <FaTimes size={20} />
           </button>
           <div className="text-xl font-bold mb-4">Register for the Event</div>
           <form onSubmit={handleFormSubmit} className="space-y-4 text-sm">
             <div className="">
-              <label className="text-gray-700">First Name</label>
+              <label className="text-gray-900">First Name</label>
               <input
                 type="text"
                 name="firstName"
@@ -590,7 +590,7 @@ const EventPage = () => {
               />
             </div>
             <div className="">
-              <label className="text-gray-700">Last Name</label>
+              <label className="text-gray-900">Last Name</label>
               <input
                 type="text"
                 name="lastName"
@@ -602,7 +602,7 @@ const EventPage = () => {
             </div>
 
             <div>
-              <label className="text-gray-700">Designation</label>
+              <label className="text-gray-900">Designation</label>
               <input
                 type="text"
                 name="designation"
@@ -614,7 +614,7 @@ const EventPage = () => {
             </div>
 
             <div>
-              <label className="text-gray-700">Company</label>
+              <label className="text-gray-900">Company</label>
               <input
                 type="text"
                 name="company"
@@ -625,7 +625,7 @@ const EventPage = () => {
               />
             </div>
             <div>
-              <label className="text-gray-700">Division</label>
+              <label className="text-gray-900">Division</label>
               <input
                 type="text"
                 name="division"
@@ -636,7 +636,7 @@ const EventPage = () => {
               />
             </div>
             <div>
-              <label className="text-gray-700">Sector / Industry</label>
+              <label className="text-gray-900">Sector / Industry</label>
               <input
                 type="text"
                 name="sector"
@@ -647,7 +647,7 @@ const EventPage = () => {
               />
             </div>
             <div>
-              <label className="text-gray-700">
+              <label className="text-gray-900">
                 Would you like to share your thoughts on 'Sustainable innovation
                 through ecosystem'?
               </label>
@@ -664,7 +664,7 @@ const EventPage = () => {
               </select>
             </div>
             <div>
-              <label className="text-gray-700">Contact Number (Whatsapp)</label>
+              <label className="text-gray-900">Contact Number (Whatsapp)</label>
               <input
                 type="text"
                 name="contactNumber"
@@ -675,7 +675,7 @@ const EventPage = () => {
               />
             </div>
             <div className="">
-              <label className="text-gray-700">Person to follow up</label>
+              <label className="text-gray-900">Person to follow up</label>
               <input
                 type="text"
                 name="followUpPerson"
@@ -686,7 +686,7 @@ const EventPage = () => {
               />
             </div>
             <div className="">
-              <label className="text-gray-700">Contact</label>
+              <label className="text-gray-900">Contact</label>
               <input
                 type="text"
                 name="followUpContact"
@@ -697,7 +697,7 @@ const EventPage = () => {
               />
             </div>
             <div>
-              <label className="text-gray-700">Meal Preferences</label>
+              <label className="text-gray-900">Meal Preferences</label>
               <select
                 name="mealPreference"
                 value={formData.mealPreference}
@@ -711,7 +711,7 @@ const EventPage = () => {
               </select>
             </div>
             <div>
-              <label className="text-gray-700">
+              <label className="text-gray-900">
                 Would you need any assistance with travel & accommodation?
               </label>
               <select

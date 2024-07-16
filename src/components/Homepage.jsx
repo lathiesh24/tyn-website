@@ -144,7 +144,10 @@ const Homepage = () => {
         </div>
         {/* scrolling banner */}
 
-        <div className="w-8/12 flex flex-col items-center" onClick={handleEventNavigation}>
+        <div
+          className="w-8/12 flex flex-col items-center"
+          onClick={handleEventNavigation}
+        >
           <div className="relative overflow-hidden h-10">
             <div
               className={`flex ${
@@ -160,16 +163,19 @@ const Homepage = () => {
                 let colorClass;
                 switch (index % sentences.length) {
                   case 0:
-                    colorClass = "bg-custom-gradient text-transparent bg-clip-text"; // Dark blue for the first sentence
+                    colorClass =
+                      "bg-custom-gradient text-transparent bg-clip-text"; // Dark blue for the first sentence
                     break;
                   case 1:
-                    colorClass = "bg-custom-yellow-gradient text-transparent bg-clip-text"; // Bright yellow for the second sentence (CTA)
+                    colorClass =
+                      "bg-custom-gradient text-transparent bg-clip-text"; // Bright yellow for the second sentence (CTA)
                     break;
                   case 2:
-                    colorClass = "bg-custom-gradient text-transparent bg-clip-text"; 
+                    colorClass =
+                      "bg-custom-gradient text-transparent bg-clip-text";
                     break;
                   default:
-                    colorClass = "text-gray-800"; 
+                    colorClass = "text-gray-800";
                 }
                 return (
                   <div
