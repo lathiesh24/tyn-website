@@ -4,19 +4,15 @@ import { FaArrowRight, FaTimes } from "react-icons/fa";
 import Footer from "./Footer";
 import { db } from "../firebase";
 import { collection, addDoc } from "firebase/firestore";
-import { useNavigate } from "react-router-dom";
 import Modal from "react-modal";
 
 const EventReworked = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
-  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     designation: "",
     company: "",
-    division: "",
-    sector: "",
     thoughtsOnInnovation: "",
     shareThoughts: "",
     contactNumber: "",
@@ -271,16 +267,16 @@ const EventReworked = () => {
         <Footer />
       </div>
 
-      <Modal
+      {/* <Modal
         isOpen={modalIsOpen}
         onRequestClose={() => setModalIsOpen(false)}
-        className="fixed inset-0 flex items-center sm:hidden justify-center z-50"
+        className="fixed inset-0 flex items-center justify-center z-50 sm:hidden"
         overlayClassName="fixed inset-0 bg-black bg-opacity-50"
       >
-        <div className="max-h-[70vh] p-6 bg-white rounded-lg shadow-lg overflow-y-auto scrollbar-w-2 scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar scrollbar-thumb-gray-400 scrollbar-track-slate-100 relative">
+        <div className="max-h-[70vh] p-6 bg-white rounded-lg shadow-lg overflow-y-auto relative w-11/12 max-w-md mx-auto">
           <button
             onClick={() => setModalIsOpen(false)}
-            className="absolute top-[26px] right-2 text-gray-900 hover:text-gray-900"
+            className="absolute top-2 right-2 text-gray-900 hover:text-gray-900"
           >
             <FaTimes size={20} />
           </button>
@@ -330,28 +326,7 @@ const EventReworked = () => {
                 required
               />
             </div>
-            <div>
-              <label className="text-gray-900">Division</label>
-              <input
-                type="text"
-                name="division"
-                value={formData.division}
-                onChange={handleInputChange}
-                className="w-full p-2 border border-gray-300 rounded"
-                required
-              />
-            </div>
-            <div>
-              <label className="text-gray-900">Sector / Industry</label>
-              <input
-                type="text"
-                name="sector"
-                value={formData.sector}
-                onChange={handleInputChange}
-                className="w-full p-2 border border-gray-300 rounded"
-                required
-              />
-            </div>
+
             <div>
               <label className="text-gray-900">
                 Would you like to share your thoughts on 'Sustainable innovation
@@ -388,7 +363,6 @@ const EventReworked = () => {
                 value={formData.followUpPerson}
                 onChange={handleInputChange}
                 className="w-full p-2 border border-gray-300 rounded"
-                required
               />
             </div>
             <div>
@@ -399,7 +373,6 @@ const EventReworked = () => {
                 value={formData.followUpContact}
                 onChange={handleInputChange}
                 className="w-full p-2 border border-gray-300 rounded"
-                required
               />
             </div>
             <div>
@@ -442,15 +415,15 @@ const EventReworked = () => {
             </div>
           </form>
         </div>
-      </Modal>
+      </Modal> */}
 
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={() => setModalIsOpen(false)}
-        className="fixed inset-0 items-center justify-center hidden mt-24 sm:flex z-50"
+        className="fixed inset-0 flex items-center justify-center z-50"
         overlayClassName="fixed inset-0 bg-black bg-opacity-50"
       >
-        <div className="w-[450px] max-h-[80vh] p-6 bg-white rounded-lg shadow-lg overflow-y-auto scrollbar-w-2 scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar scrollbar-thumb-gray-400 scrollbar-track-slate-100 relative">
+        <div className="w-11/12 max-h-[70vh] sm:w-[450px] sm:max-h-[80vh] p-4 sm:p-6 bg-white rounded-lg shadow-lg overflow-y-auto relative">
           <button
             onClick={() => setModalIsOpen(false)}
             className="absolute top-4 right-4 text-gray-900 hover:text-gray-900"
@@ -459,7 +432,7 @@ const EventReworked = () => {
           </button>
           <div className="text-2xl font-bold mb-4">Register for the Event</div>
           <form onSubmit={handleFormSubmit} className="space-y-4">
-            <div className="flex flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <div className="flex-1">
                 <label className="text-gray-900">First Name</label>
                 <input
@@ -509,17 +482,6 @@ const EventReworked = () => {
             </div>
 
             <div>
-              <label className="text-gray-900">Sector / Industry</label>
-              <input
-                type="text"
-                name="sector"
-                value={formData.sector}
-                onChange={handleInputChange}
-                className="w-full p-2 border border-gray-300 rounded"
-                required
-              />
-            </div>
-            <div>
               <label className="text-gray-900">
                 Would you like to share your thoughts on 'Sustainable innovation
                 through ecosystem'?
@@ -547,7 +509,7 @@ const EventReworked = () => {
                 required
               />
             </div>
-            <div className="flex flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <div className="flex-1">
                 <label className="text-gray-900">Person to follow up</label>
                 <input
@@ -556,7 +518,6 @@ const EventReworked = () => {
                   value={formData.followUpPerson}
                   onChange={handleInputChange}
                   className="w-full p-2 border border-gray-300 rounded"
-                  required
                 />
               </div>
               <div className="flex-1">
@@ -567,7 +528,6 @@ const EventReworked = () => {
                   value={formData.followUpContact}
                   onChange={handleInputChange}
                   className="w-full p-2 border border-gray-300 rounded"
-                  required
                 />
               </div>
             </div>
