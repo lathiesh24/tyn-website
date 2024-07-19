@@ -233,7 +233,7 @@ const EventReworked = () => {
 
       <div className="flex flex-col sm:px-16">
         <div className="relative flex justify-center items-center text-3xl sm:text-5xl font-medium py-16 sm:py-32 mx-auto">
-          <div className="absolute top-12 -right-8">
+          <div className="absolute top-12 -right-8 sm:top-24  sm:-right-8">
             <img
               src="doublequotes.jpg"
               alt="Double Quotes"
@@ -423,7 +423,7 @@ const EventReworked = () => {
         className="fixed inset-0 flex items-center justify-center z-50"
         overlayClassName="fixed inset-0 bg-black bg-opacity-50"
       >
-        <div className="w-11/12 max-h-[70vh] sm:w-[450px] sm:max-h-[80vh] p-4 sm:p-6 bg-white rounded-lg shadow-lg overflow-y-auto relative">
+        <div className="w-11/12 max-h-[70vh] sm:w-[450px] sm:max-h-[70vh] p-4 sm:p-6 bg-white rounded-lg shadow-lg overflow-y-auto relative">
           <button
             onClick={() => setModalIsOpen(false)}
             className="absolute top-4 right-4 text-gray-900 hover:text-gray-900"
