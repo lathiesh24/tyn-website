@@ -169,19 +169,21 @@ const EventReworked = () => {
         <div className="flex flex-col gap-10">
           <div className="flex flex-col gap-2 bg-blue-50 px-6 py-6 rounded-lg ">
             <div className="text-customBlack font-medium text-xl">
-              Interact with Industry Leader
+              Network with Industry leaders
             </div>
             <div className="text-customGreyishBlack">
-              Connect with top executives and thought leaders
+              Connect and converse with thought leaders on ecosystem led
+              innovation
             </div>
           </div>
 
           <div className="flex flex-col gap-2 bg-blue-50 px-6 py-6 rounded-lg ">
             <div className="text-customBlack font-medium text-xl">
-              From the lens of Global Innovators
+              Tap the power of global innovators
             </div>
             <div className="text-customGreyishBlack">
-              Explore how global enterprises leverage ecosystems for growth
+              Explore how the global innovation ecosystem is leveraged for
+              growth.
             </div>
           </div>
           <div className="flex flex-col gap-2 bg-blue-50  px-6  py-6 rounded-lg ">
@@ -189,8 +191,16 @@ const EventReworked = () => {
               Collaborate for Impact
             </div>
             <div className="text-customGreyishBlack">
-              Discover ecosystems can leverage academia for excelling in
-              Innovation
+              Discover how enterprises can leverage academia for excelling in
+              innovation
+            </div>
+          </div>
+          <div className="flex flex-col gap-2 bg-blue-50  px-6  py-6 rounded-lg ">
+            <div className="text-customBlack font-medium text-xl">
+              Understand cutting edge technologies.
+            </div>
+            <div className="text-customGreyishBlack">
+              Emerging tech showcases from the industry.
             </div>
           </div>
         </div>
