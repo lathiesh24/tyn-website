@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import { IoIosArrowBack } from "react-icons/io";
-import { IoIosArrowForward } from "react-icons/io";
+import React from "react";
 
 const IdeologyData = [
   {
@@ -31,19 +29,19 @@ const IdeologyData = [
 ];
 
 const OurIdeology = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // const [currentIndex, setCurrentIndex] = useState(0);
 
-  const goToPrevious = () => {
-    const newIndex =
-      currentIndex === 0 ? IdeologyData.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
-  };
+  // const goToPrevious = () => {
+  //   const newIndex =
+  //     currentIndex === 0 ? IdeologyData.length - 1 : currentIndex - 1;
+  //   setCurrentIndex(newIndex);
+  // };
 
-  const goToNext = () => {
-    const newIndex =
-      currentIndex === IdeologyData.length - 1 ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
-  };
+  // const goToNext = () => {
+  //   const newIndex =
+  //     currentIndex === IdeologyData.length - 1 ? 0 : currentIndex + 1;
+  //   setCurrentIndex(newIndex);
+  // };
 
   return (
     <div className="flex flex-col justify-center items-center pt-8 sm:pt-12">

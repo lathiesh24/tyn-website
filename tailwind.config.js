@@ -7,7 +7,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        homebg: "ur('/homebg.png')",
+        homebg: "url('/homebg.png')",
         "custom-gradient":
           "linear-gradient(90.76deg, #2287C0 6.67%, #00C1EC 58.25%, #83FBD6 89.58%)",
         "custom-yellow-gradient":
@@ -23,6 +23,15 @@ module.exports = {
         customGreyishBlack: "#626262",
         bgBlue: "#F0FAFF",
         borderBlue: "#BBE6FF",
+      },
+      keyframes: {
+        scroll: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(calc(-100% - var(--gap)))" },
+        },
+      },
+      animation: {
+        marquee: "scroll 15s linear infinite",
       },
     },
   },

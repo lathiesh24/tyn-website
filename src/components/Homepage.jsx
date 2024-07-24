@@ -9,8 +9,8 @@ import OurDifferentiators from "./OurDifferentiators";
 import Footer from "./Footer";
 import OurIdeology from "./OurIdeology";
 import { useNavigate } from "react-router-dom";
-import SeptEvent from "./SeptEvent";
-import SeptEventMob from "./SeptEventMob";
+import SeptEvent from "./EventPage/SeptEvent";
+import SeptEventMob from "./EventPage/SeptEventMob";
 
 const Homepage = () => {
   const sentences = [
