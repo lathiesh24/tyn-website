@@ -7,35 +7,35 @@ const cardData = [
     role: "CTO, HDFC Life",
     roleDescription:
       "With 25+ years across Europe, India, and Southeast Asia, HDFC Life's CTO leads their digital revolution. He drives fintech innovations like wealth platforms and digital lending, and mentors startups in deep tech and fintech.",
-    image: "/dummyimage.jpg",
+    image: "/rohit.jpeg",
   },
   {
     name: "Sujatha Gopal",
     role: "CTO, TCS Business Group",
     roleDescription:
       "Expert in Web3.0, Metaverse, FinOps, Hybrid Cloud, Generative AI, and AIOps. She excels in transforming futuristic concepts into practical technology solutions.",
-    image: "/dummyimage.jpg",
+    image: "/sujathagopal.jpg",
   },
   {
     name: "Dr.Somasundaram Balasubramaniam",
     role: "Head of Digital Transformation, ELGI",
     roleDescription:
       "Industry and academia bridge with expertise in Industry 4.0 and Six Sigma. He implements cutting-edge practices at multinationals and is a published researcher with 30+ works.",
-    image: "/dummyimage.jpg",
+    image: "/somasundharam.jpeg",
   },
   {
     name: "Andy David",
     role: "Advisor to Israel Innovation Minister",
     roleDescription:
       "International networking professional specializing in tech, innovation, and wealth creation through global investment and innovation collaborations.",
-    image: "/dummyimage.jpg",
+    image: "/AndyDavid.jpg",
   },
   {
     name: "Swetha Suresh",
     role: "Head of Innovations, Swissnex",
     roleDescription:
       "Cambridge-educated scientist leading innovation. She excels in program management and collaborates with diverse groups to bring new initiatives to life.",
-    image: "/dummyimage.jpg",
+    image: "/swethasuresh.jpg",
   },
 ];
 
