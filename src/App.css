@@ -3,15 +3,21 @@
 @tailwind utilities;
 
 @keyframes scroll {
-    from {
+    0% {
         transform: translateX(0);
     }
 
-    to {
-        transform: translateX(calc(-100% - 1rem));
+    100% {
+        transform: translateX(-50%);
     }
 }
 
 .scroll {
-    animation: scroll 10s linear infinite;
+    display: flex;
+    animation: scroll 5s linear infinite;
+}
+
+.scroll-container {
+    display: flex;
+    width: 200%;
 }
