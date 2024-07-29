@@ -17,8 +17,8 @@ const Footer = ({ handleNavigation }) => {
   return (
     <div className="flex flex-col">
       {/* For mobile   */}
-      <div className="mx-6 xl:mx-20 flex flex-col md:flex-row-reverse md:justify-between gap-6 mt-10">
-        <div className="font-medium text-lg flex flex-col gap-1">
+      <div className="mx-6 xl:mx-20 flex flex-col md:flex-row-reverse md:justify-between gap-8 mt-10">
+        <div className="font-medium text-lg flex flex-col gap-1.5">
           <div>Services</div>
           <p
             className="font-normal text-customGreyishBlack cursor-pointer"
@@ -34,7 +34,7 @@ const Footer = ({ handleNavigation }) => {
           </p>
         </div>
 
-        <div className="font-medium text-lg flex flex-col gap-1">
+        <div className="font-medium text-lg flex flex-col gap-1.5">
           <div>Company</div>
           <p
             onClick={() => handleNavigation("about-us")}
@@ -65,7 +65,7 @@ const Footer = ({ handleNavigation }) => {
           </div>
         </div>
 
-        <div className="font-medium text-lg flex flex-col gap-4 leading-8">
+        <div className="font-medium text-lg flex flex-col gap-8 leading-8">
           <div>
             <div>Contact</div>
             <a
@@ -78,7 +78,7 @@ const Footer = ({ handleNavigation }) => {
 
           <div>
             <div>Address</div>
-            <div className="font-normal text-customGreyishBlack w-60">
+            <div className="font-normal text-customGreyishBlack w-60 ">
               PSG Step, PSG College of Technology, Peelamedu, Coimbatore, Tamil
               Nadu 641004
             </div>
