@@ -16,7 +16,7 @@ const Homepage = () => {
   const sentences = [
     "Sustainable Innovation and Network with Industry Leaders!",
     "Register Now to Secure Your Spot!",
-    "Join Us on Sept, 2024, from 10:00 AM to 2:00 PM",
+    "Join Us on Sept 10 2024, from 5:00PM onwards!",
   ];
   const [currentSentence, setCurrentSentence] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(true);

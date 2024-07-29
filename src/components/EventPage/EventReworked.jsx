@@ -78,7 +78,7 @@ const EventReworked = () => {
               Sofitel BKC, Mumbai
             </div>
             <div className="text-2xl text-customBlack font-semibold sm:font-medium">
-              4:30pm Onwards
+              5:00PM Onwards
             </div>
           </div>
           <div></div>
