@@ -241,22 +241,22 @@ const EventReworked = () => {
           </div>
           Event Highlights
         </div>
-        <div className="flex flex-col sm:flex-row gap-12 justify-center items-center">
-          <div className="p-4 bg-white shadow-customAdCard rounded-xl w-80 h-28 sm:h-48 xl:h-32 flex items-center justify-center">
+        <div className="flex flex-col sm:flex-row gap-16 justify-center items-center text-customGreyishBlack">
+          <div className="p-4 bg-white shadow-customAdCard rounded-xl leading-loose w-80 h-36 sm:h-48 xl:h-32 flex items-center justify-center">
             <div>
               Panel discussion by TCS CMI CTO, Fortune 500 CTO & Startup CEOs
             </div>
           </div>
-          <div className="p-4 bg-white shadow-customAdCard rounded-xl w-80  h-28 sm:h-48 xl:h-32 flex items-center justify-center">
+          <div className="p-4 bg-white shadow-customAdCard rounded-xl leading-loose w-80  h-36 sm:h-48 xl:h-32 flex items-center justify-center">
             <div>
               Insights on Cross border ecosystem by the Advisor to Israel
               innovation minister &amp; the head of innovations, Swissnex.
             </div>
           </div>
-          <div className="p-4 bg-white shadow-customAdCard rounded-xl w-80 h-28 sm:h-48 xl:h-32 flex items-center justify-center">
+          <div className="p-4 bg-white shadow-customAdCard rounded-xl leading-loose w-80 h-36 sm:h-48 xl:h-32 flex items-center justify-center">
             <div>Emerging Tech/ Startup Showcases</div>
           </div>
-          <div className="p-4 bg-white shadow-customAdCard rounded-xl w-80 h-28 sm:h-48 xl:h-32 flex items-center justify-center">
+          <div className="p-4 bg-white shadow-customAdCard rounded-xl leading-loose w-80 h-36 sm:h-48 xl:h-32 flex items-center justify-center">
             <div>
               Academia as Innovation Hubs: Real-life case study from Head of
               Digital Transformation - ELGi
