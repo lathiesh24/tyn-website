@@ -112,9 +112,35 @@ const EventReworked = () => {
             event and discover strategies and insights on how ecosystems can
             empower innovation in your organization.
           </div>
-          <div>
+          {/* Fixed position button for mobile screens */}
+          <div className="fixed bottom-4 right-4 sm:hidden z-50">
             <button
-              className="flex flex-row items-center justify-center gap-2 bg-customBlue text-white py-2 px-4 rounded-md"
+              className="flex flex-row items-center justify-center gap-2 bg-customBlue text-white py-2 px-4 rounded-md "
+              onClick={openModal}
+            >
+              <div>Register</div>
+              <div>
+                <FaArrowRight />
+              </div>
+            </button>
+          </div>
+          {/* Fixed position button for mobile screens */}
+          <div className="fixed bottom-4 right-4 sm:hidden z-50">
+            <button
+              className="flex flex-row items-center justify-center gap-2 bg-customBlue text-white py-2 px-4 rounded-md "
+              onClick={openModal}
+            >
+              <div>Register</div>
+              <div>
+                <FaArrowRight />
+              </div>
+            </button>
+          </div>
+
+          {/* Normal position button for larger screens */}
+          <div className="hidden sm:block">
+            <button
+              className="flex flex-row items-center justify-center gap-2 bg-customBlue text-white py-2 px-4 rounded-md "
               onClick={openModal}
             >
               <div>Register</div>
@@ -166,7 +192,7 @@ const EventReworked = () => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-10 leading-loose">
           <div className="flex flex-col gap-2 bg-blue-50 px-6 py-6 rounded-lg ">
             <div className="text-customBlack font-medium text-xl">
               Network with Industry leaders
@@ -242,21 +268,21 @@ const EventReworked = () => {
           Event Highlights
         </div>
         <div className="flex flex-col sm:flex-row gap-16 justify-center items-center text-customGreyishBlack">
-          <div className="p-4 bg-white shadow-customAdCard rounded-xl leading-loose w-80 h-36 sm:h-48 xl:h-32 flex items-center justify-center">
+          <div className="p-4 bg-white text:base shadow-customAdCard rounded-xl leading-loose w-80 h-36 sm:h-80 xl:h-48 flex items-center justify-center">
             <div>
               Panel discussion by TCS CMI CTO, Fortune 500 CTO & Startup CEOs
             </div>
           </div>
-          <div className="p-4 bg-white shadow-customAdCard rounded-xl leading-loose w-80  h-36 sm:h-48 xl:h-32 flex items-center justify-center">
+          <div className="p-4 bg-white shadow-customAdCard rounded-xl leading-loose w-80  h-36 sm:h-80 xl:h-48 flex items-center justify-center">
             <div>
               Insights on Cross border ecosystem by the Advisor to Israel
               innovation minister &amp; the head of innovations, Swissnex.
             </div>
           </div>
-          <div className="p-4 bg-white shadow-customAdCard rounded-xl leading-loose w-80 h-36 sm:h-48 xl:h-32 flex items-center justify-center">
+          <div className="p-4 bg-white shadow-customAdCard rounded-xl leading-loose w-80 h-36 sm:h-80 xl:h-48 flex items-center justify-center">
             <div>Emerging Tech/ Startup Showcases</div>
           </div>
-          <div className="p-4 bg-white shadow-customAdCard rounded-xl leading-loose w-80 h-36 sm:h-48 xl:h-32 flex items-center justify-center">
+          <div className="p-4 bg-white shadow-customAdCard rounded-xl leading-loose w-80 h-36 sm:h-80 xl:h-48 flex items-center justify-center">
             <div>
               Academia as Innovation Hubs: Real-life case study from Head of
               Digital Transformation - ELGi
