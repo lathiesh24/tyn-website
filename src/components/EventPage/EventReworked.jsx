@@ -96,9 +96,7 @@ const EventReworked = () => {
           </div>
           <div>
             <span className="text-customBlack">Welcome to </span>
-            <span className="bg-custom-gradient text-transparent bg-clip-text">
-              Ynifity
-            </span>
+            <span className="text-customBlue">Ynifity</span>
           </div>
         </div>
       </div>
@@ -180,7 +178,7 @@ const EventReworked = () => {
         </div>
 
         <div className="flex sm:hidden text-3xl font-medium items-center justify-center">
-          <div className="relative my-12">
+          <div className="relative my-24">
             <div className="absolute -right-8 -top-6 ">
               <img
                 src="doublequotes.jpg"
@@ -188,11 +186,11 @@ const EventReworked = () => {
                 className="h-8 w-8"
               />
             </div>
-            <div className="text-customBlack ">Why attend?</div>
+            <div className="text-customBlack">Why attend?</div>
           </div>
         </div>
 
-        <div className="flex flex-col gap-10 leading-loose">
+        <div className="flex flex-col gap-16 leading-loose">
           <div className="flex flex-col gap-2 bg-blue-50 px-6 py-6 rounded-lg ">
             <div className="text-customBlack font-medium text-xl">
               Network with Industry leaders
@@ -232,12 +230,12 @@ const EventReworked = () => {
         </div>
       </div>
 
-      <div>
+      <div className="">
         <Speakers />
       </div>
 
       <div className="flex flex-col px-8 sm:px-16">
-        <div className="relative flex justify-center my-16 sm:my-16 items-center text-3xl sm:text-5xl font-medium mx-auto">
+        <div className="relative flex justify-center my-24 sm:my-16 items-center text-3xl sm:text-5xl font-medium mx-auto">
           <div className="absolute -right-8 -top-6 ">
             <img
               src="doublequotes.jpg"
@@ -248,7 +246,7 @@ const EventReworked = () => {
           Attendees
         </div>
 
-        <div className="text-xl sm:pt-8 pb-12 text-customGreyishBlack">
+        <div className="text-xl sm:pt-8 pb-24 sm:pb-12 text-customGreyishBlack">
           15+ CXOs from the likes of
         </div>
         <div>
@@ -256,8 +254,8 @@ const EventReworked = () => {
         </div>
       </div>
 
-      <div className="flex flex-col sm:px-16">
-        <div className="relative flex justify-center items-center text-3xl sm:text-5xl font-medium py-16 sm:py-32 mx-auto">
+      <div className="flex flex-col sm:px-16 ">
+        <div className="relative flex justify-center items-center text-3xl sm:text-5xl font-medium py-16 sm:py-32 mx-auto ">
           <div className="absolute top-12 -right-8 sm:top-24  sm:-right-8">
             <img
               src="doublequotes.jpg"
@@ -359,7 +357,7 @@ const EventReworked = () => {
               />
             </div>
 
-            <div>
+            {/* <div>
               <label className="text-gray-900">
                 Would you like to share your thoughts on 'Sustainable innovation
                 through ecosystem'?
@@ -375,7 +373,7 @@ const EventReworked = () => {
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
               </select>
-            </div>
+            </div> */}
             <div>
               <label className="text-gray-900">Contact Number (Whatsapp)</label>
               <input
