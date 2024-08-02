@@ -136,7 +136,11 @@ const EventReworked = () => {
           </div>
         </div>
         <div className="flex justify-center items-center">
-          <video className="sm:w-3/4 sm:h-5/6" controls poster="/YInfinity.png">
+          <video
+            className="sm:w-3/4 sm:h-5/6"
+            controls
+            poster="/YInfinity-thumbnail.png"
+          >
             <source src="/Ynfinity Teaser.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
