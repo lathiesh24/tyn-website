@@ -122,19 +122,6 @@ const EventReworked = () => {
               </div>
             </button>
           </div>
-          {/* Fixed position button for mobile screens */}
-          <div className="fixed bottom-4 right-4 sm:hidden z-50">
-            <button
-              className="flex flex-row items-center justify-center gap-2 bg-customBlue text-white py-2 px-4 rounded-md "
-              onClick={openModal}
-            >
-              <div>Register</div>
-              <div>
-                <FaArrowRight />
-              </div>
-            </button>
-          </div>
-
           {/* Normal position button for larger screens */}
           <div className="hidden sm:block">
             <button
@@ -148,11 +135,8 @@ const EventReworked = () => {
             </button>
           </div>
         </div>
-        {/* <div className="hidden sm:flex justify-center">
-          <img src="/Group 1.png" alt="event" className="w-72" />
-        </div> */}
         <div className="flex justify-center items-center">
-          <video className="sm:w-3/4 sm:h-5/6" controls>
+          <video className="sm:w-3/4 sm:h-5/6" controls poster="/YInfinity.png">
             <source src="/Ynfinity Teaser.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
