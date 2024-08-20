@@ -242,38 +242,34 @@ const EventReworked = () => {
         </div>
       </div>
 
-      <div className="flex flex-col sm:px-16 ">
-        <div className="relative flex justify-center items-center text-3xl sm:text-5xl font-medium py-16 sm:py-32 mx-auto ">
-          <div className="absolute top-12 -right-8 sm:top-24  sm:-right-8">
+      <div className="flex flex-col px-8 sm:px-16">
+        <div className="relative flex justify-center mt-32 sm:mt-40 mb-20 sm:mb-28 items-center text-3xl sm:text-5xl font-medium mx-auto text-center">
+          <div className="absolute right-0 -top-8">
             <img
               src="doublequotes.jpg"
               alt="Double Quotes"
-              className="h-7 w-7 sm:h-8 sm:w-8"
+              className="h-8 w-8"
             />
           </div>
-          Event Highlights
+          Our Emerging Tech Partners
         </div>
-        <div className="flex flex-col sm:flex-row gap-16 justify-center items-center text-customGreyishBlack">
-          <div className="p-4 bg-white text:base shadow-customAdCard rounded-xl leading-loose w-80 h-36 sm:h-80 xl:h-48 flex items-center justify-center">
-            <div>
-              Panel discussion by TCS CMI CTO, Fortune 500 CTO & Startup CEOs
-            </div>
-          </div>
-          <div className="p-4 bg-white shadow-customAdCard rounded-xl leading-loose w-80  h-36 sm:h-80 xl:h-48 flex items-center justify-center">
-            <div>
-              Insights on Cross border ecosystem by the Advisor to Israel
-              innovation minister &amp; the head of innovations, Swissnex.
-            </div>
-          </div>
-          <div className="p-4 bg-white shadow-customAdCard rounded-xl leading-loose w-80 h-36 sm:h-80 xl:h-48 flex items-center justify-center">
-            <div>Emerging Tech/ Startup Showcases</div>
-          </div>
-          <div className="p-4 bg-white shadow-customAdCard rounded-xl leading-loose w-80 h-36 sm:h-80 xl:h-48 flex items-center justify-center">
-            <div>
-              Academia as Innovation Hubs: Real-life case study from Head of
-              Digital Transformation - ELGi
-            </div>
-          </div>
+        <div className="flex flex-wrap justify-between items-center select-none sm:gap-0">
+          <img
+            src="/cybermind.jpeg"
+            alt="Cybermind"
+            className="w-1/2 sm:w-1/5"
+          />
+          <img src="/thirdai.png" alt="Third AI" className="w-1/2 sm:w-1/5" />
+          <img
+            src="/gnani.png"
+            alt="Gnani"
+            className="w-1/2 sm:w-1/5  mt-16 sm:mt-0"
+          />
+          <img
+            src="/profit.co.png"
+            alt="Profit.co"
+            className="w-1/2 sm:w-1/5 mt-16 sm:mt-0"
+          />
         </div>
       </div>
 
