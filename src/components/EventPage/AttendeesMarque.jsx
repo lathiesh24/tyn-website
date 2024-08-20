@@ -46,7 +46,7 @@ const AttendeesMarquee = () => {
           initial={{ x: "4%" }}
           animate={{ x: "-100%" }}
           transition={{
-            duration: 30,
+            duration: 50,
             ease: "linear",
             repeat: Infinity,
           }}
@@ -66,7 +66,7 @@ const AttendeesMarquee = () => {
           initial={{ x: "100%" }}
           animate={{ x: "0%" }}
           transition={{
-            duration: 30,
+            duration: 50,
             ease: "linear",
             repeat: Infinity,
           }}
