@@ -34,7 +34,7 @@ const cardData = [
     name: "Swetha Suresh",
     role: "Head of Innovations, Swissnex",
     roleDescription:
-      "Cambridge-educated scientist leading innovation. She excels in program management and collaborates with diverse groups to bring new initiatives to life.",
+      "Dr. Swetha Suresh is the Head of Innovation at Swissnex India, connecting Switzerland’s innovation ecosystem to India. With expertise in healthtech, sustainability, and digitalization, she fosters market opportunities and bilateral initiatives. She holds a BTech in Industrial Biotechnology from Anna University and a PhD in Pharmacology from Cambridge University.",
     image: "/swethasuresh.jpg",
   },
 ];
