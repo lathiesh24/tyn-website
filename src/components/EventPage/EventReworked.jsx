@@ -7,6 +7,7 @@ import { collection, addDoc } from "firebase/firestore";
 import Modal from "react-modal";
 import Speakers from "./Speakers";
 import AttendeesMarquee from "./AttendeesMarque";
+import EmergingPartner from "./EmergingPartner";
 
 const EventReworked = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -253,23 +254,8 @@ const EventReworked = () => {
           </div>
           Our Emerging Tech Partners
         </div>
-        <div className="flex flex-wrap justify-between items-center select-none sm:gap-0">
-          <img
-            src="/cybermind.jpeg"
-            alt="Cybermind"
-            className="w-1/2 sm:w-1/5"
-          />
-          <img src="/thirdai.png" alt="Third AI" className="w-1/2 sm:w-1/5" />
-          <img
-            src="/gnani.png"
-            alt="Gnani"
-            className="w-1/2 sm:w-1/5  mt-16 sm:mt-0"
-          />
-          <img
-            src="/profit.co.png"
-            alt="Profit.co"
-            className="w-1/2 sm:w-1/5 mt-16 sm:mt-0"
-          />
+        <div>
+          <EmergingPartner/>
         </div>
       </div>
 
