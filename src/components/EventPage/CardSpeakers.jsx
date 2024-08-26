@@ -7,7 +7,7 @@ const cardData = [
     role: "CTO, HDFC Life",
     roleDescription:
       "Rohit, HDFC Life's CTO since November 2023, is a seasoned technology strategist with over 25 years of experience across the US, Southeast Asia, the Middle East, and Europe. He has held leadership roles at Tata, IBM, Aditya Birla Capital, and CMS, where he spearheaded the development of key digital public infrastructures like IRCTC, NPS, and cloud-based lending systems. At HDFC Life, he drives fintech innovations, including wealth platforms and digital lending, and mentors startups in deep tech and fintech..",
-    image: "/RohitKilam.jpg",
+    image: "/rohit.jpg",
   },
   {
     name: "Sujatha Gopal",
