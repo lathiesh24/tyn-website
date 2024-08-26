@@ -6,22 +6,15 @@ const cardData = [
     name: "Rohit.K",
     role: "CTO, HDFC Life",
     roleDescription:
-      "With 25+ years across Europe, India, and Southeast Asia, HDFC Life's CTO leads their digital revolution. He drives fintech innovations like wealth platforms and digital lending, and mentors startups in deep tech and fintech.",
-    image: "/rohit.jpeg",
+      "Rohit, HDFC Life's CTO since November 2023, is a seasoned technology strategist with over 25 years of experience across the US, Southeast Asia, the Middle East, and Europe. He has held leadership roles at Tata, IBM, Aditya Birla Capital, and CMS, where he spearheaded the development of key digital public infrastructures like IRCTC, NPS, and cloud-based lending systems. At HDFC Life, he drives fintech innovations, including wealth platforms and digital lending, and mentors startups in deep tech and fintech..",
+    image: "/RohitKilam.jpg",
   },
   {
     name: "Sujatha Gopal",
     role: "CTO, TCS Business Group",
     roleDescription:
-      "Expert in Web3.0, Metaverse, FinOps, Hybrid Cloud, Generative AI, and AIOps. She excels in transforming futuristic concepts into practical technology solutions.",
+      "Sujatha Gopal is the Chief Technology Officer of the Communication, Media & Information Service Business unit at Tata Consultancy Services. With over 25 years of experience, she excels in driving strategic technology transformations, enterprise architecture, and innovation across industries such as Banking, Manufacturing, and Retail. She leads initiatives in emerging technologies, including Generative AI, 5G Edge Computing, and Metaverse, while advising several CXOs on industry advancements.",
     image: "/sujathagopal.jpg",
-  },
-  {
-    name: "Dr.Somasundaram Balasubramaniam",
-    role: "Head of Digital Transformation, ELGI",
-    roleDescription:
-      "Industry and academia bridge with expertise in Industry 4.0 and Six Sigma. He implements cutting-edge practices at multinationals and is a published researcher with 30+ works.",
-    image: "/somasundharam.jpeg",
   },
   {
     name: "Andy David",
@@ -31,16 +24,31 @@ const cardData = [
     image: "/AndyDavid.jpg",
   },
   {
+    name: "Dr.Somasundaram Balasubramaniam",
+    role: "Head of Digital Transformation, ELGI",
+    roleDescription:
+      "Industry and academia bridge with expertise in Industry 4.0 and Six Sigma. He implements cutting-edge practices at multinationals and is a published researcher with 30+ works.",
+    image: "/somasundharam.jpeg",
+  },
+
+  {
     name: "Swetha Suresh",
     role: "Head of Innovations, Swissnex",
     roleDescription:
       "Dr. Swetha Suresh is the Head of Innovation at Swissnex India, connecting Switzerland’s innovation ecosystem to India. With expertise in healthtech, sustainability, and digitalization, she fosters market opportunities and bilateral initiatives. She holds a BTech in Industrial Biotechnology from Anna University and a PhD in Pharmacology from Cambridge University.",
     image: "/swethasuresh.jpg",
   },
+  {
+    name: "Anilkumar Singh",
+    role: "Commercial Vice President, SparkBeyond",
+    roleDescription:
+      "Anil brings deep expertise across Business, Technology and People management with a track record of scaling early stage companies and launching new business for established corporations. Prior to joining SparkBeyond , Anil has held leadership positions at Lazada (acquired by Alibaba) and Microsoft. At SparkBeyond he spearheads our commercial and delivery efforts globally.",
+    image: "/anilsingh.jpeg",
+  },
 ];
 
 const CardOurTeam = () => {
-  const [currentIndex, setCurrentIndex] = useState(4);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrevious = () => {
     const newIndex =
