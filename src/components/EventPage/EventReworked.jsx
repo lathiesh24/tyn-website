@@ -97,7 +97,7 @@ const EventReworked = () => {
           </div>
           <div>
             <span className="text-customBlack">Welcome to </span>
-            <span className="text-customBlue">Ynifity</span>
+            <span className="text-customBlue">Ynfinity</span>
           </div>
         </div>
       </div>
