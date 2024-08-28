@@ -20,7 +20,7 @@ const cardData = [
     name: "Andy David",
     role: "Advisor to Israel Innovation Minister",
     roleDescription:
-      "International networking professional specializing in tech, innovation, and wealth creation through global investment and innovation collaborations.",
+      "Dr. Andy David is currently leading the Innovation Task Force in Israel’s Ministry of Foreign Affairs. Additionally, he is an active LP investor in two Silicon Valley-based VCs and has been advising family offices in Israel on their international affairs.Previously he created and managed the Ministry of Foreign Affairs' department of Innovation Entrepreneurship and Technology, focusing on international innovation and technology ecosystem collaborations. Also, He served in the Israeli Air Force and RAFAEL – Israel’s Armament Development Authority.",
     image: "/AndyDavid.jpg",
   },
   {
