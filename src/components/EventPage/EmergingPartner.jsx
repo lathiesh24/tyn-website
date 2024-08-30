@@ -8,23 +8,25 @@ const images = [
   { src: "/gnani.png", alt: "Gnani" },
   { src: "/profit.co.png", alt: "Profit.co" },
   {src: "/Netix.png", alt: "Netix AI" },
-  {src:"/Pulralsight.png", alt:"Pluralsight"}
+  {src:"/Pluralsight.png", alt:"Pluralsight"}
 ];
 
 const AttendeesMarquee = () => {
   return (
     <>
-      <div className="relative sm:flex hidden justify-between items-center whitespace-nowrap select-none mx-32">
-          {images.map((item, index) => (
-            <div key={index} className="">
+      <div className="relative sm:flex hidden overflow-hidden whitespace-nowrap select-none">
+        <div className="flex gap-24 animate-marquee">
+          {images.concat(images).map((item, index) => (
+            <div key={index} className="flex flex-shrink-0 ">
               <img
                 src={item.src}
                 alt={item.alt}
-                className="w-48 full"
+                className="w-60 object-contain"
               />
             </div>
           ))}
         </div>
+      </div>
 
       {/* Motion div for mobile screens */}
       {/* Motion div for mobile screens */}
@@ -61,11 +63,7 @@ const AttendeesMarquee = () => {
         >
           {images.concat(images).map((item, index) => (
             <div key={index} className="mx-2">
-              <img
-                src={item.src}
-                alt={item.alt}
-                className="h-24 w-full"
-              />
+              <img src={item.src} alt={item.alt} className="h-24 w-full" />
             </div>
           ))}
         </motion.div>
