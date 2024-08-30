@@ -8,6 +8,7 @@ const images = [
   { src: "/gnani.png", alt: "Gnani" },
   { src: "/profit.co.png", alt: "Profit.co" },
   {src: "/Netix.png", alt: "Netix AI" },
+  {src:"/Pulralsight.png", alt:"Pluralsight"}
 ];
 
 const AttendeesMarquee = () => {
