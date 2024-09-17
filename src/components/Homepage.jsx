@@ -125,7 +125,7 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div>
+      {/* <div>
         <div className="hidden md:block">
           <SeptEvent
             handleEventNavigation={handleEventNavigation}
@@ -143,7 +143,7 @@ const Homepage = () => {
             isTransitioning={isTransitioning}
           />
         </div>
-      </div>
+      </div> */}
 
       <section id="about-us">
         <OurMission />
