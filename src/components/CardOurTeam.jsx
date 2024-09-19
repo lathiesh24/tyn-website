@@ -45,13 +45,6 @@ const cardData = [
     image: "/velan.png",
   },
   {
-    name: "Bharathima Suriya",
-    role: "Growth Lead",
-    roleDescription:
-      "A Entrepreneurial aspirant with appreciable knowledge in Marketing and Business development. With learnings & experiences across startups.",
-    image: "/bharathi.png",
-  },
-  {
     name: "Rakesh Mahendran",
     role: "Software Developer",
     roleDescription:

@@ -2,6 +2,7 @@ import React from "react";
 import { IoExitOutline } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import Navbar from "./Navbar";
 
 const Alliance = () => {
   const navigate = useNavigate();
@@ -12,6 +13,7 @@ const Alliance = () => {
 
   return (
     <>
+    <Navbar/>
       <div className="flex flex-col sm:mx-20 2xl:mx-32 sm:pt-6 xl:pt-16 sm:h-screen sm:gap-6 mt-2 sm:mt-0 mx-6 mb-16 sm:mb-0">
         <div className="flex flex-row justify-between">
           <div className="text-xl sm:text-2xl font-medium sm:font-semibold text-customBlack py-4 sm:py-0">
@@ -26,7 +28,7 @@ const Alliance = () => {
               </div>
             </div>
           </div>
-          <button
+          {/* <button
             className="hidden sm:flex border-[3px] text-lg font-normal text-white bg-customBlue  w-max items-center justify-center py-1.5 px-4  rounded-xl cursor-pointer  tracking-wider shadow-md hover:text-customBlue hover:bg-white hover:border-white"
             onClick={handleMainMenu}
           >
@@ -37,7 +39,7 @@ const Alliance = () => {
             onClick={handleMainMenu}
           >
             <IoExitOutline size={30} />
-          </button>
+          </button> */}
         </div>
 
         <div>

@@ -1,29 +1,40 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Navbar = ({ activeSection }) => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleIconNavigation = () => {
     navigate("/");
   };
 
+  const scrollToSection = (section) => {
+    const sectionElement = document.getElementById(section);
+    if (sectionElement) {
+      const navbarHeight = document.querySelector(".fixed").offsetHeight;
+      const sectionTop = sectionElement.offsetTop - navbarHeight;
+      window.scrollTo({
+        top: sectionTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
   const handleLinkNavigation = (section) => {
-    navigate(`/#${section}`);
-    setTimeout(() => {
-      const sectionElement = document.getElementById(section);
-      if (sectionElement) {
-        const navbarHeight = document.querySelector(".fixed").offsetHeight;
-        const sectionTop = sectionElement.offsetTop - navbarHeight;
-        window.scrollTo({
-          top: sectionTop,
-          behavior: "smooth",
-        });
-      }
-    }, 0);
+    if (location.pathname !== "/") {
+      // If we're not on the homepage, navigate to the homepage first
+      navigate(`/#${section}`);
+      setTimeout(() => {
+        scrollToSection(section);
+      }, 100); // Adjust the delay if needed
+    } else {
+      // If already on the homepage, just scroll to the section
+      scrollToSection(section);
+    }
     setIsOpen(false); // Close the mobile menu if it's open
   };
 

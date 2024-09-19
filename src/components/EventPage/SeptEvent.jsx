@@ -65,7 +65,7 @@ const SeptEvent = ({
         className={`border cursor-pointer bg-sky-600 text-white hover:text-customBlue shadow hover:bg-white py-1.5 px-8 rounded-3xl`}
         onClick={handleEventNavigation}
       >
-        Join Us!
+        See More!
       </div>
     </div>
   );

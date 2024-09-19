@@ -14,9 +14,7 @@ import SeptEventMob from "./EventPage/SeptEventMob";
 
 const Homepage = () => {
   const sentences = [
-    "Sustainable Innovation and Network with Industry Leaders!",
-    "Register Now to Secure Your Spot!",
-    "Join Us on Sept 10 2024, from 5:00PM onwards!",
+    "Ynfinity 2024 Mumbai"
   ];
   const [currentSentence, setCurrentSentence] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(true);
@@ -125,7 +123,7 @@ const Homepage = () => {
         </div>
       </div>
 
-      {/* <div>
+     <div>
         <div className="hidden md:block">
           <SeptEvent
             handleEventNavigation={handleEventNavigation}
@@ -143,7 +141,7 @@ const Homepage = () => {
             isTransitioning={isTransitioning}
           />
         </div>
-      </div> */}
+      </div>
 
       <section id="about-us">
         <OurMission />
