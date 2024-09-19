@@ -76,7 +76,7 @@ const Homepage = () => {
           scrollPosition >= sectionTop &&
           scrollPosition < sectionTop + sectionHeight
         ) {
-          setActiveSection(sectionId);
+          setActiveSection(sectionId);  
         }
       });
     };
