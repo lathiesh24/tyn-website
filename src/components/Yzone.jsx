@@ -8,8 +8,7 @@ const Yzone = () => {
     <div className="">
       <Navbar activeSection={activeSection} />
       <div className="">
-        <div className="relative flex flex-col justify-center items-center gap-24 h-screen">
-          {/* Background Image with reduced opacity */}
+        <div className="relative flex flex-col justify-center items-center gap-8 sm:gap-24 h-screen py-32">
           <div
             className="absolute inset-0 bg-cover bg-center opacity-30"
             style={{ backgroundImage: "url(/yzone-bg.jpeg)" }}
@@ -17,16 +16,20 @@ const Yzone = () => {
 
           {/* Content goes here */}
           <div className="relative z-10">
-            <img src="/yzone-logo.png" alt="Y-Zone Logo" className="w-48" />
+            <img
+              src="/yzone-logo.png"
+              alt="Y-Zone Logo"
+              className="w-48 sm:w-48"
+            />
           </div>
-          <div className="relative z-10 font-semibold text-4xl text-customBlack">
+          <div className="relative z-10 font-semibold text-2xl sm:text-4xl text-customBlack">
             An Agile Innovation Hub
           </div>
         </div>
 
-        <div className="flex flex-col gap-32 mx-64 py-24">
-          <div className="grid grid-cols-3 gap-4">
-            <div className="flex flex-col col-span-2 gap-8">
+        <div className="flex flex-col gap-16 sm:gap-32 mx-8 sm:mx-64 py-8 sm:py-24">
+          <div className="flex flex-col sm:grid sm:grid-cols-3 gap-8 sm:gap-4">
+            <div className="flex flex-col col-span-2 gap-4 sm:gap-8">
               <div className="flex text-2xl font-semibold text-customBlue">
                 Accelerating and Scaling Innovation Services
               </div>
@@ -44,11 +47,8 @@ const Yzone = () => {
               <img src="yzone1.png" alt="" />
             </div>
           </div>
-          <div className="grid grid-cols-3 gap-8">
-            <div>
-              <img src="yzone2.png" alt="" />
-            </div>
-            <div className="flex flex-col col-span-2 gap-4">
+          <div className="flex flex-col sm:grid sm:grid-cols-3 gap-8 sm:gap-4">
+            <div className="flex flex-col col-span-2 gap-4 sm:gap-8">
               <div className="flex text-2xl font-semibold text-customBlue">
                 How YZone Works?
               </div>
@@ -62,9 +62,12 @@ const Yzone = () => {
                 next generation of talent and creating lasting industry impact.
               </div>
             </div>
+            <div>
+              <img src="yzone2.png" alt="" />
+            </div>
           </div>
-          <div className="grid grid-cols-3 gap-8">
-            <div className="flex flex-col col-span-2 gap-4">
+          <div className="flex flex-col sm:grid sm:grid-cols-3 gap-8 sm:gap-4">
+            <div className="flex flex-col col-span-2 gap-4 sm:gap-8">
               <div className="flex text-2xl font-semibold text-customBlue">
                 Enterprise problems
               </div>
