@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import { useNavigate, useLocation } from "react-router-dom";
@@ -25,22 +25,28 @@ const Navbar = ({ activeSection }) => {
   };
 
   const handleLinkNavigation = (section) => {
-    if (location.pathname !== "/") {
-      // If we're not on the homepage, navigate to the homepage first
-      navigate(`/#${section}`);
-      setTimeout(() => {
-        scrollToSection(section);
-      }, 100); // Adjust the delay if needed
+    if (section === "nifo") {
+      navigate("/nifo");
+      setIsOpen(false);
+    } else if (section === "yzone") {
+      navigate("/yzone");
+      setIsOpen(false);
     } else {
-      // If already on the homepage, just scroll to the section
-      scrollToSection(section);
+      if (location.pathname !== "/") {
+        navigate(`/#${section}`);
+        setTimeout(() => {
+          scrollToSection(section);
+        }, 100); 
+      } else {
+        scrollToSection(section);
+      }
+      setIsOpen(false); 
     }
-    setIsOpen(false); // Close the mobile menu if it's open
   };
 
   return (
     <>
-      <div className="fixed flex flex-row bg-white z-50 h-20 sm:h-24 w-full items-center justify-between">
+      <div className="fixed flex flex-row bg-white z-50 h-20 sm:h-16 w-full items-center justify-between">
         <div
           className="ml-4 sm:ml-8 cursor-pointer"
           onClick={handleIconNavigation}
@@ -93,6 +99,26 @@ const Navbar = ({ activeSection }) => {
             Our Team
           </div>
           <div
+            onClick={() => handleLinkNavigation("nifo")}
+            className={`mt-2 cursor-pointer ${
+              activeSection === "nifo"
+                ? "underline decoration-customYellow decoration-[3px]"
+                : ""
+            }`}
+          >
+            NIFO
+          </div>
+          <div
+            onClick={() => handleLinkNavigation("yzone")}
+            className={`mt-2 cursor-pointer ${
+              activeSection === "yzone"
+                ? "underline decoration-customYellow decoration-[3px]"
+                : ""
+            }`}
+          >
+            YZONE
+          </div>
+          <div
             onClick={() => handleLinkNavigation("contact-us")}
             className={`border bg-sky-600 text-white hover:text-customBlue shadow hover:bg-white py-1.5 px-8 rounded-3xl cursor-pointer ${
               activeSection === "contact-us"
@@ -138,6 +164,12 @@ const Navbar = ({ activeSection }) => {
               className="mt-2 cursor-pointer text-xl"
             >
               Our Team
+            </div>
+            <div
+              onClick={() => handleLinkNavigation("nifo")}
+              className="mt-2 cursor-pointer text-xl"
+            >
+              NIFO
             </div>
             <div
               onClick={() => handleLinkNavigation("contact-us")}

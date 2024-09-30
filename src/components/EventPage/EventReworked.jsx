@@ -111,8 +111,8 @@ const EventReworked = () => {
             event and discover strategies and insights on how ecosystems can
             empower innovation in your organization.
           </div>
-          {/* Fixed position button for mobile screens */}
-          <div className="fixed bottom-4 right-4 sm:hidden z-50">
+  
+          {/* <div className="fixed bottom-4 right-4 sm:hidden z-50">
             <button
               className="flex flex-row items-center justify-center gap-2 bg-customBlue text-white py-2 px-4 rounded-md "
               onClick={openModal}
@@ -122,9 +122,9 @@ const EventReworked = () => {
                 <FaArrowRight />
               </div>
             </button>
-          </div>
-          {/* Normal position button for larger screens */}
-          <div className="hidden sm:block">
+          </div> */}
+
+          {/* <div className="hidden sm:block">
             <button
               className="flex flex-row items-center justify-center gap-2 bg-customBlue text-white py-2 px-4 rounded-md "
               onClick={openModal}
@@ -134,7 +134,8 @@ const EventReworked = () => {
                 <FaArrowRight />
               </div>
             </button>
-          </div>
+          </div> */}
+
         </div>
         <div className="flex justify-center items-center">
           <video
@@ -158,11 +159,7 @@ const EventReworked = () => {
                 className="h-8 w-8"
               />
             </div>
-            <span className="text-customBlue">Y</span>
-            <span className="text-customBlack">I need to</span>
-          </div>
-          <div className="">
-            <span>attend</span>
+            <span className="text-customBlack">Highlights</span>
           </div>
         </div>
 
