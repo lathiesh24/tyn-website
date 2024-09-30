@@ -1,0 +1,93 @@
+import React from "react";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+
+const Yzone = () => {
+  const activeSection = "yzone";
+  return (
+    <div className="">
+      <Navbar activeSection={activeSection} />
+      <div className="">
+        <div className="relative flex flex-col justify-center items-center gap-24 h-screen">
+          {/* Background Image with reduced opacity */}
+          <div
+            className="absolute inset-0 bg-cover bg-center opacity-30"
+            style={{ backgroundImage: "url(/yzone-bg.jpeg)" }}
+          ></div>
+
+          {/* Content goes here */}
+          <div className="relative z-10">
+            <img src="/yzone-logo.png" alt="Y-Zone Logo" className="w-48" />
+          </div>
+          <div className="relative z-10 font-semibold text-4xl text-customBlack">
+            An Agile Innovation Hub
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-32 mx-64 py-24">
+          <div className="grid grid-cols-3 gap-4">
+            <div className="flex flex-col col-span-2 gap-8">
+              <div className="flex text-2xl font-semibold text-customBlue">
+                Accelerating and Scaling Innovation Services
+              </div>
+              <div className="text-customGreyishBlack text-lg">
+                Yzone is TYN’s model for delivering accelerated innovation
+                services, tailored to meet enterprise needs. Unlike traditional
+                industry-academia collaboration, Yzone leverages a talented pool
+                of engineering students trained by TYN’s core team in
+                cutting-edge digital technologies. Yzone’s Objective is to
+                provide ready-to-deploy innovation teams capable of delivering
+                impactful solutions.
+              </div>
+            </div>
+            <div className="">
+              <img src="yzone1.png" alt="" />
+            </div>
+          </div>
+          <div className="grid grid-cols-3 gap-8">
+            <div>
+              <img src="yzone2.png" alt="" />
+            </div>
+            <div className="flex flex-col col-span-2 gap-4">
+              <div className="flex text-2xl font-semibold text-customBlue">
+                How YZone Works?
+              </div>
+              <div className="text-customGreyishBlack text-lg">
+                Collaborative Ecosystem Yzone brings enterprises, startups, and
+                academia together for co-creation through innovation challenges,
+                internships, and PoCs, accelerating enterprise innovation by
+                offering scalable, skilled resources to solve real-world
+                problems. This initiative is central to TYN'’s mission to drive
+                co- innovation through talent’ integration by empowering the
+                next generation of talent and creating lasting industry impact.
+              </div>
+            </div>
+          </div>
+          <div className="grid grid-cols-3 gap-8">
+            <div className="flex flex-col col-span-2 gap-4">
+              <div className="flex text-2xl font-semibold text-customBlue">
+                Enterprise problems
+              </div>
+              <div className="text-customGreyishBlack text-lg">
+                Students are handpicked for each cohort and undergo TYN’s 3D
+                Learning program, which exposes them to various industries,
+                domain specialization, and technologies like GenaAl, Automation,
+                UI/UX and Full-Stack Development. Projects are managed
+                innovative solutions aligned with industry needs.
+              </div>
+            </div>
+            <div>
+              <img src="yzonebg.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="">
+        <Footer />
+      </div>
+    </div>
+  );
+};
+
+export default Yzone;
