@@ -8,19 +8,24 @@ const Nifo = () => {
   const [wordsVisible, setWordsVisible] = useState(0);
   const [fadeOut, setFadeOut] = useState(false);
   const [scrollY, setScrollY] = useState(0);
+
   const textArray = [
     "It provides ",
-    <span className="text-customYellow">contextualized search</span>,
+    <span key="1" className="text-customBlue">
+      contextualized search
+    </span>,
     " with curated insights tailored to specific business needs. ",
-    <span className="text-customYellow">
+    <span key="2" className="text-customBlue">
       NiFo's Trends and Spotlights feature
     </span>,
     " keeps enterprises updated on emerging technologies and key industry players. The platform goes beyond discovery by facilitating ",
-    <span className="text-customYellow">
+    <span key="3" className="text-customBlue">
       Secure Connections and Conversations
     </span>,
     ", allowing enterprises to engage with startups, SMEs, and experts in a safe, efficient environment. Whether you're a CIO seeking AI solutions or a consultant looking for innovation partners, NiFo acts as an ",
-    <span className="text-customYellow">intelligent co-pilot</span>,
+    <span key="4" className="text-customBlue">
+      intelligent co-pilot
+    </span>,
     ", guiding you from problem identification to execution.",
   ];
 
@@ -39,7 +44,7 @@ const Nifo = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const imageHeight = imageRef.current.offsetHeight;
+      const imageHeight = imageRef.current ? imageRef.current.offsetHeight : 0;
 
       // Adjust words visibility based on scroll
       const newVisibleWords = Math.min(
@@ -63,17 +68,17 @@ const Nifo = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [textArray.length]);
 
   return (
     <>
       <Navbar activeSection={activeSection} />
       <animated.div
         style={fadeSpring}
-        className="fixed inset-0 bg-gradient-to-b from-white via-white to-sky-200 grid grid-flow-col grid-cols-5 px-48"
+        className="fixed inset-0 bg-gradient-to-b from-white via-white to-sky-200 flex flex-col justify-center items-center sm:grid grid-flow-col sm:grid-cols-5 sm:px-48"
       >
-        <div className="flex flex-col justify-center items-center px-8 col-span-3">
-          <div className="font-semibold text-6xl text-customBlack">
+        <div className="mt-16 sm:mt-0 flex flex-col justify-center items-center px-8 sm:col-span-3">
+          <div className="font-semibold text-3xl sm:text-6xl text-customBlack">
             Your personalized innovation assistant
           </div>
           <div className="text-xl pt-4 leading-9 text-customGreyishBlack">
@@ -82,12 +87,12 @@ const Nifo = () => {
             Frictionless Orchestration
           </div>
         </div>
-        <div className="flex justify-center items-center col-span-2">
+        <div className="mt-8 flex justify-center items-center col-span-2">
           <div className="flex justify-around items-center flex-col rounded-md h-[400px] w-[350px] bg-white shadow-lg border-2">
             <div className="w-32 mx-auto flex justify-center items-center py-2">
               <img src="/nifo.png" alt="Nifo Logo" />
             </div>
-            <div className="-mt-4 mb-2">
+            <div className="flex-mt-4 mb-2">
               <animated.img
                 ref={imageRef}
                 style={imageSpring}
@@ -107,10 +112,19 @@ const Nifo = () => {
           </div>
         </div>
       </animated.div>
-      <div className="flex justify-center items-center h-screen">
+
+      {/* Desktop Background */}
+      <div className="hidden sm:flex justify-center items-center h-screen">
         <img src="/nifobg.png" alt="" className="w-3/4 mt-96" />
       </div>
-      <div className="text-2xl font-medium px-60 leading-loose h-screen justify-center items-center flex">
+
+      {/* Mobile Background */}
+      <div className="sm:hidden flex justify-center items-center h-screen">
+        <img src="/nifomobile.png" alt="" className="w-2/3 mt-48" />
+      </div>
+
+      {/* Text Array Animation */}
+      <div className="text-xl sm:leading-loose sm:mt-16 sm:text-2xl font-medium px-8 sm:px-60 leading-loose text-justify sm:text-left h-screen justify-center items-center flex">
         <div>
           {textArray.map((word, index) => (
             <span
