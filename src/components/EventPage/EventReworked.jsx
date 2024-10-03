@@ -104,14 +104,17 @@ const EventReworked = () => {
 
       <div className="grid gap-12 sm:gap-0 sm:grid-cols-2 px-8 sm:px-16 xl:px-32 place-content-between items-center">
         <div className="space-y-4">
-          <div className="text-customGreyishBlack leading-loose text-lg text-justify">
-            Unlock the potential of Ecosystem and lead your innovation game!
-            Ynfinity is an invite-only CXO event themed around &#39;Sustainable
-            innovation through ecosystem&#39;. Gain access to the exclusive
-            event and discover strategies and insights on how ecosystems can
-            empower innovation in your organization.
+          <div className="text-customBlack font-semibold text-xl">
+            A Gathering of Minds
           </div>
-  
+          <div className="text-customGreyishBlack leading-loose text-lg text-justify">
+            Ynfinity 2024 concluded successfully, solidifying its position as a
+            premier annual gathering for C-suite executives and technology
+            innovators. This exclusive, invitation-only event brought together
+            industry luminaries to explore the latest trends, share insights,
+            and foster collaborations.
+          </div>
+
           {/* <div className="fixed bottom-4 right-4 sm:hidden z-50">
             <button
               className="flex flex-row items-center justify-center gap-2 bg-customBlue text-white py-2 px-4 rounded-md "
@@ -135,7 +138,6 @@ const EventReworked = () => {
               </div>
             </button>
           </div> */}
-
         </div>
         <div className="flex justify-center items-center">
           <video
@@ -179,38 +181,39 @@ const EventReworked = () => {
         <div className="flex flex-col gap-16 leading-loose">
           <div className="flex flex-col gap-2 bg-blue-50 px-6 py-6 rounded-lg ">
             <div className="text-customBlack font-medium text-xl">
-              Network with Industry leaders
+              Exclusive Networking
             </div>
             <div className="text-customGreyishBlack">
-              Connect and converse with thought leaders on ecosystem led
-              innovation
+              Connect with industry peers and thought leaders in an intimate,
+              invitation-only setting.
             </div>
           </div>
 
           <div className="flex flex-col gap-2 bg-blue-50 px-6 py-6 rounded-lg ">
             <div className="text-customBlack font-medium text-xl">
-              Tap the power of global innovators
+              Thought Leadership Insights
             </div>
             <div className="text-customGreyishBlack">
-              Explore how the global innovation ecosystem is leveraged for
-              growth.
+              Gain valuable perspectives from industry experts on the latest
+              trends and challenges.
             </div>
           </div>
           <div className="flex flex-col gap-2 bg-blue-50  px-6  py-6 rounded-lg ">
             <div className="text-customBlack font-medium text-xl">
-              Collaborate for Impact
+              Innovation Showcase
             </div>
             <div className="text-customGreyishBlack">
-              Discover how enterprises can leverage academia for excelling in
-              innovation
+              Discover cutting-edge technologies shaping the future of
+              [industry].
             </div>
           </div>
           <div className="flex flex-col gap-2 bg-blue-50  px-6  py-6 rounded-lg ">
             <div className="text-customBlack font-medium text-xl">
-              Understand cutting edge technologies.
+              Collaborative Opportunities
             </div>
             <div className="text-customGreyishBlack">
-              Emerging tech showcases from the industry.
+              Explore potential partnerships and collaborations to drive growth
+              and innovation.
             </div>
           </div>
         </div>
@@ -252,7 +255,7 @@ const EventReworked = () => {
           Our Emerging Tech Partners
         </div>
         <div>
-          <EmergingPartner/>
+          <EmergingPartner />
         </div>
       </div>
 
