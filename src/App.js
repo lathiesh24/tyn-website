@@ -6,10 +6,12 @@ import CoInnovation from "./components/CoInnovation";
 import Event from "./components/EventPage/EventReworked";
 import Yzone from "./components/Yzone";
 import Nifo from "./components/Nifo";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Homepage />} exact />
         <Route path="/alliance" element={<Alliance />} exact />
