@@ -8,6 +8,7 @@ import Modal from "react-modal";
 import Speakers from "./Speakers";
 import AttendeesMarquee from "./AttendeesMarque";
 import EmergingPartner from "./EmergingPartner";
+import PhotoCarousel from "../PhotoCarousel";
 
 const EventReworked = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -149,6 +150,10 @@ const EventReworked = () => {
             Your browser does not support the video tag.
           </video>
         </div>
+      </div>
+
+      <div className="mt-32">
+        <PhotoCarousel/>
       </div>
 
       <div className="grid sm:grid-cols-2 sm:my-32 mx-8">
