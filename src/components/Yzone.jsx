@@ -47,8 +47,8 @@ const Yzone = () => {
               <img src="yzone1.png" alt="" />
             </div>
           </div>
-          <div className="flex flex-col sm:grid sm:grid-cols-3 gap-8 sm:gap-4">
-            <div className="flex flex-col col-span-2 gap-4 sm:gap-8">
+          <div className="flex flex-col sm:grid sm:grid-flow-col-dense  sm:grid-cols-3 gap-8 sm:gap-4">
+            <div className="flex flex-col col-span-2 gap-4 sm:gap-8 order-first sm:order-last">
               <div className="flex text-2xl font-semibold text-customBlue">
                 How YZone Works?
               </div>
