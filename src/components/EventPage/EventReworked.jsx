@@ -61,7 +61,7 @@ const EventReworked = () => {
         className="relative bg-center bg-cover h-screen"
         style={{
           backgroundImage:
-            'linear-gradient(to right, #FFF25CF2, rgba(255, 242, 92, 0)), url("/eventbg.png")',
+            'linear-gradient(to right, #FFF25CF2, rgba(255, 242, 92, 0)), url("/centerimage.jpg")',
         }}
       >
         <div className="absolute inset-0 sm:justify-end items-center sm:text-right p-4 flex sm:grid sm:grid-cols-2">
