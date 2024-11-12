@@ -140,7 +140,7 @@ const Navbar = ({ activeSection }) => {
       </div>
       {isOpen && (
         <div className="fixed inset-0 bg-customBlack bg-opacity-50 z-20">
-          <div className="fixed top-0 right-0 w-full bg-white flex flex-col items-center pt-32 pb-16 space-y-8">
+          <div className="fixed top-0 right-0 w-full bg-white flex flex-col items-center pt-24 pb-8 space-y-8">
             <div
               onClick={() => handleLinkNavigation("home")}
               className="mt-2 cursor-pointer text-xl"
@@ -170,6 +170,12 @@ const Navbar = ({ activeSection }) => {
               className="mt-2 cursor-pointer text-xl"
             >
               NIFO
+            </div>
+            <div
+              onClick={() => handleLinkNavigation("yzone")}
+              className="mt-2 cursor-pointer text-xl"
+            >
+              Yzone
             </div>
             <div
               onClick={() => handleLinkNavigation("contact-us")}
