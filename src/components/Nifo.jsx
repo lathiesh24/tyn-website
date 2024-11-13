@@ -69,9 +69,9 @@ const Nifo = () => {
       <Navbar activeSection={activeSection} />
       <animated.div
         style={fadeSpring}
-        className="fixed inset-0 bg-gradient-to-b from-white via-white to-sky-200 flex flex-col justify-center items-center sm:grid grid-flow-col sm:grid-cols-5 sm:px-12 xl:px-16 h-screen sm:h-auto"
+        className="fixed inset-0 bg-gradient-to-b from-white via-white to-sky-200 flex flex-col sm:justify-center sm:items-center sm:grid grid-flow-col sm:grid-cols-5 sm:px-12 xl:px-16 h-screen sm:h-auto"
       >
-        <div className="mt-16 sm:mt-0 flex flex-col sm:gap-4 justify-center items-center xs-only:px-4 px-8 sm:col-span-3">
+        <div className="mt-24 sm:mt-0 flex flex-col sm:gap-4 sm:justify-center sm:items-center px-4 sm:px-8 sm:col-span-3">
           <div className="font-semibold xs-only:text-[29px] text-3xl sm:text-6xl xl:text-7xl text-customBlack">
             Your personalized innovation assistant
           </div>
