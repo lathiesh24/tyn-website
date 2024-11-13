@@ -13,8 +13,6 @@ const Yzone = () => {
             className="absolute inset-0 bg-cover bg-center opacity-30"
             style={{ backgroundImage: "url(/yzone-bg.jpeg)" }}
           ></div>
-
-          {/* Content goes here */}
           <div className="relative z-10">
             <img
               src="/yzone-logo.png"
