@@ -6,6 +6,9 @@ module.exports = {
       sans: ["Poppins", "sans-serif"],
     },
     extend: {
+      screens: {
+        'xs-only': {'min': '315px', 'max': '414px'}, 
+      },
       backgroundImage: {
         homebg: "url('/homebg.png')",
         "custom-gradient":
