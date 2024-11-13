@@ -71,11 +71,11 @@ const Nifo = () => {
         style={fadeSpring}
         className="fixed inset-0 bg-gradient-to-b from-white via-white to-sky-200 flex flex-col justify-center items-center sm:grid grid-flow-col sm:grid-cols-5 sm:px-12 xl:px-16 h-screen sm:h-auto"
       >
-        <div className="mt-0 xs-only:mt-16 sm:mt-0 flex flex-col sm:gap-4 justify-center items-center xs-only:px-4 px-8 sm:col-span-3">
+        <div className="mt-16 sm:mt-0 flex flex-col sm:gap-4 justify-center items-center xs-only:px-4 px-8 sm:col-span-3">
           <div className="font-semibold xs-only:text-[29px] text-3xl sm:text-6xl xl:text-7xl text-customBlack">
             Your personalized innovation assistant
           </div>
-          <div className="text-xl sm:text-xl xs-only:leading-7 xs-only:text-[16px] xl:text-2xl pt-4 leading-9 sm:leading-relaxed xl:leading-loose text-customGreyishBlack">
+          <div className="sm:text-xl leading-7 text-[16px] xl:text-2xl pt-4 sm:leading-relaxed xl:leading-loose text-customGreyishBlack">
             AI-driven platform, designed to help enterprises solve business
             challenges by delivering Noiseless Information and enabling
             Frictionless Orchestration
@@ -83,7 +83,7 @@ const Nifo = () => {
         </div>
         <div className="mt-8 flex justify-center items-center col-span-2">
           <div className="flex justify-around items-center flex-col rounded-md xs-only:h-[300px] xs-only:w-[300px] h-[350px] w-[350px] sm:h-[400px] sm:w-[400px] xl:h-[400px] xl:w-[350px] bg-white shadow-lg border-2">
-            <div className="xs-only:w-24 w-32 mx-auto flex justify-center items-center py-2">
+            <div className="w-24 sm:w-32 mx-auto flex justify-center items-center py-2">
               <img src="/nifo.png" alt="Nifo Logo" />
             </div>
             <div className="flex-mt-4 mb-2">
@@ -92,7 +92,7 @@ const Nifo = () => {
                 style={imageSpring}
                 src="/nifodesktopmobile.png"
                 alt=""
-                className="xs-only:w-56 w-64 select-none"
+                className="w-56 sm:w-64 select-none"
               />
             </div>
             <a
