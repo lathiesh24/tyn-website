@@ -27,7 +27,7 @@ const Yzone = () => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-16 sm:gap-32 mx-8 sm:mx-64 py-8 sm:py-24">
+        <div className="flex flex-col gap-16 sm:gap-32 mx-8 xl:mx-16 py-8 sm:py-24">
           <div className="flex flex-col sm:grid sm:grid-cols-3 gap-8 sm:gap-4">
             <div className="flex flex-col col-span-2 gap-4 sm:gap-8">
               <div className="flex text-2xl font-semibold text-customBlue">
