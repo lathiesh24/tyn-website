@@ -11,6 +11,7 @@ import OurIdeology from "./OurIdeology";
 import { useNavigate } from "react-router-dom";
 import SeptEvent from "./EventPage/SeptEvent";
 import SeptEventMob from "./EventPage/SeptEventMob";
+import Testimonials from "./Testimonials";
 
 const Homepage = () => {
   const sentences = [
@@ -161,6 +162,10 @@ const Homepage = () => {
 
       <section id="Differentiators">
         <OurDifferentiators />
+      </section>
+
+      <section id="testimonials">
+        <Testimonials />
       </section>
 
       <section id="our-team" className="mt-8 sm:mt-20">
