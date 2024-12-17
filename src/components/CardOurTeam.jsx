@@ -39,7 +39,7 @@ const cardData = [
   },
   {
     name: "Senthilvelan Natarajan",
-    role: "Co-Founder",
+    role: "Co-Founder & CTO",
     roleDescription:
       "Global IT leader with 25+ yrs experience in product units, AI, Digital Twin. Multicontinental, P&L ownership, presales, transformations. Passionate about development, scaling businesses, travel",
     image: "/velan.png",
