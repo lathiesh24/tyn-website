@@ -7,17 +7,19 @@ const images = [
   { src: "/viacom18.png", alt: "Viacom 18" },
   { src: "/tafe.png", alt: "Tafe" },
   { src: "israelministry.jpg", alt: "Israel Foreign Ministry" },
-  { src: "/axismutualfund.png", alt: "Axis Mutualfund" },
-  { src: "/juliusbaer.jpeg", alt: "Julius Baer" },
+  { src: "/infosys.png", alt: "Infosys" },
+  { src: "/krahejagroup.webp", alt: "K Raheja Group" },
   { src: "Godrej Capital.jpg", alt: "Godrej Capital" },
-  { src: "/welspun.webp", alt: "Welspun" },
+  { src: "/lokmatmedia.png", alt: "Lokmat Media" },
   { src: "/tcs.jpeg", alt: "TCS" },
-  { src: "/tatatrusts.png", alt: "Tata Trusts" },
+  { src: "/vedantaspark.png", alt: "Vedanta Spark" },
   { src: "/swissnex.png", alt: "Swissnex" },
-  { src: "/Hdfclife.jpg", alt: "HDFC Life" },
-  { src: "/tata.png", alt: "Tata" },
-  { src: "/piramal.png", alt: "Piramal" },
-  { src: "/ltrealty.jpeg", alt: "L&T Realty" },
+  { src: "/yesbank.png", alt: "Yes Bank" },
+  { src: "/ltimindtree.jpg", alt: "LTI Mind Tree" },
+  { src: "/kalpataru.png", alt: "Kalpataru" },
+  { src: "/ELGI.png", alt: "ELGI" },
+  {src:"adityabirla.png", alt:"Aditya Birla"},
+  {src:"sbgroupinternational.png", alt:"SB Group International"}
 ];
 
 const AttendeesMarquee = () => {

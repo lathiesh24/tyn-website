@@ -15,7 +15,7 @@ const Footer = ({ handleNavigation }) => {
   };
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col bg-bgBlue">
       {/* For mobile   */}
       <div className="mx-6 xl:mx-20 flex flex-col md:flex-row-reverse md:justify-between gap-8 mt-10">
         <div className="font-medium text-lg flex flex-col gap-1.5">
@@ -100,11 +100,11 @@ const Footer = ({ handleNavigation }) => {
       {/* Footer part 2 */}
 
       {/* Footer last part */}
-      <div className="font-light flex flex-col text-center justify-center items-center sm:flex-row mt-4 mb-1 text-[15px] sm:text-lg p-5 gap-5 md:my-5">
+      <div className="font-light flex flex-col text-center justify-center items-center sm:flex-row mt-4 sm:mt-0 mb-1 sm:mb-0 text-[15px] sm:text-lg p-5 gap-5 sm:gap-16 ">
         <div className="text-gray-400">
           Copyright © 2024 TYN Ecosystem Private Ltd
         </div>
-        <div className="gap-4 text-center sm:text-auto sm:gap-5 flex sm:justify-around text-customGreyishBlack">
+        <div className="gap-4 text-center sm:text-auto sm:gap-12 flex sm:justify-around text-customGreyishBlack">
           <div>Terms of Service</div>
           <div>Privacy Policy</div>
           <div>Cookie Policy</div>
