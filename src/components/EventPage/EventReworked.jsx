@@ -159,7 +159,7 @@ const EventReworked = () => {
       <div className="grid sm:grid-cols-2 sm:my-32 mx-8">
         <div className="hidden sm:flex sm:flex-col text-5xl font-medium items-center justify-center gap-4">
           <div className="relative sm:flex gap-4">
-            <div className="absolute -right-8 -top-6 ">
+            <div className="absolute -right-8 -top-6">
               <img
                 src="doublequotes.jpg"
                 alt="Double Quotes"
@@ -172,7 +172,7 @@ const EventReworked = () => {
 
         <div className="flex sm:hidden text-3xl font-medium items-center justify-center">
           <div className="relative my-24">
-            <div className="absolute -right-8 -top-6 ">
+            <div className="absolute -right-8 -top-6">
               <img
                 src="doublequotes.jpg"
                 alt="Double Quotes"
@@ -184,45 +184,44 @@ const EventReworked = () => {
         </div>
 
         <div className="flex flex-col gap-16 leading-loose">
-          <div className="flex flex-col gap-2 bg-blue-50 px-6 py-6 rounded-lg ">
+          <div className="flex flex-col gap-2 bg-blue-50 px-6 py-6 rounded-lg">
             <div className="text-customBlack font-medium text-xl">
               Exclusive Networking
             </div>
             <div className="text-customGreyishBlack">
-              Connect with industry peers and thought leaders in an intimate,
-              invitation-only setting.
+              Opportunities to connect with industry peers and thought leaders were provided in an intimate, invitation-only setting.
             </div>
           </div>
 
-          <div className="flex flex-col gap-2 bg-blue-50 px-6 py-6 rounded-lg ">
+          <div className="flex flex-col gap-2 bg-blue-50 px-6 py-6 rounded-lg">
             <div className="text-customBlack font-medium text-xl">
               Thought Leadership Insights
             </div>
             <div className="text-customGreyishBlack">
-              Gain valuable perspectives from industry experts on the latest
-              trends and challenges.
+              Valuable perspectives from industry experts on the latest trends and challenges were gained.
             </div>
           </div>
-          <div className="flex flex-col gap-2 bg-blue-50  px-6  py-6 rounded-lg ">
+
+          <div className="flex flex-col gap-2 bg-blue-50 px-6 py-6 rounded-lg">
             <div className="text-customBlack font-medium text-xl">
               Innovation Showcase
             </div>
             <div className="text-customGreyishBlack">
-              Discover cutting-edge technologies shaping the future of
-              [industry].
+              Cutting-edge technologies shaping the future of [industry] were discovered.
             </div>
           </div>
-          <div className="flex flex-col gap-2 bg-blue-50  px-6  py-6 rounded-lg ">
+
+          <div className="flex flex-col gap-2 bg-blue-50 px-6 py-6 rounded-lg">
             <div className="text-customBlack font-medium text-xl">
               Collaborative Opportunities
             </div>
             <div className="text-customGreyishBlack">
-              Explore potential partnerships and collaborations to drive growth
-              and innovation.
+              Potential partnerships and collaborations to drive growth and innovation were explored.
             </div>
           </div>
         </div>
       </div>
+
 
       <div className="">
         <Speakers />

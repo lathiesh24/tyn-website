@@ -14,11 +14,6 @@ const Card = () => {
             image: "/adt1.png"
         },
         {
-            name: "Sundaravalli Narayanaswami",
-            roleDescription: "Professor & Ex chair, Public systems group, IIM Ahmedabad",
-            image: "/adt2.png"
-        },
-        {
             name: "Antony Kagoo (Tony)",
             roleDescription: "Head of Innovation & Strategic Initiatives, TCS UK",
             image: "/adt3.png"

@@ -5,6 +5,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 
 const Navbar = ({ activeSection }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -25,24 +26,26 @@ const Navbar = ({ activeSection }) => {
   };
 
   const handleLinkNavigation = (section) => {
-    if (section === "nifo") {
-      navigate("/nifo");
-      setIsOpen(false);
-    } else if (section === "yzone") {
-      navigate("/yzone");
+    if (["nifo", "yzone", "yinifity"].includes(section)) {
+      navigate(`/${section}`);
       setIsOpen(false);
     } else {
       if (location.pathname !== "/") {
         navigate(`/#${section}`);
         setTimeout(() => {
           scrollToSection(section);
-        }, 100); 
+        }, 100);
       } else {
         scrollToSection(section);
       }
-      setIsOpen(false); 
+      setIsOpen(false);
     }
   };
+
+  // Determine if the current path is part of the accelerators section
+  const isAcceleratorActive = ["nifo", "yzone", "yinifity"].some((path) =>
+    location.pathname.includes(path)
+  );
 
   return (
     <>
@@ -98,26 +101,55 @@ const Navbar = ({ activeSection }) => {
           >
             Our Team
           </div>
-          <div
-            onClick={() => handleLinkNavigation("nifo")}
-            className={`mt-2 cursor-pointer ${
-              activeSection === "nifo"
-                ? "underline decoration-customYellow decoration-[3px]"
-                : ""
-            }`}
-          >
-            NIFO
-          </div>
-          <div
-            onClick={() => handleLinkNavigation("yzone")}
-            className={`mt-2 cursor-pointer ${
-              activeSection === "yzone"
-                ? "underline decoration-customYellow decoration-[3px]"
-                : ""
-            }`}
-          >
-            YZONE
-          </div>
+        <div
+  className="relative mt-2 cursor-pointer"
+  onMouseEnter={() => setIsDropdownOpen(true)}
+  onMouseLeave={() => setIsDropdownOpen(false)}
+>
+  <div
+    className={`${
+      isAcceleratorActive
+        ? "underline decoration-customYellow decoration-[3px]"
+        : ""
+    }`}
+  >
+    Accelerators
+  </div>
+  {isDropdownOpen && (
+    <div
+      className="absolute top-8 left-1/2 transform -translate-x-1/2 bg-white border shadow-md rounded-lg w-40"
+    >
+      <div
+        onClick={() => handleLinkNavigation("nifo")}
+        className="py-2 px-4 hover:bg-gray-200 border"
+      >
+        <img
+          src="/nifo.png"
+          className="mx-auto h-8 justify-center items-center"
+        />
+      </div>
+      <div
+        onClick={() => handleLinkNavigation("yzone")}
+        className="py-2 px-4 hover:bg-gray-200 border"
+      >
+        <img
+          src="/yzone-logo.png"
+          className="mx-auto h-8 justify-center items-center"
+        />
+      </div>
+      <div
+        onClick={() => handleLinkNavigation("yinifity")}
+        className="py-2 px-4 hover:bg-gray-200 border"
+      >
+        <img
+          src="/YInfinity.png"
+          className="mx-auto h-8 justify-center items-center"
+        />
+      </div>
+    </div>
+  )}
+</div>
+
           <div
             onClick={() => handleLinkNavigation("contact-us")}
             className={`border bg-sky-600 text-white hover:text-customBlue shadow hover:bg-white py-1.5 px-8 rounded-3xl cursor-pointer ${
@@ -165,17 +197,37 @@ const Navbar = ({ activeSection }) => {
             >
               Our Team
             </div>
-            <div
-              onClick={() => handleLinkNavigation("nifo")}
-              className="mt-2 cursor-pointer text-xl"
-            >
-              NIFO
-            </div>
-            <div
-              onClick={() => handleLinkNavigation("yzone")}
-              className="mt-2 cursor-pointer text-xl"
-            >
-              Yzone
+            {/* Dropdown for Accelerators */}
+            <div className="relative w-full">
+              <div
+                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                className="mt-2 cursor-pointer text-xl flex justify-center gap-2 items-center px-4"
+              >
+                Accelerators
+                <span>{isDropdownOpen ? "-" : "+"}</span>
+              </div>
+              {isDropdownOpen && (
+                <div className="flex flex-row justify-around items-center mt-8 mb-4">
+                  <div
+                    onClick={() => handleLinkNavigation("nifo")}
+                    className="cursor-pointer"
+                  >
+                    <img src="/nifo.png" alt="NIFO Logo" className="h-12" />
+                  </div>
+                  <div
+                    onClick={() => handleLinkNavigation("yzone")}
+                    className="cursor-pointer"
+                  >
+                    <img src="/yzone-logo.png" alt="YZONE Logo" className="h-12" />
+                  </div>
+                  <div
+                    onClick={() => handleLinkNavigation("yinifity")}
+                    className="cursor-pointer"
+                  >
+                    <img src="/YInfinity.png" alt="YInfinity Logo" className="h-8" />
+                  </div>
+                </div>
+              )}
             </div>
             <div
               onClick={() => handleLinkNavigation("contact-us")}
