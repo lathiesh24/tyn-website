@@ -16,7 +16,7 @@ function App() {
         <Route path="/" element={<Homepage />} exact />
         <Route path="/alliance" element={<Alliance />} exact />
         <Route path="/co-innovation" element={<CoInnovation />} exact />
-        <Route path="/event" element={<Event />} exact />
+        <Route path="/ynfinity" element={<Event />} exact />
         <Route path="/yzone" element={<Yzone />} exact />
         <Route path="/nifo" element={<Nifo />} exact />
       </Routes>

@@ -26,7 +26,7 @@ const Navbar = ({ activeSection }) => {
   };
 
   const handleLinkNavigation = (section) => {
-    if (["nifo", "yzone", "yinifity"].includes(section)) {
+    if (["nifo", "yzone", "ynfinity"].includes(section)) {
       navigate(`/${section}`);
       setIsOpen(false);
     } else {
@@ -43,7 +43,7 @@ const Navbar = ({ activeSection }) => {
   };
 
   // Determine if the current path is part of the accelerators section
-  const isAcceleratorActive = ["nifo", "yzone", "yinifity"].some((path) =>
+  const isAcceleratorActive = ["nifo", "yzone", "ynfinity"].some((path) =>
     location.pathname.includes(path)
   );
 
@@ -138,7 +138,7 @@ const Navbar = ({ activeSection }) => {
         />
       </div>
       <div
-        onClick={() => handleLinkNavigation("yinifity")}
+        onClick={() => handleLinkNavigation("ynfinity")}
         className="py-2 px-4 hover:bg-gray-200 border"
       >
         <img
@@ -221,7 +221,7 @@ const Navbar = ({ activeSection }) => {
                     <img src="/yzone-logo.png" alt="YZONE Logo" className="h-12" />
                   </div>
                   <div
-                    onClick={() => handleLinkNavigation("yinifity")}
+                    onClick={() => handleLinkNavigation("ynfinity")}
                     className="cursor-pointer"
                   >
                     <img src="/YInfinity.png" alt="YInfinity Logo" className="h-8" />
