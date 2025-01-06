@@ -146,7 +146,7 @@ const EventReworked = () => {
             controls
             poster="/YInfinity-thumbnail.png"
           >
-            <source src="/Ynfinity Teaser.mp4" type="video/mp4" />
+            <source src="/Ynfinity_Summary.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
