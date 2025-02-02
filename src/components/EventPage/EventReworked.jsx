@@ -113,7 +113,7 @@ const EventReworked = () => {
             premier annual gathering for C-suite executives and technology
             innovators. This exclusive, invitation-only event brought together
             industry luminaries to explore the latest trends, share insights,
-            and foster collaborations.
+            and foster collaboration.
           </div>
 
           {/* <div className="fixed bottom-4 right-4 sm:hidden z-50">
