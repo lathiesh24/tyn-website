@@ -146,10 +146,14 @@ const EventReworked = () => {
             controls
             poster="/YInfinity-thumbnail.png"
           >
-            <source src="/Ynfinity_Summary.mp4" type="video/mp4" />
+            <source
+              src="https://res.cloudinary.com/dbhroxtwb/video/upload/wsv64xqgg4wfrrgpulff.mp4"
+              type="video/mp4"
+            />
             Your browser does not support the video tag.
           </video>
         </div>
+
       </div>
 
       <div className="mt-32">
