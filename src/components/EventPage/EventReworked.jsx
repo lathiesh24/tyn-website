@@ -166,7 +166,7 @@ const EventReworked = () => {
                 className="h-8 w-8"
               />
             </div>
-            <span className="text-customBlack">Highlights of the event</span>
+            <span className="text-customBlack">Highlights</span>
           </div>
         </div>
 
