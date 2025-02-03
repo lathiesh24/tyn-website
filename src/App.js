@@ -7,6 +7,7 @@ import Event from "./components/EventPage/EventReworked";
 import Yzone from "./components/Yzone";
 import Nifo from "./components/Nifo";
 import ScrollToTop from "./components/ScrollToTop";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         <Route path="/ynfinity" element={<Event />} exact />
         <Route path="/yzone" element={<Yzone />} exact />
         <Route path="/nifo" element={<Nifo />} exact />
+        <Route path="*" element={<NotFound />} />
+        
       </Routes>
     </>
   );
