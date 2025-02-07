@@ -43,7 +43,7 @@ const WeOffer = () => {
         </div>
         <div className="border bg-bgBlue rounded-lg sm:px-4 xl:px-6 py-4 px-3 sm:py-4 xl:py-6">
           <div className="text-customBlue text-xl sm:text-xl 2xl:text-xl">
-            Enabling Co Innovation to Entreprise
+            Enabling Co Innovation to Enterprise
           </div>
           <div className="mt-2 leading-loose sm:leading-loose text-lg sm:text-base font-light text-customGreyishBlack ">
             Co Innovation as a service to enterprise & governments, to solve
