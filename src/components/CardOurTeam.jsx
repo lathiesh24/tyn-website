@@ -35,7 +35,7 @@ const cardData = [
     role: "Founder",
     roleDescription:
       "Tech leader with 20 yrs experience in scaling businesses, innovation, ecosystem development, transformations, mentoring startups, NGO founder, nation-building advocate",
-    image: "/ganapathy.png",
+    image: "/gg.jpeg",
   },
   {
     name: "Senthilvelan Natarajan",
@@ -58,6 +58,18 @@ const cardData = [
       "Engineer with software development experience. Proficient in React, Typescript, Node.js. Eager to explore tech intersections, contribute to innovative projects",
     image: "/lathiesh.png",
   },
+  {
+    name:"Vivek Raju", 
+    role:"Alliance Director",
+    roleDescription:"",
+    image:""
+  },
+  {
+    name:"Rathnasundara Devi",
+    role:"Legal & Finance Manager",
+    roleDescription:"/rathna.jpg",
+    image:"A legal professional with a strong interest in the intersection of law and finance."
+  }
 ];
 
 const CardOurTeam = () => {

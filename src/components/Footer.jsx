@@ -69,10 +69,10 @@ const Footer = ({ handleNavigation }) => {
           <div>
             <div>Contact</div>
             <a
-              href="mailto:info@theyellownetwork.com"
+              href="mailto:innovation@theyellow.network"
               className="font-normal text-customGreyishBlack"
             >
-              info@theyellownetwork.com
+              innovation@theyellow.network
             </a>
           </div>
 
