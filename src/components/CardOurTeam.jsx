@@ -67,8 +67,8 @@ const cardData = [
   {
     name:"Rathnasundara Devi",
     role:"Legal & Finance Manager",
-    roleDescription:"/rathna.jpg",
-    image:"A legal professional with a strong interest in the intersection of law and finance."
+    roleDescription:"A legal professional with a strong interest in the intersection of law and finance.",
+    image:"/rathna.jpg"
   }
 ];
 
