@@ -58,12 +58,12 @@ const cardData = [
       "Engineer with software development experience. Proficient in React, Typescript, Node.js. Eager to explore tech intersections, contribute to innovative projects",
     image: "/lathiesh.png",
   },
-  // {
-  //   name:"Vivek Raju", 
-  //   role:"Alliance Director",
-  //   roleDescription:"",
-  //   image:""
-  // },
+  {
+    name:"Vivek Raju", 
+    role:"Alliance Director",
+    roleDescription:"",
+    image:"/vivek.jpg"
+  },
   {
     name:"Rathnasundara Devi",
     role:"Legal & Finance Manager",
