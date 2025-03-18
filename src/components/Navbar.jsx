@@ -26,7 +26,7 @@ const Navbar = ({ activeSection }) => {
   };
 
   const handleLinkNavigation = (section) => {
-    if (["nifo", "yzone", "ynfinity"].includes(section)) {
+    if (["nifo", "yzone", "ynfinity","insights"].includes(section)) {
       navigate(`/${section}`);
       setIsOpen(false);
     } else {
@@ -60,17 +60,7 @@ const Navbar = ({ activeSection }) => {
             className="w-44"
           />
         </div>
-        <div className="hidden md:grid text-customBlack grid-flow-col sm:gap-x-6 xl:gap-x-16 sm:mr-4 xl:mr-20 text-lg">
-          <div
-            onClick={() => handleLinkNavigation("home")}
-            className={`mt-2 cursor-pointer ${
-              activeSection === "home"
-                ? "underline decoration-customYellow decoration-[3px]"
-                : ""
-            }`}
-          >
-            Home
-          </div>
+        <div className="hidden md:grid text-customBlack grid-flow-col sm:gap-x-6 xl:gap-x-16 sm:mr-4 xl:mr-20 text-base">
           <div
             onClick={() => handleLinkNavigation("about-us")}
             className={`mt-2 cursor-pointer ${
@@ -90,6 +80,15 @@ const Navbar = ({ activeSection }) => {
             }`}
           >
             Services
+          </div>
+          <div
+            onClick={() => handleLinkNavigation("insights")}
+            className={`mt-2 cursor-pointer ${activeSection === "insights"
+                ? "underline decoration-customYellow decoration-[3px]"
+                : ""
+              }`}
+          >
+            Our Insights
           </div>
           <div
             onClick={() => handleLinkNavigation("our-team")}
@@ -149,7 +148,6 @@ const Navbar = ({ activeSection }) => {
     </div>
   )}
 </div>
-
           <div
             onClick={() => handleLinkNavigation("contact-us")}
             className={`border bg-sky-600 text-white hover:text-customBlue shadow hover:bg-white py-1.5 px-8 rounded-3xl cursor-pointer ${
