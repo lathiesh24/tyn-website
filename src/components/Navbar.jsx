@@ -81,7 +81,7 @@ const Navbar = ({ activeSection }) => {
           >
             Services
           </div>
-          {/* <div
+          <div
             onClick={() => handleLinkNavigation("insights")}
             className={`mt-2 cursor-pointer ${activeSection === "insights"
                 ? "underline decoration-customYellow decoration-[3px]"
@@ -89,7 +89,7 @@ const Navbar = ({ activeSection }) => {
               }`}
           >
             Our Insights
-          </div> */}
+          </div>
           <div
             onClick={() => handleLinkNavigation("our-team")}
             className={`mt-2 cursor-pointer ${

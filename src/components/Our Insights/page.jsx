@@ -10,12 +10,8 @@ const page = () => {
             <div>
                 <Navbar />
             </div>
-            <div className='pt-20'>
+            <div className='pt-16'>
                 <WhitepaperOne />
-            </div>
-
-            <div className='mt-10'>
-                <PartnerLandScape/>
             </div>
         </div>
     )
