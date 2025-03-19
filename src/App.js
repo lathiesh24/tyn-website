@@ -21,7 +21,7 @@ function App() {
         <Route path="/ynfinity" element={<Event />} exact />
         <Route path="/yzone" element={<Yzone />} exact />
         <Route path="/nifo" element={<Nifo />} exact />
-        <Route path="/insights" element={<OurInsights/>} exact />
+        {/* <Route path="/insights" element={<OurInsights/>} exact /> */}
         <Route path="*" element={<NotFound />} />
         
       </Routes>
