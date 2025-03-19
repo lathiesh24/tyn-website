@@ -1,0 +1,125 @@
+{
+    "partners": {
+        "GSIs": {
+            "advantages": [
+                "Width and depth of enterprise clients.",
+                "Connected with high-level decision makers of clients.",
+                "Potential for long-term exponential growth."
+            ],
+            "challenges": [
+                "Long sales cycle.",
+                "Long and bureaucratic due diligence processes.",
+                "Cannot be strategic right from the get-go, need to be tactful initially until the rapport and initial success stories are established."
+            ],
+            "recommendations": [
+                "Focus on ‘influenced deals’; bring leads to GSIs for influenced and quicker closures.",
+                "Push for building and articulating thought leadership solutions for clients.",
+                "Leverage hyperscaler practices - cloud consumption quotas, marketplace offers, etc.",
+                "One size doesn’t fit all - Different stakeholders within GSIs have different priorities. Practice teams understand tech and innovation; client sales team focuses on services revenues, and so on."
+            ]
+        },
+        "SIs": {
+            "advantages": [
+                "Faster time-to-market than GSIs.",
+                "SIs are agile & eager for new tech.",
+                "Good portfolio of enterprise clients."
+            ],
+            "challenges": [
+                "Limited depth in enterprise relationships.",
+                "Limited thought leadership positioning."
+            ],
+            "recommendations": [
+                "Push for quick POCs to drive adoption.",
+                "Enable thought leadership for clients.",
+                "Focus on enabling the SI team with product skillset.",
+                "One size doesn’t fit all - Different stakeholders within SIs have different priorities. Practice teams understand tech and innovation; client sales team focuses on services revenues, and so on.",
+                "Offer high-margin reseller incentives."
+            ]
+        },
+        "Niche_Boutique_Partners": {
+            "advantages": [
+                "Deep domain expertise with strong CXO-level connects.",
+                "Quick ramp up in tech and sales.",
+                "Faster GTM compared to GSIs.",
+                "Thought leadership & ecosystem-driven innovation."
+            ],
+            "challenges": [
+                "Limited client base.",
+                "Can be geo-specific."
+            ],
+            "recommendations": [
+                "Identify and align with industry-focused consulting plays.",
+                "Focus on core competency & brand positioning.",
+                "Offer co-branded GTM strategies to expand credibility."
+            ]
+        },
+        "Big4_Consulting_Firms": {
+            "advantages": [
+                "Established market positioning.",
+                "Strong brand influence with enterprise clients.",
+                "Deep executive-level relationships."
+            ],
+            "challenges": [
+                "Highly fragmented structure with geo-specific teams & processes.",
+                "High barriers to entry (due diligence, existing tech, etc.)."
+            ],
+            "recommendations": [
+                "Talk about existing Big4 partnerships to the fore to induce FOMO, if applicable.",
+                "Initially focus on ‘influenced deals’; bring leads to GSIs for influenced and quicker closures.",
+                "Leverage Hyperscaler relationships for co-sell opportunities."
+            ]
+        },
+        "Hyperscalers": {
+            "advantages": [
+                "Strong enterprise reach.",
+                "Easy tech onboarding.",
+                "High visibility via Cloud Solution Providers (CSPs) and Partner Selling & Reselling.",
+                "High Marketing Development Funds (MDFs) & co-branding opportunities."
+            ],
+            "challenges": [
+                "Product strategy should align with hyperscalers.",
+                "Upfront revenue and CSP commitments (MAC Agreement, etc.)."
+            ],
+            "recommendations": [
+                "Leverage GSI, SI, and CSP partnerships to accelerate joint opportunities.",
+                "Leverage exclusive incentives on Cloud Marketplaces.",
+                "Identify opportunities for joint solutions and thought leaderships (GenAI, AI-driven automation, etc.)."
+            ]
+        },
+        "ISVs": {
+            "advantages": [
+                "Quick time to market.",
+                "Easier billing.",
+                "One-stop shop for customer value proposition."
+            ],
+            "challenges": [
+                "Might have limited existing customer base.",
+                "Product strategy should align with ISVs.",
+                "Very little scope to incentivize ISV sales team on the JVP."
+            ],
+            "recommendations": [
+                "Develop mutual enablement programs (sales & tech).",
+                "Focus on joint solution packaging with ISVs.",
+                "Identify vertical-specific GTM plays for better positioning."
+            ]
+        },
+        "Resellers_Channel_Partners": {
+            "advantages": [
+                "Quick sales wins.",
+                "Good customer connects.",
+                "High appetite for early wins."
+            ],
+            "challenges": [
+                "Little to no control over pricing.",
+                "Higher rebates or sales comp required.",
+                "Geo-specific, hence, complicated to manage partner ecosystem."
+            ],
+            "recommendations": [
+                "Identify high-margin, low-intent markets for rapid adoption (GCC, APAC, etc.).",
+                "Set up partner enablement teams (sales & tech).",
+                "Set up partner portal for partners to register deals and track progress.",
+                "Incentivize partners on partner tiers."
+            ]
+        }
+    }
+}
