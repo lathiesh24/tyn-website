@@ -2,6 +2,7 @@ import React from 'react'
 import WhitepaperOne from './WhitepaperOne'
 import Navbar from '../Navbar'
 import PartnerLandScape from './PartnerLandScape'
+import Footer from '../Footer'
 
 const page = () => {
  
@@ -10,8 +11,11 @@ const page = () => {
             <div>
                 <Navbar />
             </div>
-            <div className='pt-16'>
+            <div className=''>
                 <WhitepaperOne />
+            </div>
+            <div className=''>
+                <Footer/>
             </div>
         </div>
     )

@@ -7,7 +7,7 @@ const WhitepaperOne = () => {
     return (
         <div className='flex flex-col min-h-screen'>
             <div class="relative w-full h-[400px]">
-                <img src="your-image-url.jpg" alt="Background" class="w-full h-full object-cover" />
+                <img src="/bgwhitepaper.jpg" alt="Background" class="w-full h-full object-cover" />
                 <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
                     <h1 class="text-white text-3xl font-bold text-center">
                         Unlocking Non-Linear Growth through Strategic Alliances
@@ -15,13 +15,13 @@ const WhitepaperOne = () => {
                 </div>
             </div>
             <div className='flex flex-grow"'>
-                <div className='w-[250px] h-[calc(100vh-72px)] sticky top-[72px]'>
+                <div className='w-[250px] h-screen sticky top-[72px]'>
                     <Sidebar />
                 </div>
-                <div className='px-8 flex-1 overflow-auto pt-4'>
-                    <div className='flex flex-col gap-4' id='executive-summary'>
-                        <div className='flex font-semibold text-2xl text-customBlack'>Executive Summary</div>
-                        <div className='flex flex-col gap-4 text-customGreyishBlack font-light'>
+                <div className='px-8 flex-1 flex flex-col gap-8 py-10'>
+                    <div className='flex flex-col gap-8' id='executive-summary'>
+                        <div className='flex font-semibold text-3xl text-customBlack'>Executive Summary</div>
+                        <div className='flex flex-col gap-8 text-lg text-customGreyishBlack font-light'>
                             <div>In today’s competitive tech landscape, it is imperative
                                 that emerging tech firms must scale quickly and
                                 secure enterprise clients in order to drive sustainable
@@ -38,9 +38,9 @@ const WhitepaperOne = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex flex-col gap-4 pt-4' id='channel-growth'>
-                        <div className='flex font-semibold text-2xl text-customBlack'>Why Channel-Led Growth</div>
-                        <div className='flex flex-col gap-4 text-customGreyishBlack font-light'>
+                    <div className='flex flex-col gap-8' id='channel-growth'>
+                        <div className='flex font-semibold text-3xl text-customBlack'>Why Channel-Led Growth</div>
+                        <div className='flex flex-col gap-8 text-lg text-customGreyishBlack font-light'>
                             <div>While direct sales yield good results in the short term,
                                 they fail to scale non-linearly. Channel-led growth,
                                 where third-party partners with an established market
@@ -60,15 +60,15 @@ const WhitepaperOne = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col gap-4 pt-4" id='partner-landscape'>
-                        <div className='flex font-semibold text-2xl text-customBlack'>
+                    <div className="flex flex-col gap-8" id='partner-landscape'>
+                        <div className='flex font-semibold text-3xl text-customBlack'>
                            Partner Landscape
                         </div>
                         <PartnerLandScape />
                     </div>
-                    <div className="pt-8 flex flex-col gap-4" id='who-to-work-with'>
-                        <div className='flex font-semibold text-2xl text-customBlack'>Who should you work with?</div>
-                        <div className='flex flex-col gap-4 text-customGreyishBlack font-light'>
+                    <div className=" flex flex-col gap-8" id='who-to-work-with'>
+                        <div className='flex font-semibold text-3xl text-customBlack'>Who should you work with?</div>
+                        <div className='flex flex-col gap-8 text-lg text-customGreyishBlack font-light'>
                             <div>Selecting the right partners is essential for scaling
                                 through channels. Each type of partner brings a
                                 unique blend of strengths, networks, and challenges.
@@ -88,9 +88,9 @@ const WhitepaperOne = () => {
                     <div >
                         <ThirdPointData />
                     </div>
-                    <div className='flex flex-col gap-4' id='beyond-transactions'>
+                    <div className='flex flex-col gap-8' id='beyond-transactions'>
                         <div className='text-3xl font-semibold text-customBlack'>Beyond Transactions</div>
-                        <div className='font-light text-customGreyishBlack flex flex-col gap-4'>
+                        <div className='font-light  text-lg text-customGreyishBlack flex flex-col gap-8'>
                             <div>
                                 For emerging tech firms, success and scale depends on
                                 delivering end-to-end solutions, and not just standalone
@@ -108,31 +108,30 @@ const WhitepaperOne = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex flex-col gap-4 pt-4' id='conclusion'>
+                    <div className='flex flex-col gap-4' id='conclusion'>
                         <div className='text-3xl font-semibold text-customBlack'>Conclusion and Summary</div>
-                        <div className='font-light text-customGreyishBlack'>
-                            In today’s hyper-competitive technology landscape, startups can not rely on direct sales alone for sustained enterprise adoption and market penetration. The shift to SaaS, cloud-based business models, and ecosystem-led GTM strategies has made strategic alliances the most effective enabler for scalable, long-term growth
+                        <div className='font-light text-lg text-customGreyishBlack'>
+                            In today’s hyper-competitive technology landscape, startups cannot rely on direct sales alone for sustained enterprise adoption and market penetration. The shift to SaaS, cloud-based business models, and ecosystem-led GTM strategies has made strategic alliances the most effective enabler for scalable, long-term growth.
                         </div>
-                        <div className='flex flex-col gap-2'>
-                            <div >Key points to consider:</div>
-                            <ul>
-                                <li>Strategic Alliances Enable Exponential Growth</li>
-                                <li>Choosing the Right Partner is Crucial</li>
-                                <li>Executive buy-in and top-down alignment can make or break partnerships</li>
-                                <li>A Strong GTM Strategy is Essential</li>
-                                <li>Alliance Success Requires Continuous Engagement</li>
+                        <div className='flex flex-col gap-4'>
+                            <div className='text-lg'>Key points to consider:</div>
+                            <ul className="pl-5 space-y-4 text-customGreyishBlack text-lg">
+                                <li className="custom-bullet">Strategic Alliances Enable Exponential Growth</li>
+                                <li className="custom-bullet">Choosing the Right Partner is Crucial</li>
+                                <li className="custom-bullet">Executive buy-in and top-down alignment can make or break partnerships</li>
+                                <li className="custom-bullet">A Strong GTM Strategy is Essential</li>
+                                <li className="custom-bullet">Alliance Success Requires Continuous Engagement</li>
                             </ul>
                         </div>
-                        <div>
-                            <div>At The Yellow Network, we work with emerging tech firms to fast-track strategic alliances by:</div>
-                            <ul>
-                                <li>Curating high-impact partnerships.</li>
-                                <li>Facilitating structured GTM execution for pipeline acceleration.</li>
-                                <li>Building scalable, long-term alliance models that maximise revenue potential.</li>
-                                <li>Enabling executive connects with partner organisations.</li>
+                        <div className='flex flex-col gap-4'>
+                            <div className='text-lg'>At The Yellow Network, we work with emerging tech firms to fast-track strategic alliances by:</div>
+                            <ul className="pl-5 space-y-4 text-customGreyishBlack text-lg">
+                                <li className="custom-bullet">Curating high-impact partnerships.</li>
+                                <li className="custom-bullet">Facilitating structured GTM execution for pipeline acceleration.</li>
+                                <li className="custom-bullet">Building scalable, long-term alliance models that maximise revenue potential.</li>
+                                <li className="custom-bullet">Enabling executive connects with partner organisations.</li>
                             </ul>
                         </div>
-
                     </div>
                 </div>
             </div>
