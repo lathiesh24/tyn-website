@@ -1,6 +1,6 @@
 {
     "partners": {
-        "GSIs": {
+        "1. Global System Integrators(GSIs)": {
             "advantages": [
                 "Width and depth of enterprise clients.",
                 "Connected with high-level decision makers of clients.",
@@ -18,7 +18,7 @@
                 "One size doesn’t fit all - Different stakeholders within GSIs have different priorities. Practice teams understand tech and innovation; client sales team focuses on services revenues, and so on."
             ]
         },
-        "SIs": {
+        "2. System Integrators(SIs)": {
             "advantages": [
                 "Faster time-to-market than GSIs.",
                 "SIs are agile & eager for new tech.",
@@ -36,7 +36,7 @@
                 "Offer high-margin reseller incentives."
             ]
         },
-        "Niche_Boutique_Partners": {
+        "3. Niche/Boutique Partners": {
             "advantages": [
                 "Deep domain expertise with strong CXO-level connects.",
                 "Quick ramp up in tech and sales.",
@@ -53,7 +53,7 @@
                 "Offer co-branded GTM strategies to expand credibility."
             ]
         },
-        "Big4_Consulting_Firms": {
+        "4. Big 4 Consulting Firms": {
             "advantages": [
                 "Established market positioning.",
                 "Strong brand influence with enterprise clients.",
@@ -69,7 +69,7 @@
                 "Leverage Hyperscaler relationships for co-sell opportunities."
             ]
         },
-        "Hyperscalers": {
+        "5. Hyperscalers": {
             "advantages": [
                 "Strong enterprise reach.",
                 "Easy tech onboarding.",
@@ -86,7 +86,7 @@
                 "Identify opportunities for joint solutions and thought leaderships (GenAI, AI-driven automation, etc.)."
             ]
         },
-        "ISVs": {
+        "6. Independent Software Vendors (ISVs)": {
             "advantages": [
                 "Quick time to market.",
                 "Easier billing.",
@@ -103,7 +103,7 @@
                 "Identify vertical-specific GTM plays for better positioning."
             ]
         },
-        "Resellers_Channel_Partners": {
+        "7. Resellers/Channel Partners": {
             "advantages": [
                 "Quick sales wins.",
                 "Good customer connects.",

@@ -19,15 +19,15 @@ const WhitepaperOne = () => {
         </div>
       </div>
       <div className='flex flex-grow"'>
-        <div className="w-[250px] h-screen sticky top-[72px] hidden md:block">
+        <div className="w-[250px] h-screen sticky top-[72px]">
           <Sidebar />
         </div>
-        <div className=" flex-1 flex flex-col gap-8 sm:py-10 sm:px-8 px-5 py-5">
-          <div className="flex flex-col sm:gap-8 gap-4" id="executive-summary">
-            <div className="flex font-semibold sm:text-3xl text-2xl text-customBlack">
+        <div className="px-8 flex-1 flex flex-col gap-8 py-10">
+          <div className="flex flex-col gap-8" id="executive-summary">
+            <div className="flex font-semibold text-3xl text-customBlack">
               Executive Summary
             </div>
-            <div className="flex flex-col sm:gap-8 gap-4 sm:text-lg text-base text-customGreyishBlack font-light">
+            <div className="flex flex-col gap-8 text-lg text-customGreyishBlack font-light">
               <div>
                 In today’s competitive tech landscape, it is imperative that
                 emerging tech firms must scale quickly and secure enterprise
@@ -44,11 +44,11 @@ const WhitepaperOne = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col sm:gap-8 gap-4" id="channel-growth">
-            <div className="flex font-semibold sm:text-3xl text-2xl text-customBlack">
+          <div className="flex flex-col gap-8" id="channel-growth">
+            <div className="flex font-semibold text-3xl text-customBlack">
               Why Channel-Led Growth
             </div>
-            <div className="flex flex-col sm:gap-8 gap-4 sm:text-lg text-base text-customGreyishBlack font-light">
+            <div className="flex flex-col gap-8 text-lg text-customGreyishBlack font-light">
               <div>
                 While direct sales yield good results in the short term, they
                 fail to scale non-linearly. Channel-led growth, where
@@ -67,17 +67,17 @@ const WhitepaperOne = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col sm:gap-8 gap-4" id="partner-landscape">
-            <div className="flex font-semibold sm:text-3xl text-2xl text-customBlack">
+          <div className="flex flex-col gap-8" id="partner-landscape">
+            <div className="flex font-semibold text-3xl text-customBlack">
               Partner Landscape
             </div>
             <PartnerLandScape />
           </div>
-          <div className=" flex flex-col sm:gap-8 gap-4" id="who-to-work-with">
-            <div className="flex font-semibold sm:text-3xl text-2xl text-customBlack">
+          <div className=" flex flex-col gap-8" id="who-to-work-with">
+            <div className="flex font-semibold text-3xl text-customBlack">
               Who should you work with?
             </div>
-            <div className="flex flex-col sm:gap-8 gap-4 sm:text-lg text-base text-customGreyishBlack font-light">
+            <div className="flex flex-col gap-8 text-lg text-customGreyishBlack font-light">
               <div>
                 Selecting the right partners is essential for scaling through
                 channels. Each type of partner brings a unique blend of
@@ -96,14 +96,11 @@ const WhitepaperOne = () => {
           <div>
             <ThirdPointData />
           </div>
-          <div
-            className="flex flex-col sm:gap-8 gap-4"
-            id="beyond-transactions"
-          >
-            <div className="sm:text-3xl text-2xl font-semibold text-customBlack">
+          <div className="flex flex-col gap-8" id="beyond-transactions">
+            <div className="text-3xl font-semibold text-customBlack">
               Beyond Transactions
             </div>
-            <div className="font-light sm:text-lg text-base text-customGreyishBlack flex flex-col sm:gap-8 gap-4">
+            <div className="font-light  text-lg text-customGreyishBlack flex flex-col gap-8">
               <div>
                 For emerging tech firms, success and scale depends on delivering
                 end-to-end solutions, and not just standalone products or point
@@ -122,10 +119,10 @@ const WhitepaperOne = () => {
             </div>
           </div>
           <div className="flex flex-col gap-4" id="conclusion">
-            <div className="sm:text-3xl text-2xl font-semibold text-customBlack">
+            <div className="text-3xl font-semibold text-customBlack">
               Conclusion and Summary
             </div>
-            <div className="font-light sm:text-lg text-base text-customGreyishBlack">
+            <div className="font-light text-lg text-customGreyishBlack">
               In today’s hyper-competitive technology landscape, startups cannot
               rely on direct sales alone for sustained enterprise adoption and
               market penetration. The shift to SaaS, cloud-based business
@@ -133,9 +130,9 @@ const WhitepaperOne = () => {
               alliances the most effective enabler for scalable, long-term
               growth.
             </div>
-            <div className="flex flex-col gap-4 sm:text-lg text-base">
-              <div className="">Key points to consider:</div>
-              <ul className="pl-5 space-y-4 text-customGreyishBlack ">
+            <div className="flex flex-col gap-4">
+              <div className="text-lg">Key points to consider:</div>
+              <ul className="pl-5 space-y-4 text-customGreyishBlack text-lg">
                 <li className="custom-bullet">
                   Strategic Alliances Enable Exponential Growth
                 </li>
@@ -154,12 +151,12 @@ const WhitepaperOne = () => {
                 </li>
               </ul>
             </div>
-            <div className="flex flex-col gap-4 sm:text-lg text-base">
-              <div className="">
+            <div className="flex flex-col gap-4">
+              <div className="text-lg">
                 At The Yellow Network, we work with emerging tech firms to
                 fast-track strategic alliances by:
               </div>
-              <ul className="pl-5 space-y-4 text-customGreyishBlack">
+              <ul className="pl-5 space-y-4 text-customGreyishBlack text-lg">
                 <li className="custom-bullet">
                   Curating high-impact partnerships.
                 </li>
@@ -182,5 +179,3 @@ const WhitepaperOne = () => {
     </div>
   );
 };
-
-export default WhitepaperOne;

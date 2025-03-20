@@ -3,13 +3,13 @@ import data from "../../data/ThirdPoint.json";
 
 const ThirdPointData = () => {
   return (
-    <div className="flex flex-col sm:gap-8 gap-4">
+    <div className="flex flex-col gap-4">
       {Object.entries(data.partners).map(([key, value]) => (
         <div key={key} className="">
-          <h2 className="sm:text-xl text-2xl font-semibold mb-2">
+          <h2 className="text-xl font-semibold mb-2">
             {key.replace(/_/g, " ")}
           </h2>
-          <div className="grid sm:grid-cols-2  grid-cols-1 gap-4">
+          <div className="grid grid-cols-2 gap-4">
             <div>
               <div>
                 <h3 className="text-lg font-medium">Advantages:</h3>
