@@ -47,7 +47,7 @@ const PartnerLandScape = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 sm:gap-4 gap-8">
       {contentForPartnerLandScape.map((content, index) => (
         <div
           key={index}
@@ -68,7 +68,13 @@ const PartnerLandScape = () => {
           </div>
 
           {/* Right Section: Image - Fixed Z-index and Positioning */}
-          <div className={`absolute right-[-24px] sm:right-[-21px] z-0 ${index === contentForPartnerLandScape.length - 1 ? "bottom-3 md:bottom-[-14px]" : "bottom-3 sm:bottom-0"}`}>
+          <div
+            className={`absolute right-[-24px] sm:right-[-21px] z-0 ${
+              index === contentForPartnerLandScape.length - 1
+                ? "bottom-3 md:bottom-[-14px]"
+                : "bottom-3 sm:bottom-0"
+            }`}
+          >
             <img
               src={content.image}
               alt={content.title}
