@@ -58,7 +58,7 @@ const PartnerLandScape = () => {
           }`}
         >
           {/* Left Section: Text Content */}
-          <div className="flex-grow pr-14 md:pr-10 flex flex-col justify-center">
+          <div className="flex-grow pr-14 md:pr-10 flex flex-col justify-center sm:gap-0 gap-2">
             <div className="font-semibold">
               {index + 1}. {content.title}
             </div>
