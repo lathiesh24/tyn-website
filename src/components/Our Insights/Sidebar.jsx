@@ -12,8 +12,8 @@ const sections = [
 const Sidebar = () => {
     return (
         <div className="bg-gray-100 p-4 border-r h-screen w-max">
-            <h2 className="text-lg font-bold mb-4">Sections</h2>
-            <ul className="flex flex-col gap-4">
+            <h2 className="text-xl font-semibold my-5">Sections</h2>
+            <ul className="flex flex-col gap-5">
                 {sections.map((section) => (
                     <li key={section.id}>
                         <a
