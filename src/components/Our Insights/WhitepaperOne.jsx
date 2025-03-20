@@ -108,14 +108,14 @@ const WhitepaperOne = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex flex-col gap-4' id='conclusion'>
+                    <div className='flex flex-col gap-8' id='conclusion'>
                         <div className='text-3xl font-semibold text-customBlack'>Conclusion and Summary</div>
                         <div className='font-light text-lg text-customGreyishBlack'>
                             In today’s hyper-competitive technology landscape, startups cannot rely on direct sales alone for sustained enterprise adoption and market penetration. The shift to SaaS, cloud-based business models, and ecosystem-led GTM strategies has made strategic alliances the most effective enabler for scalable, long-term growth.
                         </div>
                         <div className='flex flex-col gap-4'>
                             <div className='text-lg'>Key points to consider:</div>
-                            <ul className="pl-5 space-y-4 text-customGreyishBlack text-lg">
+                            <ul className="pl-5 space-y-4 text-customGreyishBlack text-lg font-light">
                                 <li className="custom-bullet">Strategic Alliances Enable Exponential Growth</li>
                                 <li className="custom-bullet">Choosing the Right Partner is Crucial</li>
                                 <li className="custom-bullet">Executive buy-in and top-down alignment can make or break partnerships</li>
@@ -125,7 +125,7 @@ const WhitepaperOne = () => {
                         </div>
                         <div className='flex flex-col gap-4'>
                             <div className='text-lg'>At The Yellow Network, we work with emerging tech firms to fast-track strategic alliances by:</div>
-                            <ul className="pl-5 space-y-4 text-customGreyishBlack text-lg">
+                            <ul className="pl-5 space-y-4 text-customGreyishBlack text-lg font-light">
                                 <li className="custom-bullet">Curating high-impact partnerships.</li>
                                 <li className="custom-bullet">Facilitating structured GTM execution for pipeline acceleration.</li>
                                 <li className="custom-bullet">Building scalable, long-term alliance models that maximise revenue potential.</li>
