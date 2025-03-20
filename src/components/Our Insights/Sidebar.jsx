@@ -46,8 +46,7 @@ const Sidebar = () => {
     };
 
     return (
-        <div className="bg-gray-100 p-4 border-r h-screen w-max">
-            <h2 className="text-xl font-semibold my-5">Sections</h2>
+        <div className="flex flex-col gap-4 p-4 border-r h-screen w-max">
             <ul className="flex flex-col gap-5">
                 {sections.map((section) => (
                     <li key={section.id}>
@@ -69,6 +68,32 @@ const Sidebar = () => {
                     </li>
                 ))}
             </ul>
+            <div className="flex flex-col gap-5">
+                <div className="text-customBlack">Authors</div>
+
+                {/* First Author */}
+                <div className="flex items-center gap-4">
+                    <div className="rounded-full bg-gray-300 flex items-center justify-center">
+                        <img src="/gg.jpeg" alt="Ganapathy Gangadharan" className="rounded-full object-cover w-12 h-12" />
+                    </div>
+                    <div>
+                        <div className="text-xs">Ganapathy Gangadharan</div>
+                        <div className="text-xs text-customGreyishBlack">Founder</div>
+                    </div>
+                </div>
+
+                {/* Second Author */}
+                <div className="flex items-center gap-4">
+                    <div className=" rounded-full bg-gray-300 flex items-center justify-center">
+                        <img src="/kaushik.jpg" alt="Kaushik Venkatesan" className="rounded-full object-cover w-12 h-12" />
+                    </div>
+                    <div>
+                        <div className="text-xs">Kaushik Venkatesan</div>
+                        <div className="text-xs text-customGreyishBlack">Alliance Director</div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     );
 };
