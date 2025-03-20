@@ -14,3 +14,7 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+html {
+    scroll-behavior: smooth;
+}
