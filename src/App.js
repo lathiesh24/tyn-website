@@ -9,6 +9,7 @@ import Nifo from "./components/Nifo";
 import ScrollToTop from "./components/ScrollToTop";
 import NotFound from "./components/NotFound";
 import OurInsights from "./components/Our Insights/page"
+import WhitepaperDetails from "./components/Our Insights/WhitepaperDetails";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/yzone" element={<Yzone />} exact />
         <Route path="/nifo" element={<Nifo />} exact />
         <Route path="/insights" element={<OurInsights/>} exact />
+        <Route path="/whitepaper/:id" element={<WhitepaperDetails/>} /> 
         <Route path="*" element={<NotFound />} />
         
       </Routes>

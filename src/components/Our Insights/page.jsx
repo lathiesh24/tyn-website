@@ -3,6 +3,7 @@ import WhitepaperOne from "./WhitepaperOne";
 import Navbar from "../Navbar";
 import PartnerLandScape from "./PartnerLandScape";
 import Footer from "../Footer";
+import Whitepapers from "./Whitepapers";
 
 const page = () => {
   return (
@@ -11,7 +12,7 @@ const page = () => {
         <Navbar />
       </div>
       <div className="">
-        <WhitepaperOne />
+        <Whitepapers/>
       </div>
       <div className="">
         <Footer />
