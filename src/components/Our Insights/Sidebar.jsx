@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const sections = [
     { id: "executive-summary", title: "Executive Summary" },
@@ -10,6 +10,41 @@ const sections = [
 ];
 
 const Sidebar = () => {
+    const [activeSection, setActiveSection] = useState("");
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setActiveSection(entry.target.id);
+                    }
+                });
+            },
+            { threshold: 0.5 }
+        );
+
+        sections.forEach((section) => {
+            const element = document.getElementById(section.id);
+            if (element) observer.observe(element);
+        });
+
+        return () => {
+            observer.disconnect();
+        };
+    }, []);
+
+    // Handle scroll to the start of the section
+    const handleScrollToSection = (id) => {
+        const section = document.getElementById(id);
+        if (section) {
+            section.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+            });
+        }
+    };
+
     return (
         <div className="bg-gray-100 p-4 border-r h-screen w-max">
             <h2 className="text-xl font-semibold my-5">Sections</h2>
@@ -18,7 +53,16 @@ const Sidebar = () => {
                     <li key={section.id}>
                         <a
                             href={`#${section.id}`}
-                            className="text-[14px]"
+                            className={`text-[14px] py-2 px-4 block rounded-md font-light
+                                ${activeSection === section.id
+                                    ? 'text-black cursor-default'
+                                    : 'text-customGreyishBlack'
+                                }
+                                transition-all`}
+                            onClick={(e) => {
+                                e.preventDefault(); 
+                                handleScrollToSection(section.id); 
+                            }}
                         >
                             {section.title}
                         </a>

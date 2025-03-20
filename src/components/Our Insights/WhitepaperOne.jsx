@@ -60,14 +60,14 @@ const WhitepaperOne = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col gap-8" id='partner-landscape'>
-                        <div className='flex font-semibold text-3xl text-customBlack'>
+                    <div className="flex flex-col gap-8 " id='partner-landscape'>
+                        <div className='flex font-semibold text-3xl text-customBlack py-4'>
                            Partner Landscape
                         </div>
                         <PartnerLandScape />
                     </div>
                     <div className=" flex flex-col gap-8" id='who-to-work-with'>
-                        <div className='flex font-semibold text-3xl text-customBlack'>Who should you work with?</div>
+                        <div className='flex font-semibold text-3xl text-customBlack py-4'>Who should you work with?</div>
                         <div className='flex flex-col gap-8 text-lg text-customGreyishBlack font-light'>
                             <div>Selecting the right partners is essential for scaling
                                 through channels. Each type of partner brings a
