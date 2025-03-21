@@ -47,31 +47,25 @@ const PartnerLandScape = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 sm:gap-4 gap-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
       {contentForPartnerLandScape.map((content, index) => (
         <div
           key={index}
-          className={`relative z-10 flex flex-row border border-gray-500 border-solid rounded-lg p-4 overflow-hidden ${
-            index === contentForPartnerLandScape.length - 1
-              ? "md:col-span-2 mx-auto"
-              : ""
-          }`}
+          className="relative flex border border-gray-500 rounded-lg p-3 overflow-hidden"
         >
-          <div className="flex-grow pr-28 md:pr-10 flex flex-col justify-center sm:gap-0 gap-2">
-            <div className="font-semibold">
+          {/* Left: Text Content */}
+          <div className="flex-grow pr-24">
+            <div className="font-semibold text-lg">
               {index + 1}. {content.title}
             </div>
-            <div className="text-gray-500 font-light">
-              {content.description}
-            </div>
+            <div className="text-gray-500 font-light">{content.description}</div>
           </div>
 
+          {/* Right: Logo (ABSOLUTE & FIXED to Border) */}
           <div
-            className={`absolute right-[-28px] sm:right-[-21px] z-0 ${
-              index === contentForPartnerLandScape.length - 1
-                ? "bottom-3 md:bottom-[-14px]"
-                : "bottom-3 sm:bottom-0"
-            }`}
+            className={`absolute right-[-16px] ${
+              index === 3 || index === 4 || index === 5 ? "sm:bottom-3" : "sm:bottom-[-4px] 2xl:bottom-[-6px]"
+            } flex items-center justify-end w-24 h-24`}
           >
             <img
               src={content.image}
