@@ -7,8 +7,8 @@ import Navbar from '../Navbar';
 
 const whitepapers = [
     {
-        id: 'Unlocking-Non-Linear-Growth-through-Strategic-Alliances', 
-        title: 'Unlocking Non-Linear Growth through Strategic Alliances',
+        id: 'Choosing-the-Right-Partner-for-Channel-Led-Growth', 
+        title: 'Choosing the Right Partner for Channel - Led Growth',
         image: '/bgwhitepaper.jpg',
         component: <WhitepaperOne />,  
     },

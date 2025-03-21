@@ -2,8 +2,23 @@ import React from "react";
 import PartnerLandScape from "./PartnerLandScape";
 import ThirdPointData from "./ThirdPointData";
 import Sidebar from "./Sidebar";
+import { FiDownload, FiShare2 } from "react-icons/fi";
 
 const WhitepaperOne = () => {
+
+    const handleShare = (url, title) => {
+        if (navigator.share) {
+            navigator.share({
+                title: title,
+                url: url,
+            })
+                .then(() => console.log('Successfully shared'))
+                .catch((error) => console.error('Error sharing:', error));
+        } else {
+            alert('Sharing is not supported on this device.');
+        }
+    };
+
     return (
         <div className="flex flex-col min-h-screen">
             <div class="relative w-full h-[400px]">
@@ -14,7 +29,7 @@ const WhitepaperOne = () => {
                 />
                 <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
                     <h1 class="text-white text-3xl font-bold text-center">
-                        Unlocking Non-Linear Growth through Strategic Alliances
+                        Choosing the Right Partner for Channel - Led Growth
                     </h1>
                 </div>
             </div>
@@ -23,13 +38,28 @@ const WhitepaperOne = () => {
                     <Sidebar />
                 </div>
                 <div className="sm:px-8 flex-1 flex flex-col gap-8 sm:py-10 p-6">
+                    <div className="flex gap-8 items-center justify-end px-4">
+                        <button
+                            onClick={() => handleShare('/insights/Unlocking Non-Linear Growth through Strategic Alliances', 'Unlocking Non-Linear Growth through Strategic Alliances')}
+                            className="text-gray-600 hover:text-blue-500"
+                        >
+                            <FiShare2 size={16} />
+                        </button>
+                        <a
+                            href="/Unlocking Non Linear Growth through Strategic Alliances.pdf"
+                            download={true}
+                            className="text-gray-600 hover:text-blue-500"
+                        >
+                            <FiDownload size={16} />
+                        </a>
+                    </div>
                     <div className="flex flex-col sm:gap-8 gap-4" id="executive-summary">
                         <div className="flex flex-col sm:gap-8 gap-4 sm:text-lg text-base text-customGreyishBlack font-light">
                             <div>
                                 In today’s competitive tech landscape, it is imperative that emerging tech firms must scale quickly and secure enterprise clients in order to drive sustainable growth. Here we explore different types of channel partnerships that can unlock non-linear growth.
                             </div>
                             <div>
-                                While direct sales yield good results in the short term, they fail to scale non-linearly. Channel-led growth, where third-party partners with an established market presence drive customer acquisition, accelerates enterprise penetration and market expansion, while also establishing and enhancing the credibility of emerging technologies. 
+                                While direct sales yield good results in the short term, they fail to scale non-linearly. Channel-led growth, where third-party partners with an established market presence drive customer acquisition, accelerates enterprise penetration and market expansion, while also establishing and enhancing the credibility of emerging technologies.
                             </div>
                         </div>
                     </div>
@@ -49,7 +79,7 @@ const WhitepaperOne = () => {
                         </div>
                         <PartnerLandScape />
                     </div>
-                   
+
                     <div className="flex flex-col gap-8" id="conclusion">
                         <div className="sm:text-3xl text-2xl font-semibold text-customBlack">
                             Key Considerations
@@ -69,6 +99,19 @@ const WhitepaperOne = () => {
                                 For an in-depth analysis of the different types of channel partners, including their advantages, challenges, and recommended strategies, download the full whitepaper.
                             </div>
                         </div>
+                    </div>
+
+                    <div className="flex justify-center items-center">
+                         <a
+                            href="/Unlocking Non Linear Growth through Strategic Alliances.pdf"
+                            download={true}
+                            className=" hover:text-customBlue hover:bg-white shadow-md flex flex-row gap-4 items-center justify-center border bg-customBlue text-white w-max px-6 py-3 rounded-[32px]"
+                        >
+                            <FiDownload size={16} />
+                            <div>
+                                Download the full whitepaper
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
