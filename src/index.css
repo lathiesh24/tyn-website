@@ -1,9 +1,9 @@
-.custom-bullet {
+.custom-bullet li {
     position: relative;
     padding-left: 2rem;
 }
 
-.custom-bullet::before {
+.custom-bullet li::before {
     content: "";
     position: absolute;
     left: 0;

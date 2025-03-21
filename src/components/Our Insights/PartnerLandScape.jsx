@@ -57,7 +57,6 @@ const PartnerLandScape = () => {
               : ""
           }`}
         >
-          {/* Left Section: Text Content */}
           <div className="flex-grow pr-28 md:pr-10 flex flex-col justify-center sm:gap-0 gap-2">
             <div className="font-semibold">
               {index + 1}. {content.title}
@@ -67,7 +66,6 @@ const PartnerLandScape = () => {
             </div>
           </div>
 
-          {/* Right Section: Image - Fixed Z-index and Positioning */}
           <div
             className={`absolute right-[-28px] sm:right-[-21px] z-0 ${
               index === contentForPartnerLandScape.length - 1

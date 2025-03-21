@@ -5,13 +5,13 @@ import WhitepaperOne from './WhitepaperOne';
 
 const whitepapers = [
     {
-        id: 1,
+        id: 'Unlocking-Non-Linear-Growth-through-Strategic-Alliances',
         title: 'Unlocking Non-Linear Growth through Strategic Alliances',
         description: "Choosing the Right Partner for Channel - Led Growth",
         image: '/bgwhitepaper.jpg',
         component: <WhitepaperOne />,
         pdfUrl: '/Unlocking Non Linear Growth through Strategic Alliances.pdf',
-        url: '/whitepaper/1', 
+        url: '/insights/Unlocking Non-Linear Growth through Strategic Alliances',
     },
 ];
 
@@ -30,21 +30,21 @@ const Whitepapers = () => {
     };
 
     return (
-        <div className='h-screen justify-center items-center '>
+        <div className='h-screen justify-center items-center'>
             <div className='px-8 flex flex-col gap-5'>
-                <div className='mt-20 flex font-semibold text-2xl text-customBlack '>
+                <div className='mt-20 flex font-semibold text-2xl text-customBlack'>
                     Our Insights
                 </div>
-                <hr className='border-gray-300'/>
+                <hr className='border-gray-300' />
             </div>
-            
+
             <div className="flex gap-6 px-6 justify-center items-center pt-10">
                 {whitepapers.map((whitepaper) => (
                     <div
                         className="card bg-white border border-gray-200 rounded-[16px] shadow-2xl overflow-hidden hover:scale-105"
                         key={whitepaper.id}
                     >
-                        <Link to={`/whitepaper/${whitepaper.id}`} className="flex flex-col">
+                        <Link to={`/insights/${whitepaper.id}`} className="flex flex-col"> {/* Updated link path */}
                             <div className="">
                                 <img
                                     src={whitepaper.image}
@@ -82,8 +82,6 @@ const Whitepapers = () => {
                 ))}
             </div>
         </div>
-
-       
     );
 };
 

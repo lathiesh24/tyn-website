@@ -46,31 +46,11 @@ const Sidebar = () => {
 
     return (
         <div className="flex flex-col gap-4 p-4 border-r h-screen w-max">
-            <ul className="flex flex-col gap-5">
-                {sections.map((section) => (
-                    <li key={section.id}>
-                        <a
-                            href={`#${section.id}`}
-                            className={`text-[14px] py-2 px-4 block rounded-md font-light
-                                ${activeSection === section.id
-                                    ? 'text-black cursor-default'
-                                    : 'text-customGreyishBlack'
-                                }
-                                transition-all`}
-                            onClick={(e) => {
-                                e.preventDefault(); 
-                                handleScrollToSection(section.id); 
-                            }}
-                        >
-                            {section.title}
-                        </a>
-                    </li>
-                ))}
-            </ul>
+        
             <div className="flex flex-col gap-5">
                 <div className="text-customBlack">Authors</div>
 
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4" >
                     <div className="rounded-full bg-gray-300 flex items-center justify-center">
                         <img src="/gg.jpeg" alt="Ganapathy Gangadharan" className="rounded-full object-cover w-12 h-12" />
                     </div>

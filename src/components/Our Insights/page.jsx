@@ -12,7 +12,8 @@ const page = () => {
         <Navbar />
       </div>
       <div className="">
-        <Whitepapers/>
+        {/* <Whitepapers/> */}
+        <WhitepaperOne/>
       </div>
       <div className="">
         <Footer />
