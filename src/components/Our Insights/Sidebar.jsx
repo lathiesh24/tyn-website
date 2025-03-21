@@ -34,7 +34,6 @@ const Sidebar = () => {
         };
     }, []);
 
-    // Handle scroll to the start of the section
     const handleScrollToSection = (id) => {
         const section = document.getElementById(id);
         if (section) {
@@ -71,7 +70,6 @@ const Sidebar = () => {
             <div className="flex flex-col gap-5">
                 <div className="text-customBlack">Authors</div>
 
-                {/* First Author */}
                 <div className="flex items-center gap-4">
                     <div className="rounded-full bg-gray-300 flex items-center justify-center">
                         <img src="/gg.jpeg" alt="Ganapathy Gangadharan" className="rounded-full object-cover w-12 h-12" />
@@ -82,7 +80,6 @@ const Sidebar = () => {
                     </div>
                 </div>
 
-                {/* Second Author */}
                 <div className="flex items-center gap-4">
                     <div className=" rounded-full bg-gray-300 flex items-center justify-center">
                         <img src="/kaushik.jpg" alt="Kaushik Venkatesan" className="rounded-full object-cover w-12 h-12" />
