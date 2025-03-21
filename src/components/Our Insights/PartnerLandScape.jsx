@@ -47,30 +47,28 @@ const PartnerLandScape = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:mx-10">
       {contentForPartnerLandScape.map((content, index) => (
         <div
           key={index}
-          className="relative flex border border-gray-500 rounded-lg p-3 overflow-hidden"
+          className={`relative flex border border-gray-500 rounded-lg p-4 overflow-hidden ${
+            index === contentForPartnerLandScape.length - 1 ? "md:col-span-2 md:mx-64" : ""
+          }`}
         >
-          {/* Left: Text Content */}
-          <div className="flex-grow pr-24">
-            <div className="font-semibold text-lg">
+          <div className={`flex-grow pr-10 md:pr-24`}>
+            <div className="font-semibold sm:text-lg">
               {index + 1}. {content.title}
             </div>
-            <div className="text-gray-500 font-light">{content.description}</div>
+            <div className="text-gray-500 font-light text-xs sm:text-sm">
+              {content.description}
+            </div>
           </div>
 
-          {/* Right: Logo (ABSOLUTE & FIXED to Border) */}
-          <div
-            className={`absolute right-[-16px] ${
-              index === 3 || index === 4 || index === 5 ? "sm:bottom-3" : "sm:bottom-[-4px] 2xl:bottom-[-6px]"
-            } flex items-center justify-end w-24 h-24`}
-          >
+          <div className="absolute right-[-24px] sm:right-[-20px] bottom-[-1px] md:bottom-0 flex items-center justify-end w-24 h-24">
             <img
               src={content.image}
               alt={content.title}
-              className="w-32 h-32 object-contain"
+              className="w-24 h-24 sm:w-32 sm:h-32 object-contain"
             />
           </div>
         </div>

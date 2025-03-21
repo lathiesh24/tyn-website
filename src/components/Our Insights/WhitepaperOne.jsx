@@ -59,14 +59,14 @@ const WhitepaperOne = () => {
                                 In today’s competitive tech landscape, it is imperative that emerging tech firms must scale quickly and secure enterprise clients in order to drive sustainable growth. Here we explore different types of channel partnerships that can unlock non-linear growth.
                             </div>
                             <div>
-                                While direct sales yield good results in the short term, they fail to scale non-linearly. Channel-led growth, where third-party partners with an established market presence drive customer acquisition, accelerates enterprise penetration and market expansion, while also establishing and enhancing the credibility of emerging technologies.
+                                While direct sales yield good results in the short term, they fail to scale non-linearly. Channel-led growth, where third-party partners with an established market presence drive customer acquisition, accelerate enterprise penetration and market expansion, while also establishing and enhancing the credibility of emerging technologies.
                             </div>
                         </div>
                     </div>
                     <div className="flex flex-col sm:gap-8 gap-4" id="channel-growth">
                         <div className="flex flex-col sm:gap-8 gap-4 sm:text-lg text-base text-customGreyishBlack font-light">
                             <div>
-                                Selecting the right partners is essential for scaling through channels. Each type of partner brings a unique blend of strengths, networks, and challenges. Understanding this along with their roles and how they fit into your growth strategy can help you unlock new markets, sales growth, and enhanced brand visibility.
+                                Selecting the right set of partners is essential for scaling through channels. Each type of partner brings a unique blend of strengths, networks, and challenges. Understanding this along with their roles and how they fit into your growth strategy can help you unlock new markets, sales growth, and enhanced brand visibility.
                             </div>
                             <div>
                                 For emerging tech firms, partnering with multiple entities is key to delivering complete, scalable solutions that reduce friction and drive enterprise adoption. A multi-partner approach reduces sales friction while increasing credibility, accelerating customer acquisition, and enhancing market access.
