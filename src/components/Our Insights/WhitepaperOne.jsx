@@ -40,7 +40,7 @@ const WhitepaperOne = () => {
                 <div className="sm:px-8 flex-1 flex flex-col gap-8 sm:py-10 p-6">
                     <div className="flex gap-8 items-center justify-end px-4">
                         <button
-                            onClick={() => handleShare('/insights/Unlocking Non-Linear Growth through Strategic Alliances', 'Unlocking Non-Linear Growth through Strategic Alliances')}
+                            onClick={() => handleShare('/insights', 'Unlocking Non-Linear Growth through Strategic Alliances')}
                             className="text-gray-600 hover:text-blue-500"
                         >
                             <FiShare2 size={16} />
