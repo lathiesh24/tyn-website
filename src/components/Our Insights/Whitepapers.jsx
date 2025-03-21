@@ -5,13 +5,13 @@ import WhitepaperOne from './WhitepaperOne';
 
 const whitepapers = [
     {
-        id: 'Unlocking-Non-Linear-Growth-through-Strategic-Alliances',
-        title: 'Unlocking Non-Linear Growth through Strategic Alliances',
+        id: 'Choosing-the-Right-Partner-for-Channel-Led Growth',
+        title: 'Choosing the Right Partner for Channel - Led Growth',
         description: "Choosing the Right Partner for Channel - Led Growth",
         image: '/bgwhitepaper.jpg',
         component: <WhitepaperOne />,
         pdfUrl: '/Unlocking Non Linear Growth through Strategic Alliances.pdf',
-        url: '/insights/Unlocking Non-Linear Growth through Strategic Alliances',
+        url: '/insights/Choosing the Right Partner for Channel - Led Growth',
     },
 ];
 
