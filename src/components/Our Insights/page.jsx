@@ -13,7 +13,7 @@ const page = () => {
       </div>
       <div className="">
         {/* <Whitepapers/> */}
-        {/* <WhitepaperOne/> */}
+        <WhitepaperOne/>
       </div>
       <div className="">
         <Footer />
