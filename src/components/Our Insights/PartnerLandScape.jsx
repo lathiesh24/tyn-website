@@ -47,36 +47,28 @@ const PartnerLandScape = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 sm:gap-4 gap-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:mx-10">
       {contentForPartnerLandScape.map((content, index) => (
         <div
           key={index}
-          className={`relative z-10 flex flex-row border border-gray-500 border-solid rounded-lg p-4 overflow-hidden ${
-            index === contentForPartnerLandScape.length - 1
-              ? "md:col-span-2 mx-auto"
-              : ""
+          className={`relative flex border border-gray-500 rounded-lg p-4 overflow-hidden ${
+            index === contentForPartnerLandScape.length - 1 ? "md:col-span-2 md:mx-64" : ""
           }`}
         >
-          <div className="flex-grow pr-28 md:pr-10 flex flex-col justify-center sm:gap-0 gap-2">
-            <div className="font-semibold">
+          <div className={`flex-grow pr-10 md:pr-24`}>
+            <div className="font-semibold sm:text-lg">
               {index + 1}. {content.title}
             </div>
-            <div className="text-gray-500 font-light">
+            <div className="text-gray-500 font-light text-xs sm:text-sm">
               {content.description}
             </div>
           </div>
 
-          <div
-            className={`absolute right-[-28px] sm:right-[-21px] z-0 ${
-              index === contentForPartnerLandScape.length - 1
-                ? "bottom-3 md:bottom-[-14px]"
-                : "bottom-3 sm:bottom-0"
-            }`}
-          >
+          <div className="absolute right-[-24px] sm:right-[-20px] bottom-[-1px] md:bottom-0 flex items-center justify-end w-24 h-24">
             <img
               src={content.image}
               alt={content.title}
-              className="w-32 h-32 object-contain"
+              className="w-24 h-24 sm:w-32 sm:h-32 object-contain"
             />
           </div>
         </div>
