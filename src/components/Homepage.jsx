@@ -56,9 +56,6 @@ const Homepage = () => {
     }
   };
 
-  const handleEventNavigation = () => {
-    navigate("/event");
-  };
 
   useEffect(() => {
     const handleScroll = () => {

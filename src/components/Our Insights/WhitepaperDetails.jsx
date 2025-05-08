@@ -1,39 +1,33 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
-import WhitepaperOne from './WhitepaperOne';
-import Footer from '../Footer';
+import { useParams, useNavigate } from 'react-router-dom';
+import whitepapers from '../Our Insights/localWhitepapers'; 
+import { FiDownload } from 'react-icons/fi';
 import Navbar from '../Navbar';
 
+const WhitepaperDetail = () => {
+    const { slug } = useParams();
+    const navigate = useNavigate();
 
-const whitepapers = [
-    {
-        id: 'Choosing-the-Right-Partner-for-Channel-Led-Growth', 
-        title: 'Choosing the Right Partner for Channel - Led Growth',
-        image: '/bgwhitepaper.jpg',
-        component: <WhitepaperOne />,  
-    },
-];
+    const whitepaper = whitepapers.find(
+        (wp) => wp.id.replace(/\s+/g, '-').toLowerCase() === slug.toLowerCase()
+    );
 
-const WhitepaperDetails = () => {
-    const { id } = useParams();
-    const whitepaper = whitepapers.find(paper => paper.id === decodeURIComponent(id));
     if (!whitepaper) {
-        return <div>Whitepaper not found!</div>;
+        return <div className="p-10 text-center text-red-500">Whitepaper not found.</div>;
     }
 
     return (
-        <div>
-            <div>
-                <Navbar />
-            </div>
-            <div>
-                {whitepaper.component}
-            </div>
-            <div>
-                <Footer />
-            </div>
+        <div className="">
+            <Navbar/>
+            <div className="">{whitepaper.component}</div>
+            {/* <button
+                onClick={() => navigate(-1)}
+                className="mb-6 text-sm font-medium text-[#2287C0] hover:underline"
+            >
+                ← Back to Whitepapers
+            </button> */}
         </div>
     );
 };
 
-export default WhitepaperDetails;
+export default WhitepaperDetail;

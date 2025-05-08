@@ -44,7 +44,7 @@ const Whitepapers = () => {
                         className="card bg-white border border-gray-200 rounded-[16px] shadow-2xl overflow-hidden hover:scale-105"
                         key={whitepaper.id}
                     >
-                        <Link to={`/insights/${whitepaper.id}`} className="flex flex-col"> {/* Updated link path */}
+                        <Link to={`/ynsights/${whitepaper.id}`} className="flex flex-col"> {/* Updated link path */}
                             <div className="">
                                 <img
                                     src={whitepaper.image}

@@ -26,7 +26,7 @@ const Navbar = ({ activeSection }) => {
   };
 
   const handleLinkNavigation = (section) => {
-    if (["nifo", "yzone", "ynfinity","insights"].includes(section)) {
+    if (["nifo", "yzone", "ynfinity","ynsights"].includes(section)) {
       navigate(`/${section}`);
       setIsOpen(false);
     } else {
@@ -82,13 +82,13 @@ const Navbar = ({ activeSection }) => {
             Services
           </div>
           <div
-            onClick={() => handleLinkNavigation("insights")}
-            className={`mt-2 cursor-pointer ${activeSection === "insights"
+            onClick={() => handleLinkNavigation("ynsights")}
+            className={`mt-2 cursor-pointer ${activeSection === "ynsights"
                 ? "underline decoration-customYellow decoration-[3px]"
                 : ""
               }`}
           >
-            Our Insights
+            Ynsights
           </div>
           <div
             onClick={() => handleLinkNavigation("our-team")}

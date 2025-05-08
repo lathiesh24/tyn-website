@@ -3,20 +3,35 @@ import React from "react";
 import { FaLinkedin } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 
-const Footer = ({ handleNavigation }) => {
+const Footer = () => {
   const navigate = useNavigate();
 
-  const handleAllianceNavigation = () => {
-    navigate("/alliance");
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    const navbarHeight = document.querySelector(".fixed")?.offsetHeight || 0;
+    if (section) {
+      const sectionTop = section.offsetTop - navbarHeight;
+      window.scrollTo({
+        top: sectionTop,
+        behavior: "smooth",
+      });
+    }
   };
 
-  const handleCoInnovationNavigation = () => {
-    navigate("/alliance");
+  const handleNavigation = (sectionId) => {
+    if (window.location.pathname !== "/") {
+      navigate(`/#${sectionId}`);
+      setTimeout(() => scrollToSection(sectionId), 100);
+    } else {
+      scrollToSection(sectionId);
+    }
   };
+
+  const handleAllianceNavigation = () => navigate("/alliance");
+  const handleCoInnovationNavigation = () => navigate("/alliance");
 
   return (
     <div className="flex flex-col bg-bgBlue">
-      {/* For mobile   */}
       <div className="mx-6 xl:mx-20 flex flex-col md:flex-row-reverse md:justify-between gap-8 mt-10">
         <div className="font-medium text-lg flex flex-col gap-1.5">
           <div>Services</div>
@@ -97,9 +112,6 @@ const Footer = ({ handleNavigation }) => {
         </div>
       </div>
 
-      {/* Footer part 2 */}
-
-      {/* Footer last part */}
       <div className="font-light flex flex-col text-center justify-center items-center sm:flex-row mt-4 sm:mt-0 mb-1 sm:mb-0 text-[15px] sm:text-lg p-5 gap-5 sm:gap-16 ">
         <div className="text-gray-400">
           Copyright © 2024 TYN Ecosystem Private Ltd

@@ -10,6 +10,9 @@ import ScrollToTop from "./components/ScrollToTop";
 import NotFound from "./components/NotFound";
 import OurInsights from "./components/Our Insights/page";
 import WhitepaperDetails from "./components/Our Insights/WhitepaperDetails";
+import YnsightDetail from "./components/Our Insights/YnsightDetail";
+import WhitepaperDetail from "./components/Our Insights/WhitepaperDetails";
+import IndustryYnsights from "./components/Our Insights/IndustryYnsights"
 
 function App() {
   return (
@@ -22,8 +25,10 @@ function App() {
         <Route path="/ynfinity" element={<Event />} exact />
         <Route path="/yzone" element={<Yzone />} exact />
         <Route path="/nifo" element={<Nifo />} exact />
-        <Route path="/insights" element={<OurInsights />} exact />
-        <Route path="/insights/:id" element={<WhitepaperDetails />} /> 
+        <Route path="/ynsights" element={<OurInsights />} exact />
+        <Route path="/ynsights/:slug" element={<WhitepaperDetail />} />
+        <Route path="/ynsight/:slug" element={<YnsightDetail />} />
+        <Route path="/ynsights/industry/:industrySlug" element={<IndustryYnsights />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
