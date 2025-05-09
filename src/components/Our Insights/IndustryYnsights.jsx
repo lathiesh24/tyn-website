@@ -49,10 +49,22 @@ const IndustryYnsights = () => {
     return (
         <>
             <Navbar />
-            <div className="py-20 px-6 lg:px-16 bg-[#F9FAFB] min-h-screen">
+            <div className='pt-16'>
+            <div className="w-full bg-bgBlue py-8 px-16 flex flex-col gap-4">
+                <div className="text-sm text-[#626262] ">
+                    <span className="hover:underline cursor-pointer">Ynsight</span> &nbsp;→&nbsp;
+                    <span className="hover:underline cursor-pointer">{selectedInsight?.industry}</span> 
+                </div>
+                <h1 className="text-2xl sm:text-4xl font-bold text-customBlack mb-4 leading-snug">
+                    {selectedInsight?.title}
+                </h1>
+            </div>
+            </div>
+
+            <div className="px-6 lg:px-16 bg-[#F9FAFB] min-h-screen py-8">
                 <div className="flex flex-col lg:flex-row gap-8">
                     <aside className="lg:w-1/4 w-full border-r border-gray-200 pr-4">
-                        <h2 className="text-xl font-bold mb-6 text-customBlack tracking-tight">Insights</h2>
+                        <h2 className="text-xl font-bold mb-6 text-customBlack tracking-tight">Ynsights</h2>
                         <ul className="flex flex-col gap-2">
                             {filteredYnsights.map((item, index) => (
                                 <li

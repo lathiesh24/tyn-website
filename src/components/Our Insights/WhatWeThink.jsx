@@ -84,12 +84,12 @@ const WhatWeThink = () => {
             </div>
 
             <div className="relative w-full flex justify-center border-b-2 border-[#E0E0E0]">
-                <div className="flex gap-10">
+                <div className="flex gap-4 sm:gap-10">
                     {['whitepapers', 'ynsights', 'casestudies'].map((tab) => (
                         <button
                             key={tab}
                             onClick={() => setActiveTab(tab)}
-                            className={`relative pt-5 pb-[20px] px-4 font-medium text-sm ${activeTab === tab
+                            className={`relative pt-5 pb-[20px] px-2 sm:px-4 font-medium text-sm sm:text-sm ${activeTab === tab
                                     ? 'text-[#2287C0] after:content-[""] after:absolute after:bottom-[-2px] after:left-0 after:w-full after:h-[2px] after:bg-[#2287C0]'
                                     : 'text-[#626262]'
                                 }`}

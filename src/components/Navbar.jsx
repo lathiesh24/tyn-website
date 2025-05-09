@@ -195,6 +195,13 @@ const Navbar = ({ activeSection }) => {
             >
               Our Team
             </div>
+            <div
+              onClick={() => handleLinkNavigation("ynsights")}
+              className="mt-2 cursor-pointer text-xl"
+            >
+              Ynsights
+            </div>
+
             {/* Dropdown for Accelerators */}
             <div className="relative w-full">
               <div
