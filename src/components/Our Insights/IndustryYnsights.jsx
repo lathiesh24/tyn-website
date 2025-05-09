@@ -49,13 +49,13 @@ const IndustryYnsights = () => {
     return (
         <>
             <Navbar />
-            <div className='pt-16'>
-            <div className="w-full bg-bgBlue py-8 px-16 flex flex-col gap-4">
+            <div className='pt-20 sm:pt-16 '>
+            <div className="w-full bg-bgBlue py-4  sm:py-8 px-4 sm:px-16 flex flex-col gap-2 sm:gap-4">
                 <div className="text-sm text-[#626262] ">
                     <span className="hover:underline cursor-pointer">Ynsight</span> &nbsp;→&nbsp;
                     <span className="hover:underline cursor-pointer">{selectedInsight?.industry}</span> 
                 </div>
-                <h1 className="text-2xl sm:text-4xl font-bold text-customBlack mb-4 leading-snug">
+                <h1 className="text-lg sm:text-4xl font-bold text-customBlack mb-4 leading-snug">
                     {selectedInsight?.title}
                 </h1>
             </div>
