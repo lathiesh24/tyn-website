@@ -59,12 +59,6 @@ const cardData = [
     image: "/lathiesh.png",
   },
   {
-    name:"Vivek Raju", 
-    role:"Alliance Director",
-    roleDescription:"Vivek is a seasoned sales, alliances, program management, and GTM professional with experience in both multinational corporations and startup environments. His expertise spans a wide range of industries, including manufacturing, professional services, life sciences, and high tech. Vivek is passionate about leveraging technology initiatives and adoption to solve business problems and create value.",
-    image:"/vivek.jpg"
-  },
-  {
     name:"Rathnasundara Devi",
     role:"Legal & Finance Manager",
     roleDescription:"A legal professional with a strong interest in the intersection of law and finance.",
