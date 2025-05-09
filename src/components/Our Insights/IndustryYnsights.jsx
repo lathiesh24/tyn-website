@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { sanity } from '../../sanityClient';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
+import { useNavigate } from 'react-router-dom';
 
 const toTitleCase = (str) =>
     str.replace(/-/g, ' ').replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.slice(1).toLowerCase());
@@ -46,13 +47,19 @@ const IndustryYnsights = () => {
 
     const selectedInsight = filteredYnsights[selectedIndex];
 
+    const navigate = useNavigate()
+
+    const handleBack = ()=>{
+        navigate("/ynsights")
+    }
+
     return (
         <>
             <Navbar />
             <div className='pt-20 sm:pt-16 '>
             <div className="w-full bg-bgBlue py-4  sm:py-8 px-4 sm:px-16 flex flex-col gap-2 sm:gap-4">
                 <div className="text-sm text-[#626262] ">
-                    <span className="hover:underline cursor-pointer">Ynsight</span> &nbsp;→&nbsp;
+                    <span className="hover:underline cursor-pointer" onClick={handleBack}>Ynsight</span> &nbsp;→&nbsp;
                     <span className="hover:underline cursor-pointer">{selectedInsight?.industry}</span> 
                 </div>
                 <h1 className="text-lg sm:text-4xl font-bold text-customBlack mb-4 leading-snug">

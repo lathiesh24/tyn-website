@@ -18,7 +18,7 @@ export const industriesData = [
     {
         name: "Heavy Automotive Manufacturing",
         description: "See how large-scale vehicle manufacturers are leveraging digitization to boost shopfloor performance.",
-        image: "/heavy-automotive-manufacturing.webp",
+        image: "/heavy-automotive-manufacturing.jpg",
     },
     {
         name: "Electronics Retail",
