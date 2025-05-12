@@ -97,7 +97,7 @@ const WhatWeThink = () => {
                             {tab === 'whitepapers'
                                 ? 'Whitepapers'
                                 : tab === 'ynsights'
-                                    ? 'Ynsights'
+                                    ? 'Use Cases'
                                     : 'Case Studies'}
                         </button>
                     ))}
