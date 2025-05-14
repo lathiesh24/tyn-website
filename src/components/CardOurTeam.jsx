@@ -86,9 +86,11 @@ const CardOurTeam = () => {
       <button
         onClick={goToPrevious}
         className="absolute top-1/2 transform -translate-y-1/2 left-0 z-10"
+        aria-label="Previous slide"
       >
         <IoIosArrowBack size={36} />
       </button>
+
       <div className="hidden sm:flex px-16 space-x-4 relative">
         {[
           currentIndex,

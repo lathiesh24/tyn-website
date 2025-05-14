@@ -42,7 +42,6 @@ const Navbar = ({ activeSection }) => {
     }
   };
 
-  // Determine if the current path is part of the accelerators section
   const isAcceleratorActive = ["nifo", "yzone", "ynfinity"].some((path) =>
     location.pathname.includes(path)
   );
@@ -163,10 +162,12 @@ const Navbar = ({ activeSection }) => {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="focus:outline-none"
+            aria-label={isOpen ? "Close menu" : "Open menu"}
           >
             {isOpen ? <IoClose size={24} /> : <GiHamburgerMenu size={24} />}
           </button>
         </div>
+
       </div>
       {isOpen && (
         <div className="fixed inset-0 bg-customBlack bg-opacity-50 z-20">
