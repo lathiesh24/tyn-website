@@ -9,7 +9,6 @@ import Nifo from "./components/Nifo";
 import ScrollToTop from "./components/ScrollToTop";
 import NotFound from "./components/NotFound";
 import OurInsights from "./components/Our Insights/page";
-import WhitepaperDetails from "./components/Our Insights/WhitepaperDetails";
 import YnsightDetail from "./components/Our Insights/YnsightDetail";
 import WhitepaperDetail from "./components/Our Insights/WhitepaperDetails";
 import IndustryYnsights from "./components/Our Insights/IndustryYnsights"

@@ -74,6 +74,7 @@ const Footer = () => {
               href="https://www.linkedin.com/company/the-yellow-network/"
               target="_blank"
               rel="noreferrer"
+              aria-label="Visit The Yellow Network on LinkedIn"
             >
               <FaLinkedin size={32} />
             </a>

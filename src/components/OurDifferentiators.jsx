@@ -125,6 +125,7 @@ const OurDifferentiators = () => {
         <button
           onClick={goToNext}
           className="absolute top-1/2 transform -translate-y-1/2 right-0 z-10"
+          aria-label="Next slide"
         >
           <IoIosArrowForward size={36} />
         </button>
