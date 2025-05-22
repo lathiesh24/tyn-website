@@ -63,6 +63,12 @@ const cardData = [
     role:"Legal & Finance Manager",
     roleDescription:"A legal professional with a strong interest in the intersection of law and finance.",
     image:"/rathna.jpg"
+  },
+  {
+    name:"Maharshi Vidhyarthi",
+    role:"Innovation Consultant",
+    roleDescription:"Manufacturing professional with experience leading critical client projects and solving complex process challenges. Skilled in driving operational efficiency, streamlining workflows, and delivering client-focused outcomes. Passionate about using analytics and emerging technologies to enable innovation and unlock business value.",
+    image:"/maharshi.jpg"
   }
 ];
 
