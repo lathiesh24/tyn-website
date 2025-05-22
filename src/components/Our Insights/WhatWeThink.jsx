@@ -85,7 +85,7 @@ const WhatWeThink = () => {
 
             <div className="relative w-full flex justify-center border-b-2 border-[#E0E0E0]">
                 <div className="flex gap-4 sm:gap-10">
-                    {['whitepapers', 'ynsights', 'casestudies'].map((tab) => (
+                    {['whitepapers', 'ynsights'].map((tab) => (
                         <button
                             key={tab}
                             onClick={() => setActiveTab(tab)}
@@ -173,7 +173,7 @@ const WhatWeThink = () => {
                 </div>
             )}
 
-            {activeTab === 'casestudies' && (
+            {/* {activeTab === 'casestudies' && (
                 <div className="w-full max-w-6xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-12 px-4 sm:px-0">
                     <div className="bg-white border rounded-lg shadow hover:shadow-md transition flex flex-col items-center justify-center  text-center">
                         <img
@@ -187,7 +187,7 @@ const WhatWeThink = () => {
                         </p>
                     </div>
                 </div>
-            )}
+            )} */}
 
         </div>
     );
