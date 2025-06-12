@@ -92,10 +92,10 @@ const Homepage = () => {
       />
       <div className="relative flex items-center justify-center bg-white overflow-hidden">
         <div className="sm:flex hidden absolute right-0">
-          <img src="/circle1.png" alt="/" className="sm:h-[70vh] sm:w-auto" />
+          <img src="/circle1.png" alt="/" className="lg:h-[70vh] sm:w-auto" />
         </div>
         <div className="sm:flex hidden absolute left-0">
-          <img src="/circle2.png" alt="/" className="sm:h-[70vh] sm:w-auto" />
+          <img src="/circle2.png" alt="/" className="lg:h-[70vh] sm:w-auto" />
         </div>
 
         <div className="z-10 text-center">
@@ -103,7 +103,7 @@ const Homepage = () => {
             id="home"
             className="flex flex-col items-center justify-center h-screen"
           >
-            <div className="flex flex-col text-2xl sm:text-6xl font-medium tracking-wide">
+            <div className="flex flex-col text-2xl sm:text-4xl lg:text-6xl font-medium tracking-wide">
               <span className="text-customBlack">
                 Unleashing the potential of
               </span>
@@ -112,7 +112,7 @@ const Homepage = () => {
               </span>
             </div>
             <button
-              className="flex border-[3px] border-customBlue text-base sm:text-2xl font-medium text-customBlue w-max items-center justify-center py-1.5 px-3 sm:py-3 sm:px-5 rounded-2xl cursor-pointer mt-6 tracking-wider"
+              className="flex border-[3px] border-customBlue text-base sm:text-xl lg:text-2xl font-medium text-customBlue w-max items-center justify-center py-1.5 px-3 sm:py-3 sm:px-5 rounded-2xl cursor-pointer mt-6 sm:mt-10 lg:mt-6 tracking-wider"
               onClick={() => handleNavigation("Differentiators")}
             >
               Our Differentiators

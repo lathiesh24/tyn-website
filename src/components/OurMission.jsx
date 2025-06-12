@@ -4,12 +4,12 @@ const OurMission = () => {
   return (
     <>
       <div className="sm:flex sm:flex-col sm:gap-5 xl:gap-20 mt-4 sm:mt-8 mx-3 2xl:mx-12 hidden">
-        <div className="flex-col xl:gap-5 items-center text-[15px]  sm:text-4xl leading-loose tracking-wide font-semibold sm:flex  hidden">
-          <div className="pt-8">
-            <span className="text-[18px] sm:text-[30px] text-customBlack">
+        <div className="flex-col xl:gap-5 items-center text-[15px] sm:text-[26px] lg:text-4xl leading-loose tracking-wide font-semibold sm:flex  hidden">
+          <div className="sm:pt-0 lg:pt-8">
+            <span className="text-[18px] sm:text-[24px] lg:text-[30px] text-customBlack">
               Our Mission
             </span>
-            <span className="text-[18px] sm:text-[30px] font-extralight tracking-wider">
+            <span className="text-[18px] sm:text-[24px] lg:text-[30px] font-extralight tracking-wider">
               {" "}
               is to deliver{" "}
             </span>
@@ -38,11 +38,11 @@ const OurMission = () => {
             Frictionless Orchestration
           </div>
         </div>
-        <div className="sm:grid sm:grid-cols-2  sm:gap-3 xl:gap-20 mt-8 sm:mt-8 xl:mt-12 sm:mx-0 xl:mx-20 ">
+        <div className="sm:grid lg:grid-cols-2  sm:gap-24 lg:gap-3 xl:gap-20 mt-8 sm:mt-8 xl:mt-12 sm:mx-8 lg:mx-0 xl:mx-20 ">
           <div className="flex justify-center items-center px-12 sm:px-0">
-            <img src="/customerneedimage.jpg" alt="" className="" />
+            <img src="/customerneedimage.jpg" alt="" className="sm:w-[70%] lg:w-auto" />
           </div>
-          <div className="border bg-bgBlue rounded-lg px-2 sm:px-6 py-2 sm:py-12 flex flex-col mt-8 sm:mt-0 mx-2 sm:mx-0">
+          <div className="border bg-bgBlue rounded-lg px-2 sm:px-6 py-2 sm:py-12 lg:py-12 flex flex-col mt-8 sm:mt-0 mx-2 lg:mx-0">
             <div className="text-2xl sm:text-4xl font-medium text-customBlack text-center sm:text-left">
               <div className="flex">
                 <div className="relative">

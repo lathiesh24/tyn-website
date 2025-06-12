@@ -37,7 +37,7 @@ const Testimonials = () => {
   };
 
   useEffect(() => {
-    if (isPaused) return; // Skip setting interval if paused
+    if (isPaused) return; 
 
     const interval = setInterval(() => {
       nextSlide();
@@ -46,7 +46,6 @@ const Testimonials = () => {
     return () => clearInterval(interval);
   }, [currentIndex, isPaused]);
 
-  // Handlers to pause and resume carousel
   const handleMouseEnter = () => setIsPaused(true);
   const handleMouseLeave = () => setIsPaused(false);
 
@@ -66,24 +65,24 @@ const Testimonials = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex flex-col sm:flex-row gap-4 sm:mx-32 items-center">
-        <div className="w-auto sm:w-[40%] text-center">
+      <div className="relative flex flex-col lg:flex-row gap-4 mx-0 sm:mx-12 lg:mx-32 items-center">
+        <div className="w-auto lg:w-[40%] text-center">
           <img
             src={testimonialData[currentIndex].profilePic}
             alt={testimonialData[currentIndex].name}
-            className="rounded-full w-28 h-28 sm:w-48 sm:h-48 mx-auto"
+            className="rounded-full w-28 h-28 sm:w-48 sm:h-48 lg:w-48 lg:h-48 mx-auto"
           />
-          <div className="mt-4 font-semibold text-lg">
+          <div className="mt-4 font-semibold text-lg sm:text-2xl lg:text-lg">
             {testimonialData[currentIndex].name}
           </div>
-          <div className="text-gray-500 text-sm">
+          <div className="text-gray-500 text-sm sm:text-lg lg:text-sm">
             {testimonialData[currentIndex].designation}
           </div>
           <div className="flex justify-center items-center mt-2">
             <img
               src={testimonialData[currentIndex].companyLogo}
               alt={`${testimonialData[currentIndex].name} company`}
-              className="h-12 w-auto"
+              className="h-12 sm:h-20 lg:h-12 w-auto"
             />
           </div>
         </div>

@@ -8,7 +8,7 @@ const AdvisoryTeam = () => {
                 <div className='flex justify-center items-center text-2xl text-customBlack sm:text-sky-600 font-medium  sm:-mt-32'>
                     Our Advisory team includes
                 </div>
-                <div className='flex flex-col sm:flex-row sm:gap-x-8 flex-wrap justify-center mx-4 mt-4 sm:mt-0 sm:mx-0 '>
+                <div className='flex sm:grid sm:grid-cols-2 lg:flex flex-col sm: lg:flex-row sm:gap-x-8 flex-wrap justify-center mx-4 mt-4 sm:mt-0 sm:mx-8 lg:mx-0 '>
                     <Card />
                 </div>
             </div>

@@ -56,7 +56,7 @@ const OurIdeology = () => {
         </div>
       </div>
 
-      <div className="flex flex-col bg-bgBlue py-3 px-3 sm:px-6 sm:py-6 gap-5 mx-4 rounded-lg shadow-customAdCard">
+      <div className="flex flex-col bg-bgBlue py-3 px-3 sm:px-6 sm:py-6 gap-5 mx-4 sm:mx-12 lg:mx-0 rounded-lg shadow-customAdCard">
         {IdeologyData.map((ideology, index) => {
           return (
             <div key={index} className="mb-3 gap-10">
