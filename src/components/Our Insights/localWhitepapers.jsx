@@ -22,8 +22,8 @@ const whitepapers = [
                 }
             ]
         } />,
-        pdfUrl: '/Unlocking Non Linear Growth through Strategic Alliances.pdf',
-        url: '/insights/choosing-the-right-partner-channel-growth',
+        pdfUrl: '/whitepapers/Unlocking Non Linear Growth through Strategic Alliances.pdf',
+        url: '/ynsights/choosing-the-right-partner-for-channel-led-growth',
     },
     {
         id: 'Unlocking-industrial-transformation-through-market-innovation-adoption',
@@ -45,8 +45,8 @@ const whitepapers = [
                 } 
             ]
         }/>,
-        pdfUrl: '/Turning Market Signals Into Strategic Outcomes.pdf',
-        url: '/insights/unlocking-industrial-transformation-through-market-innovation-adoption',
+        pdfUrl: '/whitepapers/Unlocking Enterprise Transformation through Market Innovation Adoption.pdf',
+        url: '/ynsights/unlocking-industrial-transformation-through-market-innovation-adoption',
     },
 ];
 
