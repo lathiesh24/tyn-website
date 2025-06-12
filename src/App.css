@@ -2,16 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes marquee {
-    0% {
-        transform: translateX(0);
+@layer utilities {
+
+    /* Horizontal marquee animation */
+    @keyframes marquee {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
     }
 
-    100% {
-        transform: translateX(-100%);
+    .animate-marquee {
+        animation: marquee 30s linear infinite;
     }
-}
 
-.animate-marquee {
-    animation: marquee 30s linear infinite;
+    /* Sliding loader animation */
+    @keyframes slidebar {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        50% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(100%);
+        }
+    }
+
+    .animate-slidebar {
+        animation: slidebar 1.8s linear infinite;
+    }
 }
