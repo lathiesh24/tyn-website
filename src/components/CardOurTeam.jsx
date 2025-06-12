@@ -34,7 +34,7 @@ const cardData = [
     name: "Ganapathy Gangadharan [GG]",
     role: "Founder",
     roleDescription:
-      "Tech leader with 20 yrs experience in scaling businesses, innovation, ecosystem development, transformations, mentoring startups, NGO founder, nation-building advocate",
+      "Ecosystem Orchestrator with 20 yrs experience in scaling businesses, innovation, ecosystem development, transformations, mentoring startups, NGO founder, nation-building advocate",
     image: "/gg.jpeg",
   },
   {
@@ -67,7 +67,7 @@ const cardData = [
   {
     name:"Maharshi Vidhyarthi",
     role:"Innovation Consultant",
-    roleDescription:"Manufacturing professional with experience leading critical client projects and solving complex process challenges. Skilled in driving operational efficiency, streamlining workflows, and delivering client-focused outcomes. Passionate about using analytics and emerging technologies to enable innovation and unlock business value.",
+    roleDescription:"Manufacturing professional and Great Lakes alumnus adapt at solving complex process challenges. Skilled in driving efficiency, optimizing workflows, business analytics and delivering client-focused solutions.",
     image:"/maharshi.jpg"
   }
 ];

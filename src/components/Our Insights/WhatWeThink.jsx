@@ -60,7 +60,7 @@ const WhatWeThink = () => {
                 setYnsights(data);
             })
             .catch((err) => {
-                console.error("❌ Error fetching Ynsights:", err);
+                console.error("Error fetching Ynsights:", err);
             });
     }, []);
 
@@ -116,8 +116,7 @@ const WhatWeThink = () => {
                                     className="w-full h-48 object-cover rounded-t-lg"
                                 />
                                 <div className="p-4">
-                                    <h3 className="text-lg font-semibold text-customBlue">{paper.title}</h3>
-                                    <p className="text-sm text-customGreyishBlack mt-1">{paper.description}</p>
+                                    <div className="text-lg font-semibold text-customBlue">{paper.title}</div>
                                 </div>
                             </Link>
                             <div className="flex justify-between items-center px-4 pb-4">

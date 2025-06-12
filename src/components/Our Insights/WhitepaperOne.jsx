@@ -4,7 +4,7 @@ import ThirdPointData from "./ThirdPointData";
 import Sidebar from "./Sidebar";
 import { FiDownload, FiShare2 } from "react-icons/fi";
 
-const WhitepaperOne = () => {
+const WhitepaperOne = ({authors}) => {
 
     const handleShare = (url, title) => {
         if (navigator.share) {
@@ -23,7 +23,7 @@ const WhitepaperOne = () => {
         <div className="flex flex-col min-h-screen">
             <div class="relative w-full h-[400px]">
                 <img
-                    src="/bgwhitepaper.jpg"
+                    src="https://res.cloudinary.com/dv0eaik7h/image/upload/v1749708844/bgwhitepaper_fhv4be.jpg"
                     alt="Background"
                     class="w-full h-full object-cover"
                 />
@@ -35,7 +35,7 @@ const WhitepaperOne = () => {
             </div>
             <div className='flex flex-grow"'>
                 <div className="w-[250px] h-screen sticky top-[72px] sm:block hidden">
-                    <Sidebar />
+                    <Sidebar authors={authors}/>
                 </div>
                 <div className="sm:px-8 flex-1 flex flex-col gap-8 sm:py-10 p-6">
                     <div className="flex gap-8 items-center justify-end px-4">
@@ -46,7 +46,7 @@ const WhitepaperOne = () => {
                             <FiShare2 size={16} />
                         </button>
                         <a
-                            href="/Unlocking Non Linear Growth through Strategic Alliances.pdf"
+                            href="/whitepapers/Unlocking Non Linear Growth through Strategic Alliances.pdf"
                             download={true}
                             className="text-gray-600 hover:text-blue-500"
                         >
@@ -103,7 +103,7 @@ const WhitepaperOne = () => {
 
                     <div className="flex justify-center items-center">
                          <a
-                            href="/Unlocking Non Linear Growth through Strategic Alliances.pdf"
+                            href="/whitepapers/Unlocking Non Linear Growth through Strategic Alliances.pdf"
                             download={true}
                             className=" hover:text-customBlue hover:bg-white shadow-md flex flex-row gap-4 items-center justify-center border bg-customBlue text-white w-max px-6 py-3 rounded-[32px]"
                         >
